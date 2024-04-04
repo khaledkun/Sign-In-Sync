@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-number</title>
+    <title>International telephone input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+          <form id="lookup">
+            <label for="phnumber"><b>Phone Number</b></label>
+            <input id="phone" type="tel" name="phone">
+            <input type="submit" class="btn" value="Verify" />
+          </form>
+        <div class="alert alert-info" style="display: none;"></div>
+        <div class="alert alert-error" style="display: none;"></div>
+      </div>
+</body>
+</html>
