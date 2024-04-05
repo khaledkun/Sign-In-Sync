@@ -13,7 +13,7 @@
   <div class="wrapper">
     <h1>Forgot Your Password</h1>
     <p>Enter your email To Restore Your Account</p>
-    <form method="post" action="test.php" novalidate>
+        <form method="post" action="../function/ForgotPasswsord.php" novalidate>
       <div class="input-box">
         <label for="email"><b>Email Address</b></label>
         <input type="text" id="email" name="email" placeholder="Enter Your Email Address" required>
