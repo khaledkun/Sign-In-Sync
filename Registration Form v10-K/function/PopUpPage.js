@@ -5,7 +5,7 @@ var modal = document.getElementById("terms-popup");
  var blurElements = document.querySelectorAll(".blur-background");
 
 // Get the link that opens the modal
- var link = document.querySelector(".terms-link");
+ var link = document.querySelector(".privacy-Page");
 
 // Get the <span> element that closes the modal
  var span = document.getElementsByClassName("close")[0];
