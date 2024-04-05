@@ -1,0 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../Imgs/Employee.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: left;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.wrapper{
+  /* ده من أجل ان يتبع الموضع الخاص بالصوره */
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
