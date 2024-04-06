@@ -89,6 +89,7 @@ body {
 
 .header:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
 .header h1 {
@@ -179,4 +180,34 @@ body {
 
 .submit-button:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 1520px) {
+    .footer {
+        margin-top: 220px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        width: 120px;
+    }
+    .navbar ul li a {
+        padding: 8px;
+    }
+
+    .logo-container img {
+        width: 80px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+    .dashboard {
+        margin-left: 120px;
+    }
+
+    .footer {
+        margin-top: 250px;
+    }
 }

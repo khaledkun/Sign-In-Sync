@@ -81,6 +81,11 @@ body {
     margin: 0;
 }
 
+.profile-header:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
 .profile-details {
     display: grid;
     grid-template-columns: 1fr;
@@ -117,13 +122,14 @@ body {
 
 .profile-item.profile-info input[type="text"],
 .profile-item.profile-info input[type="email"],
-.profile-item.profile-info input[type="tel"] {
+.profile-item.profile-info input[type="tel"],
+.profile-info select {
     border: none;
     background-color: transparent;
     font-size: inherit;
     padding: 0;
     margin: 0;
-    width: 20%;
+    max-width: 40%;
     outline: none;
     margin-bottom: 40px;
     color: #333;
@@ -131,7 +137,8 @@ body {
 
 .profile-item.profile-info input[type="text"]:focus,
 .profile-item.profile-info input[type="email"]:focus,
-.profile-item.profile-info input[type="tel"]:focus {
+.profile-item.profile-info input[type="tel"]:focus,
+.profile-info select:focus {
     border-bottom: 2px solid #4d69ff;
 }
 
@@ -196,4 +203,41 @@ body {
 .profile-item.profile-picture label:hover i {
     color: blue;
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        width: 120px;
+    }
+    .navbar ul li a {
+        padding: 8px;
+    }
+
+    .logo-container img {
+        width: 80px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+    .profile {
+        margin-left: 120px;
+    }
+
+    .footer {
+        margin-top: 250px;
+    }
+    .profile-item.profile-info input[type="text"],
+    .profile-item.profile-info input[type="email"],
+    .profile-item.profile-info input[type="tel"],
+    .profile-info select {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1520px) {
+    .footer {
+        margin-top: 220px;
+    }
+
 }
