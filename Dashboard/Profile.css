@@ -192,3 +192,8 @@ body {
 .submit-button:focus {
     outline: none;
 }
+
+.profile-item.profile-picture label:hover i {
+    color: blue;
+    transform: scale(1.1);
+}
