@@ -257,6 +257,12 @@ p span {
     margin-right: 8px;
 }
 
+#search-button:hover,
+#search-button:hover + #search-input {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 #search-input:hover,
 #search-input:hover + #search-button {
     transform: scale(1.05);
