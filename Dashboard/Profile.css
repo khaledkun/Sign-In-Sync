@@ -206,6 +206,7 @@ body {
 .profile-item.profile-picture label:hover i {
     color: blue;
     transform: scale(1.1);
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 750px) {
