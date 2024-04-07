@@ -136,6 +136,11 @@ body {
     font-weight: bold;
 }
 
+p span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .grid-item textarea {
     width: 100%;
     padding: 10px;
@@ -189,6 +194,75 @@ body {
     color: #007bff;
 }
 
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.search-input-container {
+    display: flex;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color: #4d69ff;
+    color: rgb(255, 255, 255);
+}
+
+#search-input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#list-box {
+    padding: 10px;
+    width: 350px !important;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4d69ff;
+    color: #fafafa;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 150px;
+    outline: none;
+}
+
+#list-box:hover {
+    border-color: #999;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+#list-box:focus {
+    border-color: #4d69ff;
+    box-shadow: 0 0 5px rgba(77, 105, 255, 0.5);
+}
+
+#search-button {
+    background-color: #4d69ff;
+    margin-top: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#search-input:hover,
+#search-input:hover + #search-button {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 @media only screen and (max-width: 1520px) {
     .footer {
         margin-top: 220px;
@@ -233,6 +307,22 @@ body {
 
     .footer {
         margin-top: 250px;
+    }
+    #search-input {
+        width: 150px;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #search-button {
+        width: 40px;
+        padding: 6px;
+        font-size: 12px;
+    }
+    #list-box {
+        padding: 8px;
+        font-size: 14px;
+        width: 150px !important;
     }
 }
 
