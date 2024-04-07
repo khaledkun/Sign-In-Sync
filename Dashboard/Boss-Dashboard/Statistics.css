@@ -34,11 +34,14 @@ body {
 }
 
 .footer {
-    margin-top: 240px;
     padding: 10px;
     text-align: center;
     color: #fff;
     background-color: #1900fa;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 .navbar ul {
@@ -167,12 +170,6 @@ ul.custom-list li a:hover {
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 1520px) {
-    .footer {
-        margin-top: 220px;
-    }
-}
-
 @media only screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -210,6 +207,6 @@ ul.custom-list li a:hover {
     }
 
     .footer {
-        margin-top: 250px;
+        width: 83%;
     }
 }
