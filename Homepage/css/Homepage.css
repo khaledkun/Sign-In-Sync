@@ -55,10 +55,12 @@ nav .logo a {
 nav .logo a:hover {
   color: var(--Accent-Text);
 }
+
 .LogoWithText{
   display: flex;
   align-items: center;
 }
+
 nav .checkbox {
   display: none;
 }
@@ -66,21 +68,28 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--secondary-color);
   cursor: pointer;
   transition: 0.3s;
 }
+
 nav .checkbox i:hover {
    color:#ff0000
-  }
+}
+
 ul {
   display: flex;
   align-items: center;
   gap: 1rem;
   list-style: none;
   transition: left 0.3s;
+}
+
+nav .logo a:hover {
+  color: var(--secondary-color);
 }
 
 ul li a {
@@ -225,7 +234,10 @@ ul li a:hover {
     transition: transform 0.3s ease;
     width: 80%;
     max-width: 400px;
+    min-height: 400px;
+    max-height: 450px;
   }
+
   .features__grid {
     display: flex;
     flex-direction: wrap;
@@ -401,7 +413,7 @@ ul li a:hover {
     max-width: 600px;
     margin: auto;
   }
-  
+
   .form-group {
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #000000;
@@ -466,7 +478,7 @@ ul li a:hover {
 }
 
 .form-container {
-  border: 2px solid var(--secondary-color);
+  border: none;
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 50px;
@@ -542,11 +554,11 @@ p {
 }
 
 
-                                                       /* Media Query */
+/* Media Query */
 
 
 
-@media (width < 750px) {
+@media (width < 1024px) {
   nav .checkbox {
     display: block;
   }
@@ -636,7 +648,7 @@ p {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
     .features__grid {
       flex-direction: column;
       align-items: center;
