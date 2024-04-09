@@ -43,7 +43,7 @@ if (isset($_SESSION['id'])) {
           <input type="submit" value="login" class="btn">
 
           <div class="register-link">
-          <p>Don't have an account yet <a href="SignUp.html">Register</a>
+          <p>Don't have an account yet <a href="SignUp.php">Register</a>
           </p></div>
         </form>
       </div>
