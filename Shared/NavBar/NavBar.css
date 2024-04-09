@@ -1,0 +1,80 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--Background-color-dark);
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 8px 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: 0.3s;
+  margin-left: 10px;
+}
+nav .logo a:hover {
+  color: var(--Accent-Text);
+}
+
+.LogoWithText{
+  display: flex;
+  align-items: center;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav .checkbox i:hover {
+   color:var(--Accent-Text);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+nav .logo a:hover {
+  color: var(--secondary-color);
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: var(--Accent-Text);
+}
+
+.section {
+  background-color: var(--Accent-Text-Text);
+}
