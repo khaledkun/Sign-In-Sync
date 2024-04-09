@@ -14,6 +14,11 @@
             background-color: #004baa;
             padding: 50px;
             text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
         .container {
             background-color: #002cb6;
