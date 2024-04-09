@@ -135,5 +135,19 @@
             <p>&copy; 2024 Sign In Sync. All rights reserved.</p>
         </div>
     </footer>
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.onscroll = function() {scrollFunction()};
+    });
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.querySelector('.scroll-to-top').style.display = "block";
+        } else {
+            document.querySelector('.scroll-to-top').style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
