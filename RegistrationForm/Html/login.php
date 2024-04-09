@@ -16,7 +16,7 @@ if (isset($_SESSION['id'])) {
     <head>
         <?php
         // You Can Change the Page Title as you like
-        $pageTitle = "Sign Up";
+        $pageTitle = "Sign In";
         // Include the Template
         include '../../Shared/Templates/MetaTags.php'; 
         include '../../Shared/Templates/LogIn.php'; 

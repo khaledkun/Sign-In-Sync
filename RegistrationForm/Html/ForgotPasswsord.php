@@ -4,7 +4,7 @@
 <head>
     <?php
     // You Can Change the Page Title as you like
-    $pageTitle = "ForgetPassword";
+    $pageTitle = "Forgot Password";
     // Include the Template
     include '../../Shared/Templates/MetaTags.php'; 
     include '../../Shared/Templates/ForgetPassword.php'; 
