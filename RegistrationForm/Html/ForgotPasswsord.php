@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Forgot Password</title>
-    <link rel="stylesheet" href="../CSS/ForgotPasswsord.css">
-    <link rel="stylesheet" href="../CSS/Main-Style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <script src="script.js" defer></script>
+<head>
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "ForgetPassword";
+    // Include the Template
+    include '../../Shared/Templates/MetaTags.php'; 
+    include '../../Shared/Templates/ForgetPassword.php'; 
+    ?>
+</head>
 </head>
 <body>
   <div class="wrapper">

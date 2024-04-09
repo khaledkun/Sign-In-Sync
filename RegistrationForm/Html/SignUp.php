@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="../CSS/SignUp.css">
-  <link rel="stylesheet" href="../CSS/Main-Style.css">
-  <link rel="stylesheet" href="../CSS/privacy-popup.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <!-- لربط أعلام الدول بكل رقم للدوله -->
-  <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-   />
-       <!-- سكربت رقم التليفون الدولي -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Sign Up";
+    // Include the Template
+    include '../../Shared/Templates/MetaTags.php'; 
+    include '../../Shared/Templates/SignUp.php'; 
+    ?>
 </head>
 <body>
   <div class="wrapper">
