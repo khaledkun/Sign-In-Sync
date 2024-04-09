@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="NavBar.css">    
+    <link rel="stylesheet" href="/Shared/Css/NavBar.css">
+    <link rel="stylesheet" href="/Shared/Css/Main-Style.css"
     <script type="text/javascript" src="NavBar.js"></script>
     <title>Nav bar</title>
 </head>
@@ -11,7 +12,7 @@
     <nav>
         <div class="nav__content">
             <div class="LogoWithText">
-            <img src="../Imgs/NavBarLogo.svg" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
+            <img src="/Shared/Imgs/NavBarLogo.svg" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
             <div class="logo">
                 <a id="#Home">Sign In Sync</a>
             </div>
