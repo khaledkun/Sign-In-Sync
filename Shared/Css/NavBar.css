@@ -78,3 +78,38 @@ nav {
   .section {
     background-color: var(--Accent-Text-Text);
   }
+  @media (width < 1024px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    nav ul {
+      background-color: var(--Background-color-dark);
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      align-items: center;
+      transition: left 0.3s;
+      background-color: var(--Accent-Text-Text);
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+      align-items: center;
+    }
+  
+    ul li:first-child {
+      margin-top: 100px;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    } }
