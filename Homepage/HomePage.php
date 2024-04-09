@@ -19,7 +19,8 @@
                     The smart way to manage your team with<span> SIS<br></span>
                 </h1>
                 <p class="description">
-                    Sign In App is a modern, enjoyable way to sign in visitors and staff, and book desks & meeting rooms. From smartphone contactless sign in to RFID and QR code scanning, choose the sign in option that works best for your organization. Join the millions signing in with Sign In App each year.
+                    Sign In App is a modern, enjoyable way to sign in visitors and staff, and book desks & meeting rooms. From smartphone contactless sign in to RFID and QR code scanning, choose the sign in option that works best for your organization. Join the millions signing in with Sign In App
+                    <a id="read-more" href="Company vision.php">Read More</a>
                 </p>
                 <div class="action__btns">
                     <a href="../../Registration Form v10-K/Html/SignUp.html"><button class="Signup">Start a Free Trial</button></a>
@@ -73,7 +74,8 @@
                     We believe in the importance of improving work performance, offering various communication methods with your employees. <br><br>
                     We are eager to hear your feedback on our services and any future services you would like to see added to meet your company's needs. <br><br>
                     We are with you every step of the way, ensuring that with <strong>Sign In Sync</strong>
-                    , managers can monitor their companies securely without invading employee privacy.</p>
+                    , managers can monitor their companies securely without invading employee privacy <a id="read-more" href="#">Read More</a></p>
+                    
                 <div class="action__btns">
                     <a href="https://www.facebook.com">
                         <button class="watch"><i class="ri-play-circle-line"></i>Introducing Sign In Sync</button>

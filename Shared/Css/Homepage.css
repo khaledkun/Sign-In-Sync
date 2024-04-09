@@ -66,6 +66,14 @@ body {
   color: var(--secondary-color);
 }
 
+#read-more {
+  color:#ff0128;
+}
+
+#read-more:hover {
+  text-decoration: underline;
+}
+
 .description {
   line-height: 1.5rem;
   color: var(--secondary-color);
