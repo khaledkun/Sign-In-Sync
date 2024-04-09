@@ -12,8 +12,6 @@
   --Accent-Text: #ff0128;
   --Button-Color-Light:#fed017;
   --Button-Color-Dark:#ffb500;
-  --shadow-color: #00000033;
-  --second-shdow: #ffffff33;
   --max-width: 1200px;
   scroll-behavior: smooth;
 }
@@ -32,8 +30,8 @@ body {
 .wrapper{
   /* ده من أجل ان يتبع الموضع الخاص بالصوره */
   position: relative;
-  border: 2px solid var(--second-shdow);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px var(--shadow-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
