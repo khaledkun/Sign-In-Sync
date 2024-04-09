@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boss Statistics</title>
-    <link rel="stylesheet" href="Statistics.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+<head>
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Boss Settings";
+    // Include the Template
+    include '../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/BossDashboard.php'; 
+    ?>
+    </head>
 <body>
     <div class="navbar">
         <div class="logo-container">
-            <img src="Logo.ico" alt="Company Logo">
+            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boss Settings</title>
-    <link rel="stylesheet" href="Boss-Settings.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Boss Settings";
+    // Include the Template
+    include '../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/BossDashboard.php'; 
+    ?>
+    </head>
 <body>
     <div class="navbar">
         <div class="logo-container">
-            <img src="Logo.ico" alt="Company Logo">
+            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>
-            <li><a href="Boss-Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="Statistics.html"><i class="fas fa-chart-bar"></i> Statistics</a></li>
-            <li><a href="Boss-Settings.html" class="active"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="Boss-Dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="Statistics.php"><i class="fas fa-chart-bar"></i> Statistics</a></li>
+            <li><a href="Boss-Settings.php" class="active"><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="../Dashboard/Html/login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
         <div class="footer">
