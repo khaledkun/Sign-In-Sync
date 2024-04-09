@@ -16,7 +16,7 @@
         <div class="section__container">
             <div class="content">
                 <h1 class="title">
-                    The smart way to manage your team wtih<span> SIS<br></span>
+                    The smart way to manage your team with<span> SIS<br></span>
                 </h1>
                 <p class="description">
                     Sign In App is a modern, enjoyable way to sign in visitors and staff, and book desks & meeting rooms. From smartphone contactless sign in to RFID and QR code scanning, choose the sign in option that works best for your organization. Join the millions signing in with Sign In App each year.
