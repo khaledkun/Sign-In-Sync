@@ -10,7 +10,7 @@
 <body>
     <div class="navbar">
         <div class="logo-container">
-            <img src="Logo.ico" alt="Company Logo">
+            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>
