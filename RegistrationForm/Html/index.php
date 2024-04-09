@@ -37,9 +37,12 @@ print_r($user);
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>index</title>
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Sign Up";
+    // Include the Template
+    include '../../Shared/Templates/MetaTags.php'; 
+    ?>
 </head>
 <body>
 	<br>
