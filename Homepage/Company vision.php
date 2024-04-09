@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Vision</title>
+    <?php
+        // You Can Change the Page Title as you like
+        $pageTitle = "Company vision";
+        // Include the Template
+        include '../Shared/Templates/MetaTags.php';
+        include '../Shared/Templates/HomePage.php';
+        ?>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,6 +38,8 @@
     </style>
 </head>
 <body>
+    <!-- Include the navbar -->
+    <?php include '../Shared/NavBar/NavBar.php'; ?>
         <!-- لم اقم بربط هذة الصفحة مع باقي الصفح  -->
     <div class="container">
     <h1> Our vision at Sign In Sync....</h1>
