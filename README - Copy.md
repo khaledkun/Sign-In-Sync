@@ -1,3 +1,5 @@
+# Sign-In-Sync
+Time and Employee Manage Applaction - With us, time syncs for the leader and the team.
 To set up the project and synchronize the database with your local environment, follow these steps:
 
 - **Update XAMPP Configuration**: Update the XAMPP MySQL configuration file (`my.ini` or `my.cnf`) it is in xampp\mysql\bin
