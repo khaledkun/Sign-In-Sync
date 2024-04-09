@@ -58,7 +58,7 @@
       </label>
       <button type="submit" class="registerbtn">Sign Up</button>
       <p class="or">Or</p>
-      <a href="login.html" class="signbtn">Sign In</a>
+      <a href="login.php" class="signbtn">Sign In</a>
     </form>
   </div>
 
