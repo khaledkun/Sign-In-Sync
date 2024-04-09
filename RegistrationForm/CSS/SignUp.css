@@ -31,7 +31,7 @@
   border-radius: 16px; 
   padding: 8px; 
   font-size: 12.8px;
-  color: #fff;
+  color: var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.5);
 }
 .iti__country-list {                       /* ده عشان لون اسماء الدول وكمان مقاس مربع الاختيار ميطلعش برة الشاشة*/
@@ -49,7 +49,7 @@
   border-radius: 16px; 
   padding: 8px; 
   font-size: 12.8px; 
-  color: #fff;
+  color: var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.5);
 }
 .input-box input::placeholder,input[type=tel]::placeholder{
@@ -72,11 +72,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 5px; /* 80% of 20px */
+  margin-bottom: 5px; 
 }
 .radio-group h2 {
-  font-size: 16px; /* 80% of 20px */
-  margin-bottom: 8px; /* 80% of 10px */
+  font-size: 16px; 
+  margin-bottom: 8px; 
 }
 .radio-group label {
   display: inline-block;
@@ -86,7 +86,7 @@ input[type="radio"]{
 }
 .checkbox input[type="radio"],
 .checkbox input[type="checkbox"] {
-  margin-right: 4px; /* 80% of 5px */
+  margin-right: 4px; 
 }
 .radio-group #male{
   margin-left:28px;
@@ -116,8 +116,8 @@ button {
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
-  background-color: #fed017;
-  color: #000000;
+  background-color: var(--Button-Color-Light);
+  color: var(--Background-color-dark);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -129,7 +129,7 @@ button {
   margin-left: 47%;
 }
 .privacy-Page {
-  color: red;
+  color: var(--Accent-Text);
   text-decoration: none;
 }
 .privacy-Page:hover{

@@ -5,6 +5,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+:root {
+  --Background-color: #004baa;
+  --Background-color-dark: #002cb6;
+  --secondary-color: #f9fafc;
+  --Accent-Text: #ff0128;
+  --Button-Color-Light:#fed017;
+  --Button-Color-Dark:#ffb500;
+  --shadow-color: #00000033;
+  --second-shdow: #ffffff33;
+  --max-width: 1200px;
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   justify-content: center;
@@ -15,23 +27,13 @@ body {
   background-position: left;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .wrapper{
   /* ده من أجل ان يتبع الموضع الخاص بالصوره */
   position: relative;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--second-shdow);
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px var(--shadow-color);
   border-radius: 10px;
-}
-:root {
-  --Background-color: #004baa;
-  --Background-color-dark: #002cb6;
-  --secondary-color: #f9fafc;
-  --Accent-Text: #ff0128;
-  --Button-Color-Light:#fed017;
-  --Button-Color-Dark:#ffb500;
-  --max-width: 1200px;
-  scroll-behavior: smooth;
 }
