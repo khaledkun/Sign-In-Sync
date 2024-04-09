@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="import" href="HomePage-Temp.html">
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Sign In Sync - HomePage";
+    // Include the Template
+    include '../Shared/Templates/MetaTags.php';
+    include '../Shared/Templates/HomePage.php';   
+    ?>
 </head>
 <body>
+    <!-- Include the navbar -->
+    <?php include '../Shared/NavBar/NavBar.php'; ?>
     <section class="section" id="Home">
         <div class="section__container">
             <div class="content">
@@ -19,7 +27,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="../Img/Mocap2-Y.jpg" alt="profile">
+                <img src="../Shared/Imgs/Mocap2-Y.jpg" alt="profile">
             </div>
         </div>
     </section>
@@ -73,7 +81,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="../Img/Mocap1-Y.jpg" alt="profile">
+                <img src="../Shared/Imgs/Mocap2-Y.jpg" alt="profile">
             </div>
         </div>
     </section>

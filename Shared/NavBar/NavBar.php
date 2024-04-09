@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav bar</title>
-    <link rel="stylesheet" href="../CSS/NavBar.css">    
+    <link rel="stylesheet" href="NavBar.css">    
     <script type="text/javascript" src="NavBar.js"></script>
+    <title>Nav bar</title>
 </head>
 <body>
     <nav>
         <div class="nav__content">
             <div class="LogoWithText">
-            <img src="../Img/NavBarLogo.svg" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
+            <img src="../Imgs/NavBarLogo.svg" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
             <div class="logo">
                 <a id="#Home">Sign In Sync</a>
             </div>
@@ -24,8 +24,8 @@
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Contact">Contact Us</a></li>
                 <div class="action__btns">
-                    <a href="../../Registration Form v10-K/Html/SignUp.html"><button class="Signup">Start a Free Trial</button></a>
-                    <a href="../../Registration Form v10-K/Html/login.php"><button class="Signin">Buy Now</button></a>
+                    <a href="../../RegistrationForm/Html/SignUp.html"><button class="Signup">Start a Free Trial</button></a>
+                    <a href="../../RegistrationForm/Html/login.php"><button class="Signin">Buy Now</button></a>
                 </div>
             </ul>
         </div>
