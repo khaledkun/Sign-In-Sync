@@ -25,3 +25,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+:root {
+  --Background-color: #004baa;
+  --Background-color-dark: #002cb6;
+  --secondary-color: #f9fafc;
+  --Accent-Text: #ff0128;
+  --Button-Color-Light:#fed017;
+  --Button-Color-Dark:#ffb500;
+  --max-width: 1200px;
+  scroll-behavior: smooth;
+}
