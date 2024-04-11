@@ -5,16 +5,19 @@ Time Employee Manage Applaction - With us, time syncs for the leader and the tea
 2. search for @builtin php.
 3. Disable PHP Language Features only.
 ![PhpRun](/Tutorial/Run-Php1.PNG)
-4. Install PHP Intelephense.
-5. Install PHP Server.
-6. Download exampp From that link:
-[XAMPP](https://www.apachefriends.org/download.html)
-7. After installing the exampp go to xampp\php
+4. Install `PHP Intelephense`.
+5. Install `PHP Server`.
+![Php-Extensions](/Tutorial/Php-Extensions.PNG)
+6. Download Xampp From that link:
+- [XAMPP-Download](https://www.apachefriends.org/download.html)
+7. After installing the Xampp go to xampp\php where you installed.
 8. Then System Properties.
 9. Then Environment Variables.
-10. Edit the path for system or only user only as you like.
-11. Click New and add the path for xampp\php
+10. Edit the path for system or only-user as you like.
+![Edit-Path](/Tutorial/Edit-Path.PNG)
+11. Click on path  then New and add the full path for php for Ex: `P:\xampp\php`.
 12. Then Click Run in PHP Server It should work.
+- If now Restart your Pc.
 ## 13. Extra if you want to run the mysql database:
 - search for xampp control panel and run Apache with mysql.
 ![Xampp-Conrol-Panel](/Tutorial/Xampp.PNG)
