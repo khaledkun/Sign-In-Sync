@@ -14,7 +14,7 @@ $logoPath = $imgsPath . "Logo.ico";
 $mocap1Path = $imgsPath . "Mocap1-Y.jpg";
 $mocap2Path = $imgsPath . "Mocap2-Y.jpg";
 $navBarLogoPath = $imgsPath . "NavBarLogo.svg";
-$user1Path = $imgsPath . "User-Icon.png";
-$user2Path = $imgsPath . "user.svg";
+$user1Path = $imgsPath . "user.svg";
+$user2Path = $imgsPath . "User-Icon.png";
 $websiteLogoPath = $imgsPath . "WebSiteLogo.svg";
 ?>
