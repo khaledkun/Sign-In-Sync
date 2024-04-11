@@ -25,7 +25,8 @@ Time Employee Manage Applaction - With us, time syncs for the leader and the tea
 To set up the project and synchronize the database with your local environment, follow these steps:
 **Make Sure to stop the Xampp from Running After doing anything**
 ## 1. Delete Unnecessary Folders From xampp 
-- In the old location remove all database folders except the `mysql` folder and `phpmyadmin`, which contains system databases.
+- In the old location `"P:/xampp/mysql/data"`
+- remove all database folders except the `mysql` folder and `phpmyadmin`, which contains system databases.
 - Additionally, you can delete the `performance_schema` folder, as it will be recreated automatically.
 - If you have personal databases you can just copy it to somewhere else.
 ## Update XAMPP Configuration: 
