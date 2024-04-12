@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="text.css">
     <?php
     // You Can Change the Page Title as you like
     $pageTitle = "Employee Dashboard";
@@ -9,6 +8,7 @@
     include '../Shared/Templates/MetaTags.php';    
     ?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
+    <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
 </head>
 <body>
 <!-- Here was the Navbar -->
@@ -77,6 +77,6 @@
             </div>
         </div>
     </div>
-    <script src="text.js"></script>
+    <script src="/Controllers/StopWatch.js"></script>
 </body>
 </html>
