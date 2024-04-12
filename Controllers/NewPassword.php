@@ -12,7 +12,7 @@ session_start ();
             ?>
             <script>
                 alert("<?php  echo "Sorry, link expired "?>");
-                window.location.replace("../Html/ForgotPasswsord.php");				
+                window.location.replace("/Views/ForgotPasswsord.php");				
             </script>
             <?php
         }else{
@@ -20,7 +20,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo "  Password changed successfully "?>");
-                        window.location.replace("../Html/login.php");
+                        window.location.replace("/Views/login.php");
                     </script>
                 <?php
         }
@@ -33,7 +33,7 @@ session_start ();
 		                ?>
                     <script>
                         alert("No Token");
-                        window.location.replace("../Html/ForgotPasswsord.php");						
+                        window.location.replace("/Views/ForgotPasswsord.php");						
                     </script>
 					<?php
 	}

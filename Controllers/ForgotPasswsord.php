@@ -12,7 +12,7 @@ session_start ();
             ?>
             <script>
                 alert("<?php  echo "Sorry, no emails exists "?>");
-                window.location.replace("../Html/ForgotPasswsord.html");				
+                window.location.replace("/Views/ForgotPasswsord.php");				
             </script>
             <?php
         }else{
@@ -53,7 +53,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo " Invalid Email1 "?>");
-                        window.location.replace("../Html/ForgotPasswsord.html");
+                        window.location.replace("/Views/ForgotPasswsord.php");
 						
                     </script>
                 <?php
@@ -61,7 +61,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo "  Email sent "?>");
-                        window.location.replace("../Html/index.php");						
+                        window.location.replace("/Views/index.php");						
                     </script>
                 <?php
             }

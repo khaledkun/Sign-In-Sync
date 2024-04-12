@@ -126,7 +126,7 @@
           preferredCountries: ["eg"]
       });
     </script>
-    <script src="../function/PopUpPage.js"></script>
+    <script src="/Controllers/PopUpPage.js"></script>
   </footer>
 </body>
 </html>
