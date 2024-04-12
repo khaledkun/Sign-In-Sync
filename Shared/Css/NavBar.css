@@ -74,7 +74,11 @@ nav {
   ul li a:hover {
     color: var(--Accent-Text);
   }
-  
+
+  ul li a.active {
+    color: var(--Accent-Text);
+  }
+
   .section {
     background-color: var(--Accent-Text-Text);
   }

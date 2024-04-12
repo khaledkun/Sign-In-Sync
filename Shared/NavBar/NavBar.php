@@ -22,7 +22,7 @@
             <label for="check" class="checkbox"><i class="ri-menu-line"></i></label>
             <input type="checkbox" name="check" id="check">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#Main" class="active">Home</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Contact">Contact Us</a></li>
@@ -33,5 +33,34 @@
             </ul>
         </div>
     </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav a");
+
+            // Function to handle scroll
+            function handleScroll() {
+                const sections = document.querySelectorAll(".section");
+                const scrollPosition = window.scrollY;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 50;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        // Remove active class from all links
+                        navLinks.forEach(link => link.classList.remove("active"));
+                        // Add active class to current link
+                        const targetId = section.getAttribute("id");
+                        const correspondingLink = document.querySelector(`nav a[href="#${targetId}"]`);
+                        if (correspondingLink) {
+                            correspondingLink.classList.add("active");
+                        }
+                    }
+                });
+            }
+
+            // Add scroll event listener
+            window.addEventListener("scroll", handleScroll);
+        });
+    </script>
 </body>
 </html>
