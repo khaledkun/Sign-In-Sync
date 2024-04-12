@@ -21,6 +21,10 @@
             <li><a href="EmployeeSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="../Dashboard/Html/login.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "login.php" ? 'class="active"' : ''; ?>><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
+        <div class="mode-toggle">
+            <button id="dark-mode-btn"><i class="fas fa-moon"></i></button>
+            <button id="light-mode-btn"><i class="fas fa-sun"></i></button>
+        </div>
         <div class="footer">
             <p>&copy; 2024 Sign In Sync</p>
         </div>
