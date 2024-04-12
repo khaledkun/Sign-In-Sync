@@ -39,16 +39,17 @@ $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 
 // Define the directory containing the Templates
 // it is for head or links Css and so on
-$TemplatesPath = "/Shared/Templates";
+// $TemplatesPath = "/Shared/Templates/";
 
-// Define paths for each Template file
-$BossDashTempPath = $TemplatesPath . "BossDashboard.php";
-$CompanyVisionTempPath = $TemplatesPath . "CompanyVision.php";
-$DashboardNavFooterTempPath = $TemplatesPath . "DashboardNavFooter.php";
-$ForgetPasswordTempPath = $TemplatesPath . "ForgetPassword.php";
-$HomePageTempPath = $TemplatesPath . "HomePage.php";
-$LogInTempPath = $TemplatesPath . "LogIn.php";
-$MetaTagsTempPath = $TemplatesPath . "MetaTags.php";
-$NavBarTempPath = $TemplatesPath . "NavBar.php";
-$SignUpTempPath = $TemplatesPath . "SignUp.php";
+// // Define paths for each Template file
+// $BossDashTempPath = $TemplatesPath . "BossDashboard.php";
+// $CompanyVisionTempPath = $TemplatesPath . "CompanyVision.php";
+// $DashboardNavFooterTempPath = $TemplatesPath . "DashboardNavFooter.php";
+// $ForgetPasswordTempPath = $TemplatesPath . "ForgetPassword.php";
+// $HomePageTempPath = $TemplatesPath . "HomePage.php";
+// $LogInTempPath = $TemplatesPath . "LogIn.php";
+// $MetaTagsTempPath = $TemplatesPath . "MetaTags.php";
+// $NavBarTempPath = $TemplatesPath . "NavBar.php";
+// $SignUpTempPath = $TemplatesPath . "SignUp.php";
+// للأسف لم تعمل هذه الفكره
 ?>
