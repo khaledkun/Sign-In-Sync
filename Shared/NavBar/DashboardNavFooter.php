@@ -16,9 +16,9 @@
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>
-            <li><a href="Boss-Dashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "Boss-Dashboard.php" ? 'class="active"' : ''; ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="BossDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "BossDashboard.php" ? 'class="active"' : ''; ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
             <li><a href="Statistics.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "Statistics.php" ? 'class="active"' : ''; ?>><i class="fas fa-chart-bar"></i> Statistics</a></li>
-            <li><a href="Boss-Settings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "Boss-Settings.php" ? 'class="active"' : ''; ?>><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="BossSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "BossSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-cog"></i> Settings</a></li>
             <li><a href="../Dashboard/Html/login.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "login.php" ? 'class="active"' : ''; ?>><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
         <div class="footer">
