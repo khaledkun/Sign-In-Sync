@@ -12,7 +12,7 @@
 <body>
     <!-- Include the navbar -->
     <?php include '../Shared/NavBar/NavBar.php'; ?>
-    <section class="section" id="Home">
+    <section class="section" id="Main">
         <div class="section__container">
             <div class="content">
                 <h1 class="title">
