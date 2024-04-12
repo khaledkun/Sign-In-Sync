@@ -3,4 +3,4 @@ session_start();
 session_unset();
 session_destroy();
 
-header('location:../Html/login.php');
+header('location:/Views/login.php');
