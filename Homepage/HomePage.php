@@ -128,7 +128,7 @@
     <footer>
         <div class="footer__content">
             <div class="social-media">
-                <a href="#"><i class="ri-mail-fill"></i></a>
+                <a href="mailto:signinsyncsis@gmail.com"><i class="ri-mail-fill"></i></a>
                 <a href="#"><i class="ri-phone-fill"></i></a>
                 <a href="#"><i class="ri-team-fill"></i></a>
             </div>
