@@ -41,7 +41,7 @@ print_r($user);
     // You Can Change the Page Title as you like
     $pageTitle = "Index";
     // Include the Template
-    include '../../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/MetaTags.php'; 
     ?>
 </head>
 <body>

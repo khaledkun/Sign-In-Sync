@@ -5,7 +5,7 @@
     // You Can Change the Page Title as you like
     $pageTitle = "Sign Up";
     // Include the Template
-    include '../../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/MetaTags.php'; 
     ?>
 </head>
 <link rel="stylesheet" href="<?php echo $SignUpPath; ?>">
