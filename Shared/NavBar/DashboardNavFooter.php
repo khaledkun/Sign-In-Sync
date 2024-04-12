@@ -25,23 +25,5 @@
             <p>&copy; 2024 Sign In Sync</p>
         </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM loaded");
-    var currentLocation = window.location.pathname;
-    console.log("Current location:", currentLocation);
-
-    var navLinks = document.querySelectorAll(".navbar ul li a");
-
-    navLinks.forEach(function(link) {
-        console.log("Link:", link.getAttribute("href"));
-        if (link.getAttribute("href") === currentLocation) {
-            console.log("Match found!");
-            link.classList.add("active");
-        }
-    });
-});
-
-    </script>
 </body>
 </html>
