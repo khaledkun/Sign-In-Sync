@@ -10,7 +10,7 @@ $ImgsPath = "/Shared/Imgs/";
 $employee1Path = $ImgsPath . "Employee.png";
 $employee2Path = $ImgsPath . "Employee.webp";
 $lockPath = $ImgsPath . "lock.svg";
-$logoPath = $ImgsPath . "Logo.ico";
+$logoIcoPath = $ImgsPath . "Logo.ico";
 $mocap1Path = $ImgsPath . "Mocap1-Y.jpg";
 $mocap2Path = $ImgsPath . "Mocap2-Y.jpg";
 $navBarLogoPath = $ImgsPath . "NavBarLogo.svg";
@@ -35,4 +35,5 @@ $MainStylePath = $CssPath . "MainStyle.css";
 $NavBarPath = $CssPath . "NavBar.css";
 $PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
 $SignUpPath = $CssPath . "SignUp.css";
+$DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 ?>

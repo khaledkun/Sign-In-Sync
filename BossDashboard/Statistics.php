@@ -11,22 +11,9 @@
     ?>
     </head>
 <body>
-    <div class="navbar">
-        <div class="logo-container">
-            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
-            <span class="logo-text">Sign In Sync</span>
-        </div>
-        <ul>
-        <li><a href="Boss-Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-        <li><a href="Statistics.html" class="active"><i class="fas fa-chart-bar"></i> Statistics</a></li>
-        <li><a href="Boss-Settings.html"><i class="fas fa-cog"></i> Settings</a></li>
-        <li><a href="../Dashboard/Html/login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-    </ul>
-        <div class="footer">
-            <p>&copy; 2024 Sign In Sync</p>
-        </div>
-     </div>
-    </div>
+<!-- Here was the Navbar -->
+    <!-- Include the navbar -->
+    <?php include '../Shared/NavBar/DashboardNavFooter.php'; ?>
     <div class="dashboard">
         <div class="header">
             <h1><i class="fas fa-chart-bar"></i> Statistics</h1>

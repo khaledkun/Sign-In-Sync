@@ -10,22 +10,9 @@
         ?>
     </head>
 <body>
-    <div class="navbar">
-        <div class="logo-container">
-            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
-            <span class="logo-text">Sign In Sync</span>
-        </div>
-        <ul>
-            <li><a href="Boss-Dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="Statistics.php"><i class="fas fa-chart-bar"></i> Statistics</a></li>
-            <li><a href="Boss-Settings.php"><i class="fas fa-cog"></i> Settings</a></li>
-            <li><a href="../Dashboard/Html/login.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-        </ul>
-        <div class="footer">
-            <p>&copy; 2024 Sign In Sync</p>
-        </div>
-    </div>
-
+<!-- Here was the Navbar -->
+    <!-- Include the navbar -->
+    <?php include '../Shared/NavBar/DashboardNavFooter.php'; ?>
     <div class="boss-dashboard">
         <div class="header">
             <div class="header-text">
@@ -53,7 +40,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
@@ -62,7 +49,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
@@ -71,7 +58,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
@@ -80,7 +67,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
@@ -89,7 +76,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
@@ -98,7 +85,7 @@
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                    <img src="Image.png" alt="Profile Picture">
+                    <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>

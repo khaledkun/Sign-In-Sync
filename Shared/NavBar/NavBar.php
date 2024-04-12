@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Shared/Css/NavBar.css">
-    <script type="text/javascript" src="NavBar.js"></script>
-    <title>Nav bar</title>
+    <?php
+        // You Can Change the Page Title as you like
+        $pageTitle = "NavBar";
+        // Include the Template
+        include '../Shared/Templates/MetaTags.php'; 
+        include '../Shared/Templates/NavBar.php'; 
+        ?>
 </head>
 <body>
     <nav>
