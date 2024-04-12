@@ -16,7 +16,7 @@ session_start();
 
 
 
-				require '../function/connect.php';
+				require '/Controllers/connect.php';
 				$id = $_SESSION['id'];
 				$query="SELECT * FROM employee WHERE id ='$id'";
 				$result = $conn->query($query);
