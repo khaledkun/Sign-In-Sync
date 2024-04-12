@@ -37,21 +37,4 @@ $NavBarPath = $CssPath . "NavBar.css";
 $PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
 $SignUpPath = $CssPath . "SignUp.css";
 $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
-
-// Define the directory containing the Templates
-// it is for head or links Css and so on
-$TempPath = "../Shared/Templates/";
-
-// Define paths for each Template file
-// $MetaTagsTempPath = $TempPath . "MetaTags.php";
-// Configللأسف مش هينفع لأن هنحتاح حد ينادي عال
-$BossDashTempPath = $TempPath . "BossDashboard.php";
-$EmpDashboardTempPath = $TempPath . "EmpDashboard.php";
-$CompanyVisionTempPath = $TempPath . "CompanyVision.php";
-$DashboardNavFooterTempPath = $TempPath . "DashboardNavFooter.php";
-$ForgetPasswordTempPath = $TempPath . "ForgetPassword.php";
-$HomePageTempPath = $TempPath . "HomePage.php";
-$LogInTempPath = $TempPath . "LogIn.php";
-$NavBarTempPath = $TempPath . "NavBar.php";
-$SignUpTempPath = $TempPath . "SignUp.php";
 ?>
