@@ -14,7 +14,7 @@
   <div class="wrapper">
     <h1>Reset Your Password</h1>
     <p>Enter new Password To Restore Your Account</p>
-        <form method="post" action="../function/NewPassword.php" novalidate>
+        <form method="post" action="/Controllers/NewPassword.php" novalidate>
       <div class="input-box">
         <label for="password"><b>New Password</b></label>
       <?php if(isset($_GET["token"])): ?>
