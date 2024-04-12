@@ -30,7 +30,7 @@ if (isset($_SESSION['id'])) {
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">
                 <label for="email">Email or phone number<input type="text" placeholder="Email or phone number" name="email" required></label>
-                <img class="user-img" src="<?php echo $user2Path; ?>" alt="user-icon">
+                <img class="user-img" src="<?php echo $user1Path; ?>" alt="user-icon">
                 <label for="password">Password<input type="password" placeholder="Enter your password" name="password" required></label>    
                 <img class="lock-img" src="../../Shared/Imgs/lock.svg" alt="lock-icon for the password">
               </div>

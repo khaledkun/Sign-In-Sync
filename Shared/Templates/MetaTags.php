@@ -5,4 +5,4 @@
 <?php include "\Sign-In-Sync\Config.php"; ?>
 <title><?php echo $pageTitle; ?></title> <!-- Dynamic page title -->
 <!--stylesheets-->
-<link rel="icon" type="image/x-icon" href="/Shared/Imgs/WebSiteLogo.svg">
+<link rel="icon" type="image/x-icon" href="<?php echo $websiteLogoPath; ?>">

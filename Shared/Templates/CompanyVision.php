@@ -1,2 +1,2 @@
 
-<link rel="stylesheet" href="../Shared/Css/CompanyVision.css">
+<link rel="stylesheet" href="<?php echo $CompanyVisionPath; ?>">

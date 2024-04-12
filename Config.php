@@ -4,17 +4,35 @@
 // and everyone has its own localhost
 
 // Define the directory containing the images
-$imgsPath = "/Shared/Imgs/";
+$ImgsPath = "/Shared/Imgs/";
 
 // Define paths for each image
-$employee1Path = $imgsPath . "Employee.png";
-$employee2Path = $imgsPath . "Employee.webp";
-$lockPath = $imgsPath . "lock.svg";
-$logoPath = $imgsPath . "Logo.ico";
-$mocap1Path = $imgsPath . "Mocap1-Y.jpg";
-$mocap2Path = $imgsPath . "Mocap2-Y.jpg";
-$navBarLogoPath = $imgsPath . "NavBarLogo.svg";
-$user1Path = $imgsPath . "user.svg";
-$user2Path = $imgsPath . "User-Icon.png";
-$websiteLogoPath = $imgsPath . "WebSiteLogo.svg";
+$employee1Path = $ImgsPath . "Employee.png";
+$employee2Path = $ImgsPath . "Employee.webp";
+$lockPath = $ImgsPath . "lock.svg";
+$logoPath = $ImgsPath . "Logo.ico";
+$mocap1Path = $ImgsPath . "Mocap1-Y.jpg";
+$mocap2Path = $ImgsPath . "Mocap2-Y.jpg";
+$navBarLogoPath = $ImgsPath . "NavBarLogo.svg";
+$user1Path = $ImgsPath . "user.svg";
+$user2Path = $ImgsPath . "User-Icon.png";
+$websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
+
+// Define the directory containing the Css
+$CssPath = "/Shared/Css/";
+
+// Define paths for each Css file
+$BossDashboardPath = $CssPath . "BossDashboard.css";
+$BossSettingsPath = $CssPath . "BossSettings.css";
+$StatisticsPath = $CssPath . "Statistics.css";
+$ProfilePath = $CssPath . "Profile.css";
+$SettingsPath = $CssPath . "Settings.css";
+$DashboardPath = $CssPath . "Dashboard.css";
+$ForgotPasswsordPath = $CssPath . "ForgotPasswsord.css";
+$HomepagePath = $CssPath . "Homepage.css";
+$LoginPath = $CssPath . "Login.css";
+$MainStylePath = $CssPath . "MainStyle.css";
+$NavBarPath = $CssPath . "NavBar.css";
+$PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
+$SignUpPath = $CssPath . "SignUp.css";
 ?>

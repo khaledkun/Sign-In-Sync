@@ -39,7 +39,7 @@ print_r($user);
 <head>
     <?php
     // You Can Change the Page Title as you like
-    $pageTitle = "Sign Up";
+    $pageTitle = "Index";
     // Include the Template
     include '../../Shared/Templates/MetaTags.php'; 
     ?>

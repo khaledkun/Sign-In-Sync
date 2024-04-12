@@ -1,7 +1,7 @@
 
-<link rel="stylesheet" href="../../Shared/Css/SignUp.css">
-<link rel="stylesheet" href="../../Shared/Css/Main-Style.css">
-<link rel="stylesheet" href="../../Shared/Css/privacy-popup.css">
+<link rel="stylesheet" href="<?php echo $SignUpPath; ?>">
+<link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
+<link rel="stylesheet" href="<?php echo $PrivacyPopUpPath; ?>">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <!-- لربط أعلام الدول بكل رقم للدوله -->
 <link
