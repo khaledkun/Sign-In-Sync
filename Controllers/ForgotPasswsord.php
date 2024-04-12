@@ -44,7 +44,7 @@ session_start ();
             $mail->Body="<b>Dear $fetch[1]</b>
             <h3>We received a request to reset your password.</h3>
             <p>Kindly click the below link to reset your password</p>
-            http://$URL/RegistrationForm/Html/NewPassword.php?token=$token
+            http://$URL/Views/NewPassword.php?token=$token
             <br><br>
             <p>With regrads,</p>";
 			$sql = mysqli_query($conn, "UPDATE employee set token = '$token' WHERE email='$email'"); // نحط التوكين فالداتا بيز عشان نقارنها لما اليوزر يدخل علي اللينك
