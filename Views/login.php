@@ -18,7 +18,7 @@ if (isset($_SESSION['id'])) {
         // You Can Change the Page Title as you like
         $pageTitle = "Sign In";
         // Include the Template
-        include '../../Shared/Templates/MetaTags.php'; 
+        include '../Shared/Templates/MetaTags.php'; 
         ?>
       <link rel="stylesheet" href="<?php echo $LoginPath; ?>" />
       <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])) {
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
       <div class="wrapper">
-        <form method="post" action="../function/login.php" novalidate>
+        <form method="post" action="/Controllers/login.php" novalidate>
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">

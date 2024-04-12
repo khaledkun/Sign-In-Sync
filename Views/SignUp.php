@@ -5,7 +5,7 @@
     // You Can Change the Page Title as you like
     $pageTitle = "Sign Up";
     // Include the Template
-    include '../../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/MetaTags.php'; 
     ?>
 </head>
 <link rel="stylesheet" href="<?php echo $SignUpPath; ?>">
@@ -20,7 +20,7 @@
 <body>
   <div class="wrapper">
     <h1>Sign Up</h1>
-    <form method="post" action="../function/signup.php" novalidate>
+    <form method="post" action="/Controllers/signup.php" novalidate>
       <div class="user-details">
         <div class="input-box">
           <label for="fname">First Name</label>
@@ -126,7 +126,7 @@
           preferredCountries: ["eg"]
       });
     </script>
-    <script src="../function/PopUpPage.js"></script>
+    <script src="/Controllers/PopUpPage.js"></script>
   </footer>
 </body>
 </html>

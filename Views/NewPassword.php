@@ -5,9 +5,10 @@
     // You Can Change the Page Title as you like
     $pageTitle = "Change Password";
     // Include the Template
-    include '../../Shared/Templates/MetaTags.php'; 
-    include '../../Shared/Templates/ForgetPassword.php'; 
+    include '../Shared/Templates/MetaTags.php'; 
     ?>
+    <link rel="stylesheet" href="<?php echo $ForgotPasswsordPath; ?>">
+    <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
 </head>
 <body>
   <div class="wrapper">

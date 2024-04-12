@@ -41,12 +41,12 @@ print_r($user);
     // You Can Change the Page Title as you like
     $pageTitle = "Index";
     // Include the Template
-    include '../../Shared/Templates/MetaTags.php'; 
+    include '../Shared/Templates/MetaTags.php'; 
     ?>
 </head>
 <body>
 	<br>
 
-<a href="../function/logout.php">logout</a>
+<a href="/Controllers/logout.php">logout</a>
 </body>
 </html>
