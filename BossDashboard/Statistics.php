@@ -4,7 +4,7 @@
 <head>
     <?php
     // You Can Change the Page Title as you like
-    $pageTitle = "Boss Settings";
+    $pageTitle = "Boss Statistics";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
     include '../Shared/Templates/BossDashboard.php'; 
