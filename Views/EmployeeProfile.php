@@ -21,7 +21,7 @@
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
                 <label for="profile-picture-input">
-                    <img id="profile-picture-preview" src="Image.png" alt="Profile Picture">
+                    <img id="profile-picture-preview" src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <input type="file" id="profile-picture-input" accept="image/*" style="display: none;">
                     <i class="fas fa-camera"></i>
                 </label>
