@@ -6,8 +6,8 @@
     $pageTitle = "DashboardNavFooter";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/DashboardNavFooter.php'; 
     ?>
+    <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
 </head>
 <body>
     <div class="navbar">

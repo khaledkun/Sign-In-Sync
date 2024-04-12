@@ -7,8 +7,8 @@
         // Include the Template
         include '../Shared/Templates/MetaTags.php';
         include $HomePageTempPath;
-        include $CompanyVisionPath;
         ?>
+        <link rel="stylesheet" href="<?php echo $CompanyVisionPath; ?>">
     <!-- <style>
         body {
             font-family: Arial, sans-serif;
