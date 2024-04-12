@@ -7,8 +7,9 @@
     $pageTitle = "Forgot Password";
     // Include the Template
     include '../../Shared/Templates/MetaTags.php'; 
-    include '../../Shared/Templates/ForgetPassword.php'; 
     ?>
+    <link rel="stylesheet" href="<?php echo $ForgotPasswsordPath; ?>">
+    <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
 </head>
 </head>
 <body>

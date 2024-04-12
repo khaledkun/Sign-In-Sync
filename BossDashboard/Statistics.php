@@ -7,8 +7,8 @@
     $pageTitle = "Boss Statistics";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/BossStatistics.php'; 
     ?>
+    <link rel="stylesheet" href="<?php echo $StatisticsPath; ?>">
     </head>
 <body>
 <!-- Here was the Navbar -->

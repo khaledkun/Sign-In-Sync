@@ -6,8 +6,8 @@
         $pageTitle = "Company vision";
         // Include the Template
         include '../Shared/Templates/MetaTags.php';
-        include $HomePageTempPath;
         ?>
+    <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
       <style>
         body {
             font-family: Arial, sans-serif;

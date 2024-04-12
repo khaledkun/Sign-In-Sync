@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <?php
-        // You Can Change the Page Title as you like
-        $pageTitle = "Employee Dashboard";
-        // Include the Template
-        include '../Shared/Templates/MetaTags.php';  
-        include '../Shared/Templates/Dashboard.php';  
-        ?>
-    </head>
-    <link rel="stylesheet" href="Dashboard.css">
+    <?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Employee Dashboard";
+    // Include the Template
+    include '../Shared/Templates/MetaTags.php';    
+    ?>
+    <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
 </head>
 <body>
     <div class="navbar">
