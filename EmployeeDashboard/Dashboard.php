@@ -5,8 +5,8 @@
         // You Can Change the Page Title as you like
         $pageTitle = "Employee Dashboard";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php'; 
-        include $BossDashTempPath; 
+        include '../Shared/Templates/MetaTags.php';  
+        include '../Shared/Templates/Dashboard.php';  
         ?>
     </head>
     <link rel="stylesheet" href="Dashboard.css">
@@ -18,9 +18,9 @@
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>
-        <li><a href="Dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-        <li><a href="Profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="Settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="Dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="Profile.php"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="Settings.php"><i class="fas fa-cog"></i> Settings</a></li>
         <li><a href="../Dashboard/Html/login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </ul>
         <div class="footer">

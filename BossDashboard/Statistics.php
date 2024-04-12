@@ -8,7 +8,6 @@
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
     include '../Shared/Templates/BossStatistics.php'; 
-    include $BossDashTempPath; 
     ?>
     </head>
 <body>
