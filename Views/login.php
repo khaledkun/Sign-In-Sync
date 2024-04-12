@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])) {
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
       <div class="wrapper">
-        <form method="post" action="../function/login.php" novalidate>
+        <form method="post" action="/Controllers/login.php" novalidate>
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">

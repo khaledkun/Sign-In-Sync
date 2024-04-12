@@ -47,6 +47,6 @@ print_r($user);
 <body>
 	<br>
 
-<a href="../function/logout.php">logout</a>
+<a href="/Controllers/logout.php">logout</a>
 </body>
 </html>
