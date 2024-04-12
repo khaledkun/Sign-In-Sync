@@ -5,9 +5,9 @@
     // You Can Change the Page Title as you like
     $pageTitle = "HomePage";
     // Include the Template
-    include '../Shared/Templates/MetaTags.php';
-    include $HomePageTempPath;   
+    include '../Shared/Templates/MetaTags.php';   
     ?>
+    <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
 </head>
 <body>
     <!-- Include the navbar -->

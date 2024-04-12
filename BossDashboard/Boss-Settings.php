@@ -6,8 +6,8 @@
     $pageTitle = "Boss Settings";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/BossSettings.php';
     ?>
+    <link rel="stylesheet" href="<?php echo $BossSettingsPath; ?>">
     </head>
 <body>
 <!-- Here was the Navbar -->

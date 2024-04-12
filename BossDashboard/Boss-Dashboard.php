@@ -6,9 +6,9 @@
         $pageTitle = "Boss Dashboard";
         // Include the Template
         include '../Shared/Templates/MetaTags.php'; 
-        include $BossDashTempPath; 
         ?>
     </head>
+    <link rel="stylesheet" href="<?php echo $BossDashboardPath; ?>">
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
