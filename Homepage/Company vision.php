@@ -6,9 +6,10 @@
         $pageTitle = "Company vision";
         // Include the Template
         include '../Shared/Templates/MetaTags.php';
-        include '../Shared/Templates/HomePage.php';
+        include $HomePageTempPath;
+        include $CompanyVisionPath;
         ?>
-    <style>
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #004baa;
@@ -40,7 +41,7 @@
             margin-bottom: 20px;
             text-align: left;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <!-- Include the navbar -->

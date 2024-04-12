@@ -7,7 +7,7 @@
     $pageTitle = "Boss Statistics";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/BossDashboard.php'; 
+    include $BossDashTempPath; 
     ?>
     </head>
 <body>
