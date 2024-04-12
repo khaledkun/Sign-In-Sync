@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Settings</title>
-    <link rel="stylesheet" href="Settings.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<?php
+    // You Can Change the Page Title as you like
+    $pageTitle = "Employee Dashboard";
+    // Include the Template
+    include '../Shared/Templates/MetaTags.php';    
+    ?>
+    <link rel="stylesheet" href="<?php echo $SettingsPath; ?>">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo-container">
-            <img src="../Shared/Templates/Logo.ico" alt="Company Logo">
-            <span class="logo-text">Sign In Sync</span>
-        </div>
-        <ul>
-            <li><a href="Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="Profile.html"><i class="fas fa-user"></i> Profile</a></li>
-            <li><a href="Settings.html" class="active"><i class="fas fa-cog"></i> Settings</a></li>
-            <li><a href="../Dashboard/Html/login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-        </ul>
-        <div class="footer">
-            <p>&copy; 2024 Sign In Sync</p>
-        </div>
-     </div>
-    </div>
+<!-- Here was the Navbar -->
+<!-- Include the navbar -->
+    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
     <form action="submit_settings.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="dashboard">
         <div class="header">

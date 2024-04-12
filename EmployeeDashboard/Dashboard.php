@@ -10,22 +10,9 @@
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo-container">
-            <img src="Logo.ico" alt="Company Logo">
-            <span class="logo-text">Sign In Sync</span>
-        </div>
-        <ul>
-        <li><a href="Dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-        <li><a href="Profile.php"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="Settings.php"><i class="fas fa-cog"></i> Settings</a></li>
-        <li><a href="../Dashboard/Html/login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-    </ul>
-        <div class="footer">
-            <p>&copy; 2024 Sign In Sync</p>
-        </div>
-     </div>
-    </div>
+<!-- Here was the Navbar -->
+<!-- Include the navbar -->
+    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
     <div class="dashboard">
         <div class="header">
             <div class="header-text">

@@ -6,7 +6,6 @@
     $pageTitle = "DashboardNavFooter";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/DashboardNavFooter.php'; 
     ?>
 </head>
 <body>
