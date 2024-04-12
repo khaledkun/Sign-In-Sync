@@ -25,6 +25,5 @@
             <p>&copy; 2024 Sign In Sync</p>
         </div>
     </div>
-
 </body>
 </html>
