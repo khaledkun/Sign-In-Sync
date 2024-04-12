@@ -36,8 +36,6 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const navLinks = document.querySelectorAll("nav a");
-
-            // Function to handle scroll
             function handleScroll() {
                 const sections = document.querySelectorAll(".section");
                 const scrollPosition = window.scrollY;
@@ -46,9 +44,7 @@
                     const sectionTop = section.offsetTop - 50;
                     const sectionBottom = sectionTop + section.offsetHeight;
                     if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                        // Remove active class from all links
                         navLinks.forEach(link => link.classList.remove("active"));
-                        // Add active class to current link
                         const targetId = section.getAttribute("id");
                         const correspondingLink = document.querySelector(`nav a[href="#${targetId}"]`);
                         if (correspondingLink) {
@@ -57,8 +53,6 @@
                     }
                 });
             }
-
-            // Add scroll event listener
             window.addEventListener("scroll", handleScroll);
         });
     </script>
