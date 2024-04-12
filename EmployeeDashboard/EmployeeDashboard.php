@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="text.css">
     <?php
     // You Can Change the Page Title as you like
     $pageTitle = "Employee Dashboard";
@@ -26,12 +27,12 @@
             <div class="grid-item sign-in-time">
                 <i class="fas fa-sign-in-alt"></i>
                 <h2>Sign In Time</h2>
-                <p id="sign-in-time">HH:MM:SS</p>
+                <div id="timecontainer">
+            <div id="timedisplay">00:00:00</div>
+            <button id="startbutton" class="timer-button"><i class="fas fa-play"></i></button>
+            <button id="pausebutton" class="timer-button"><i class="fas fa-pause"></i></button>
+            <button id="resetbutton" class="timer-button"><i class="fas fa-stop"></i></button>
             </div>
-            <div class="grid-item sign-out-time">
-                <i class="fas fa-sign-out-alt"></i>
-                <h2>Sign Out Time</h2>
-                <p id="sign-out-time">HH:MM:SS</p>
             </div>
             <div class="grid-item">
                 <i class="fas fa-clock"></i>
@@ -76,5 +77,6 @@
             </div>
         </div>
     </div>
+    <script src="text.js"></script>
 </body>
 </html>
