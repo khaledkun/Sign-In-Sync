@@ -30,6 +30,7 @@ $SettingsPath = $CssPath . "Settings.css";
 $DashboardPath = $CssPath . "Dashboard.css";
 $ForgotPasswsordPath = $CssPath . "ForgotPasswsord.css";
 $HomepagePath = $CssPath . "Homepage.css";
+$CompanyVisionPath = $CssPath . "CompanyVision.css";
 $LoginPath = $CssPath . "Login.css";
 $MainStylePath = $CssPath . "MainStyle.css";
 $NavBarPath = $CssPath . "NavBar.css";
@@ -39,17 +40,18 @@ $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 
 // Define the directory containing the Templates
 // it is for head or links Css and so on
-// $TempPath = "/Shared/Templates/";
+$TempPath = "../Shared/Templates/";
 
 // Define paths for each Template file
-// $BossDashTempPath = $TempPath . "BossDashboard.php";
-// $CompanyVisionTempPath = $TempPath . "CompanyVision.php";
-// $DashboardNavFooterTempPath = $TempPath . "DashboardNavFooter.php";
-// $ForgetPasswordTempPath = $TempPath . "ForgetPassword.php";
-// $HomePageTempPath = $TempPath . "HomePage.php";
-// $LogInTempPath = $TempPath . "LogIn.php";
 // $MetaTagsTempPath = $TempPath . "MetaTags.php";
-// $NavBarTempPath = $TempPath . "NavBar.php";
-// $SignUpTempPath = $TempPath . "SignUp.php";
-// للأسف لم تعمل هذه الفكره
+// Configللأسف مش هينفع لأن هنحتاح حد ينادي عال
+$BossDashTempPath = $TempPath . "BossDashboard.php";
+$EmpDashboardTempPath = $TempPath . "EmpDashboard.php";
+$CompanyVisionTempPath = $TempPath . "CompanyVision.php";
+$DashboardNavFooterTempPath = $TempPath . "DashboardNavFooter.php";
+$ForgetPasswordTempPath = $TempPath . "ForgetPassword.php";
+$HomePageTempPath = $TempPath . "HomePage.php";
+$LogInTempPath = $TempPath . "LogIn.php";
+$NavBarTempPath = $TempPath . "NavBar.php";
+$SignUpTempPath = $TempPath . "SignUp.php";
 ?>

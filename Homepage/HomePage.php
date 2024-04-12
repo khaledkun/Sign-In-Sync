@@ -6,7 +6,7 @@
     $pageTitle = "HomePage";
     // Include the Template
     include '../Shared/Templates/MetaTags.php';
-    include '../Shared/Templates/HomePage.php';   
+    include $HomePageTempPath;   
     ?>
 </head>
 <body>
