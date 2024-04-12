@@ -17,7 +17,9 @@
         <form method="post" action="../function/NewPassword.php" novalidate>
       <div class="input-box">
         <label for="password"><b>New Password</b></label>
-		<input type="hidden" id="token" name="token" value="<?php echo $_GET["token"]?>">		
+      <?php if(isset($_GET["token"])): ?>
+    <input type="hidden" id="token" name="token" value="<?php echo $_GET["token"];?>">
+      <?php endif; ?>
         <input type="password" id="password" name="password" placeholder="Enter Your new Password" required>
       </div>
       <button type="submit" class="sendcode">Change Password</button>
