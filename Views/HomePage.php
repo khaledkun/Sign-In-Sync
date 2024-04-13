@@ -70,11 +70,7 @@
                     We strive to continuously develop our application, making it more innovative while ensuring ease of use to meet the needs of small and medium-sized businesses alike. <br><br>
                     Additionally, we are working on developing larger versions to be used by larger corporations, incorporating advanced technological enhancements and a professional team. <br><br>
                     We aim to provide the best version of our attendance and time tracking application, ensuring accuracy and effectiveness in human resource management. <br><br>
-                    We aim to streamline administrative processes to enhance your organizational success, syncing quality, cost, time, and operational ease. <br><br>
-                    We believe in the importance of improving work performance, offering various communication methods with your employees. <br><br>
-                    We are eager to hear your feedback on our services and any future services you would like to see added to meet your company's needs. <br><br>
-                    We are with you every step of the way, ensuring that with <strong>Sign In Sync</strong>
-                    , managers can monitor their companies securely without invading employee privacy <a id="read-more" href="#">Read More</a></p>
+                    We aim to streamline <a id="read-more" href="AboutUs.php">Read More</a></p>
                     
                 <div class="action__btns">
                     <a href="https://www.facebook.com">
@@ -128,15 +124,13 @@
     <footer>
         <div class="footer__content">
             <div class="social-media">
-                <a href="mailto:signinsyncsis@gmail.com"><i class="ri-mail-fill"></i></a>
-                <a href="#"><i class="ri-phone-fill"></i></a>
-                <a href="#"><i class="ri-team-fill"></i></a>
+                <a href="mailto:signinsyncsis@gmail.com" title="Email"><i class="ri-mail-fill"></i></a>
+                <a href="#" title="Phone"><i class="ri-phone-fill"></i></a>
+                <a href="Credits.php" title="Credits"><i class="ri-team-fill"></i></a>
             </div>
             <p>&copy; 2024 Sign In Sync. All rights reserved.</p>
         </div>
     </footer>
     <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
-    <script>
-    </script>
 </body>
 </html>

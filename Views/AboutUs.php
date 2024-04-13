@@ -3,7 +3,7 @@
 <head>
     <?php
         // You Can Change the Page Title as you like
-        $pageTitle = "Company Vision";
+        $pageTitle = "About Us";
         // Include the Template
         include '../Shared/Templates/MetaTags.php';
         ?>
@@ -46,17 +46,11 @@
     <!-- Include the navbar -->
     <?php include '../Shared/NavBar/NavBar.php'; ?>
         <!-- لم اقم بربط هذة الصفحة مع باقي الصفح  -->
-    <div class="container">
-    <h1> Our vision at Sign In Sync....</h1>
+        <div class="container">
+    <h1> </h1>
         <p>
-        <B><I><U>Our vision at Sign In Sync is to achieve synchronization and harmony in recording employee attendance 
-        and departure,to build a bright future where orderand efficiency prevail.</U></I></B><br>
-         The Sign In Sync application/website was developed to be an attendance and departure portal for employees
-          and students as well, stimulating excellence and creativity and building a bright future where order 
-          and efficiency prevail. We strive to provide a synchronous and unified work experience for recording attendance
-           and departure for employees and students, aiming to be the ideal destination for companies interested in managing
-            and organizing their operations with efficiency, high accuracy, and an easy and simple user interface.
+        <B><I><U>
         </p>
-    </div>    
+    </div>
 </body>
 </html>
