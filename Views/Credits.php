@@ -8,158 +8,222 @@
         include '../Shared/Templates/MetaTags.php';
         ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
-      <style>
-            body {
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
             font-family: Arial, sans-serif;
             background-color: #004baa;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            margin-top: 50px;
         }
         .container {
             width: 95%;
-            background-color: #002cb6;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 110px;
+            margin-top: 80px;
+            text-align: center;
         }
         h1 {
             color: #f9fafc;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 50px;
+            margin-bottom: 40px;
+            text-align: center;
         }
         .grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            justify-items: center;
         }
         .item {
-            width: calc(20% - 20px);
-            height: 210px;
-            background-color: #f9fafc;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            padding: 50px;
-            margin: 10px;
-            align-items: center;
+            width: 100%;
+            padding: 20px;
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            margin-bottom: 20px;
+            align-items: center;
+            position: relative;
+        }
+        .item img {
+            width: 200px;
+            margin-left: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
         .item p {
             margin: 4px 0;
         }
-        .item img {
-           width: 80px;
-           border-radius: 50%;
+        .description p {
+            flex: 1;
+            color: #fff;
+            text-align: left;
         }
-        @media screen and (max-width: 600px) {
-            .item {
-                width: 100%;
-            }
+        .item .description h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: left;
         }
-       </style> 
+        .item .description h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #002cb6;
+            color: #fff;
+            border-radius: 50%;
+            margin: 0 5px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Include the navbar -->
     <?php include '../Shared/NavBar/NavBar.php'; ?>
-        <!-- لم اقم بربط هذة الصفحة مع باقي الصفح  -->
-        <div class="container">
-          <h1>Our Team </h1>
-         <div class="grid">
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>عبدالرحمن محمد حامد حسن</p>
-            <p>Back-End Dev</p>
-            <p>01122859748</p>
-            <p>abdel.rahman31053099@art.tanta.edu
-                .eg
-            </p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>عبد الرحمن محمد الأحمدي دحروج</p>
-            <p>Mobile-Dev</p>
-            <p>01226336080</p>
-            <p>abdel.rahman31067369@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>ندي محمود احمد الدبور</p>
-            <p>Back-End Dev</p>
-            <p>01278819019</p>
-            <p>nada31050307@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>ياسمين السيد عبد المقصود رجب</p>
-            <p>Digital Marketing</p>
-            <p>01201241408</p>
-            <p>yassmine31052542@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>خالد ناجي عبد الجليل محمد حمام</p>
-            <p>Full Stack Dev - Leader</p>
-            <p>01117134243</p>
-            <p>khaled31067026@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>محمد محمد عبدالله حسين</p>
-            <p>Graphic Designer</p>
-            <p>01129483536</p>
-            <p>mohammed31067703@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>سامح ايمن صلاح محمد</p>
-            <p>Front-End Dev</p>
-            <p>01067088917</p>
-            <p>sameh31053717@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>علي محمد علي عبدالله التركاوي</p>
-            <p>Ui&Ux</p>
-            <p>01009571383</p>
-            <p>aly31067527@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>ياسمين عبد الله خليفة</p>
-            <p>Graphic Designer</p>
-            <p>01220859044</p>
-            <p>yassmine31067064@art.tanta.edu
-                .eg</p>
-           </div>
-           <div class="item">
-           <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-            <p>آية سعيد عبدالرحمن دعبس</p>
-            <p>Mobile-Dev</p>
-            <p>01129532933</p>
-            <p>aya31053410@art.tanta.edu
-                .eg</p>
-           </div>
-         </div>
+    <!-- لم اقم بربط هذة الصفحة مع باقي الصفح -->
+    <div class="container">
+        <h1>Our Team</h1>
+        <div class="grid">
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name1</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name2</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name3</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name4</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name5</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name6</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name7</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name8</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name9</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
+                <div class="description">
+                    <h2>Name10</h2>
+                    <h3>Track</h3>
+                    <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fas fa-users"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 </html>
