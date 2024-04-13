@@ -1,24 +1,21 @@
-const sections = document.querySelectorAll('.section');
-function checkActiveSection() {
-    let scrollPosition = window.scrollY;
-    sections.forEach(section => {
-        const top = section.offsetTop - 150;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-    
-        if (scrollPosition >= top && scrollPosition < top + height) {
-            document.querySelector('nav li a[href="#' + id + '"]').classList.add('active');
-        } else {
-            document.querySelector('nav li a[href="#' + id + '"]').classList.remove('active');
-        }
-    });
-}
-window.addEventListener('scroll', checkActiveSection);
-window.addEventListener('DOMContentLoaded', checkActiveSection);
-function hideMenu() {
-document.getElementById('check').checked = false;
-}
-const navLinks = document.querySelectorAll('nav ul li a');
-navLinks.forEach(link => {
-    link.addEventListener('click', hideMenu);
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav a");
+    function handleScroll() {
+        const sections = document.querySelectorAll(".section");
+        const scrollPosition = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 50;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                navLinks.forEach(link => link.classList.remove("active"));
+                const targetId = section.getAttribute("id");
+                const correspondingLink = document.querySelector(`nav a[href="#${targetId}"]`);
+                if (correspondingLink) {
+                    correspondingLink.classList.add("active");
+                }
+            }
+        });
+    }
+    window.addEventListener("scroll", handleScroll);
 });
