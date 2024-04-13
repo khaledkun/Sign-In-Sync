@@ -22,7 +22,7 @@
             <label for="check" class="checkbox"><i class="ri-menu-line"></i></label>
             <input type="checkbox" name="check" id="check">
             <ul>
-                <li><a href="#Main">Home</a></li>
+                <li><a href="#Main" class="active">Home</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Contact">Contact Us</a></li>
