@@ -20,15 +20,15 @@
                 </h1>
                 <p class="description">
                     Sign In App is a modern, enjoyable way to sign in visitors and staff, and book desks & meeting rooms. From smartphone contactless sign in to RFID and QR code scanning, choose the sign in option that works best for your organization. Join the millions signing in with Sign In App
-                    <a id="read-more" href="Company vision.php">Read More</a>
+                    <a id="read-more" href="CompanyVision.php">Read More</a>
                 </p>
                 <div class="action__btns">
-                    <a href="../../Registration Form v10-K/Html/SignUp.html"><button class="Signup">Start a Free Trial</button></a>
-                    <a href="../../Registration Form v10-K/Html/login.php"><button class="Signin">Buy Now</button></a>
+                    <a href="/Views/SignUp.php"><button class="Signup">Start a Free Trial</button></a>
+                    <a href="/Views/login.php"><button class="Signin">Buy Now</button></a>
                 </div>
             </div>
             <div class="image">
-                <img src="../Shared/Imgs/Mocap2-Y.jpg" alt="profile">
+                <img src="<?php echo $mocap2Path; ?>" alt="profile">
             </div>
         </div>
     </section>
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="../Shared/Imgs/Mocap2-Y.jpg" alt="profile">
+                <img src="<?php echo $mocap1Path; ?>" alt="profile">
             </div>
         </div>
     </section>
@@ -137,17 +137,6 @@
     </footer>
     <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        window.onscroll = function() {scrollFunction()};
-    });
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.querySelector('.scroll-to-top').style.display = "block";
-        } else {
-            document.querySelector('.scroll-to-top').style.display = "none";
-        }
-    }
     </script>
 </body>
 </html>

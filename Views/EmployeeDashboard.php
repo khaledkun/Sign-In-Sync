@@ -9,6 +9,7 @@
     ?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
+    <script src="/Controllers/StopWatch.js"></script>
 </head>
 <body>
 <!-- Here was the Navbar -->
@@ -77,6 +78,5 @@
             </div>
         </div>
     </div>
-    <script src="/Controllers/StopWatch.js"></script>
 </body>
 </html>
