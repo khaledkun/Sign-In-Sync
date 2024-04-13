@@ -57,7 +57,7 @@
     background-color: #324b80;
     transition: 0.3s;
 }
-
+/* للدارك مود */
 .mode-toggle {
   display: flex;
   align-items: center;
@@ -83,6 +83,7 @@
 .mode-toggle button:hover {
   color: #ffcc00;
 }
+/*  */
 
 @media only screen and (max-width: 750px) {
   .header-text h1 {
