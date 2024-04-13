@@ -1,5 +1,5 @@
 <?php
-define('HOST', 'localhost');
+define('HOST', 'sql11.freesqldatabase.com');
 define('USERNAME', 'root');
 define('PASS','');
 define('DB', 'sign in sync');
