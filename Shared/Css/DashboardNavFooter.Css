@@ -58,6 +58,32 @@
     transition: 0.3s;
 }
 
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mode-toggle button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-left: 35px;
+  transition: color 0.3s ease;
+}
+
+.mode-toggle button:last-child {
+  margin-right: 0;
+}
+
+.mode-toggle button:hover {
+  color: #ffcc00;
+}
+
 @media only screen and (max-width: 750px) {
   .header-text h1 {
     font-size: 20px;
@@ -80,5 +106,9 @@
 
   .footer {
     width: 83%;
+  }
+
+  .mode-toggle button {
+    margin-left: 10px;
   }
 }

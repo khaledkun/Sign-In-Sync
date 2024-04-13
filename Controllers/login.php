@@ -29,9 +29,9 @@ if ($result-> num_rows > 0) {
 	session_start();
 	$_SESSION['id']=$id;
 	echo $id;
-	header('location: /Views/index.php');
+	header('location: ../Views/index.php');
 
 	
 }else{
-	header('location: /Views/login.php');
+	header('location: ../Views/login.php');
 }
