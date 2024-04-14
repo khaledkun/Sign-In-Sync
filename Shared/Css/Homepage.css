@@ -481,7 +481,7 @@ p {
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 100px;
   background-color: #007bff;
   color: #fff;
   width: 40px;
