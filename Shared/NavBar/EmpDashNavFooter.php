@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
 </head>
 <body>
+<div class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
     <div class="navbar">
         <div class="logo-container">
             <img src="<?php echo $logoIcoPath; ?>" alt="Company Logo">
@@ -31,5 +34,33 @@
             <p>&copy; 2024 Sign In Sync</p>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navbar = document.querySelector('.navbar');
+            let navbarVisible = true;
+            menuIcon.addEventListener('click', function() {
+                navbarVisible = !navbarVisible;
+                navbar.style.display = navbarVisible ? 'block' : 'none';
+                menuIcon.innerHTML = navbarVisible ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 750) {
+                    navbar.style.display = 'none';
+                    navbarVisible = false;
+                    menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
+                } else {
+                    navbar.style.display = 'block';
+                    navbarVisible = true;
+                    menuIcon.innerHTML = '<i class="fas fa-times"></i>';
+                }
+            });
+            if (window.innerWidth <= 750) {
+                navbar.style.display = 'none';
+                navbarVisible = false;
+                menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+    </script>
 </body>
 </html>

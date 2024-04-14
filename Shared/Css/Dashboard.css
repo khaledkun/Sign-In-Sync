@@ -134,6 +134,9 @@ body {
     }
 
     .dashboard {
-        margin-left: 120px;
+        margin-left: 0px;
+    }
+    .date-section {
+        margin-right: 50px;
     }
 }

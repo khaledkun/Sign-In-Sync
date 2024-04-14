@@ -164,6 +164,6 @@ input[type="number"]:not(:focus) {
 
 @media only screen and (max-width: 750px) {
     .dashboard {
-        margin-left: 120px;
+        margin-left: 0px;
     }
 }
