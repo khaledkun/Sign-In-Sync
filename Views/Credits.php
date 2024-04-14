@@ -94,6 +94,30 @@
             text-decoration: none;
             padding: 5px;
         }
+        .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: none;
+        }
+
+        .scroll-to-top i {
+         font-size: 20px;
+         }
+
+         .scroll-to-top:hover {
+           background-color: #0056b3;
+         }
+
     </style>
 </head>
 <body>
@@ -225,5 +249,20 @@
             </div>
         </div>
     </div>
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    <script>
+     window.addEventListener("scroll", function() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.scroll-to-top').style.display = "block";
+         } else {
+           document.querySelector('.scroll-to-top').style.display = "none";
+         }
+        });
+
+       document.querySelector('.scroll-to-top').addEventListener("click", function() {
+            document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+        });
+    </script>
 </body>
 </html>
