@@ -149,27 +149,10 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
-    .navbar {
-        width: 120px;
-    }
-    .navbar ul li a {
-        padding: 8px;
-    }
-
-    .logo-container img {
-        width: 80px;
-    }
-
-    .logo-text {
-        font-size: 16px;
-    }
     .profile {
         margin-left: 120px;
     }
 
-    .footer {
-        width: 83%;
-    }
     .profile-item.profile-info input[type="text"],
     .profile-item.profile-info input[type="email"],
     .profile-item.profile-info input[type="tel"],
