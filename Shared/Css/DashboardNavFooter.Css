@@ -113,9 +113,28 @@
   .header-text h1 {
     font-size: 20px;
   }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   .navbar {
     display: block;
+    animation: slideIn 0.5s ease forwards;
   }
   
   .menu-items {
@@ -135,7 +154,11 @@
     color: #fff;
   }
 
-  .navbar {
+  .navbar.hidden {
+    animation: slideOut 0.5s ease forwards;
+  }
+  
+  .navbar.closed {
     display: none;
   }
 }
