@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                     navLinks.forEach(link => link.classList.remove("active"));
                     const targetId = section.getAttribute("id");
-                    const correspondingLink = document.querySelector(`nav a[href="#${targetId}"]`);
+                    const correspondingLink = document.querySelector(`nav a[href="HomePage.php#${targetId}"]`);
                     if (correspondingLink) {
                         correspondingLink.classList.add("active");
                     }

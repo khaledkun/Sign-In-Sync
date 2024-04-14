@@ -22,10 +22,10 @@
             <label for="check" class="checkbox"><i class="ri-menu-line"></i></label>
             <input type="checkbox" name="check" id="check">
             <ul>
-            <li><a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? '#Main' : 'HomePage.php'; ?>" <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?>>Home</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#About">About Us</a></li>
-                <li><a href="#Contact">Contact Us</a></li>
+            <li><a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'HomePage.php#Main' : 'HomePage.php'; ?>" <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?>>Home</a></li>
+                <li><a href="HomePage.php#Services">Services</a></li>
+                <li><a href="HomePage.php#About">About Us</a></li>
+                <li><a href="HomePage.php#Contact">Contact Us</a></li>
                 <div class="action__btns">
                     <a href="/Views/SignUp.php"><button class="Signup">Start a Free Trial</button></a>
                     <a href="/Views/login.php"><button class="Signin">Buy Now</button></a>
