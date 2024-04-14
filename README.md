@@ -1,6 +1,9 @@
 # Sign-In-Sync
 Time Employee Manage Applaction - With us, time syncs for the leader and the team.
 # Wanna Run PHP in the project ?
+This is youtube video to show you how could make it work.
+- [PHP-Tutorial](https://www.youtube.com/watch?v=btE1bjvon9c)
+## or follow these steps:
 1. inside the Visual Studio Code in Extensions.
 2. search for @builtin php.
 3. Disable PHP Language Features only.
@@ -20,6 +23,3 @@ Time Employee Manage Applaction - With us, time syncs for the leader and the tea
 13. Click on path then Edit then new and add the full path for php for Ex: `C:\php-8.3.6`.
 14. Then right click in `VS code` Run in PHP Server.
 - It should work If not Restart the `VS code` or your Pc.
-## Still not work? 
-This is youtube video to show you could make it work.
-- [PHP-Tutorial](https://www.youtube.com/watch?v=btE1bjvon9c)
