@@ -10,11 +10,16 @@ Time Employee Manage Applaction - With us, time syncs for the leader and the tea
 ![Php-Extensions](/Tutorial/Php-Extensions.PNG)
 6. Download PHP From that link:
 - [PHP-Download](https://windows.php.net/download/)
-7. After installing the PHP language go where you installed.
-8. Then System Properties.
-9. Then Environment Variables.
-10. Edit the path for system or only-user as you like.
+7. After installing the PHP language unzip the folder.
+8. And put it where you like for example `C:\php-8.3.6-Win32-vs16-x64`.
+- I rename it to `C:\php-8.3.6` to make it easier.
+9. Then search for advanced system properties.
+10. Then choose Environment Variables.
+12. Edit the path for system.
 ![Edit-Path](/Tutorial/Edit-Path.PNG)
-11. Click on path  then New and add the full path for php for Ex: `P:\xampp\php`.
-12. Then Click Run in PHP Server It should work.
-- If not Restart your Pc.
+13. Click on path then Edit then new and add the full path for php for Ex: `C:\php-8.3.6`.
+14. Then right click in `VS code` Run in PHP Server.
+- It should work If not Restart the `VS code` or your Pc.
+## Still not work? 
+This is youtube video to show you could make it work.
+- [PHP-Tutorial](https://www.youtube.com/watch?v=btE1bjvon9c)
