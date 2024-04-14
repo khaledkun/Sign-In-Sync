@@ -130,6 +130,19 @@
             </div>
             <p>&copy; 2024 Sign In Sync. All rights reserved.</p>
         </div>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/661c01e0a0c6737bd12bab5e/1hremelga';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     </footer>
     <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
 </body>
