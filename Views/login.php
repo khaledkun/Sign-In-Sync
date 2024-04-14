@@ -21,7 +21,7 @@ if (isset($_SESSION['id'])) {
         include '../Shared/Templates/MetaTags.php'; 
         ?>
       <link rel="stylesheet" href="<?php echo $LoginPath; ?>" />
-      <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
+      <link rel="stylesheet" hr ef="<?php echo $MainStylePath; ?>">
     </head>
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
