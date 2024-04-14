@@ -94,6 +94,11 @@
             text-decoration: none;
             padding: 5px;
         }
+        .social-icons a:hover {
+           background-color: #0056b3;
+           transform: scale(1.1);
+           transition: 0.3s;
+        }
         .scroll-to-top {
         position: fixed;
         bottom: 20px;
@@ -117,7 +122,6 @@
          .scroll-to-top:hover {
            background-color: #0056b3;
          }
-
     </style>
 </head>
 <body>
