@@ -20,7 +20,7 @@
 <body>
   <div class="wrapper">
     <h1>Sign Up</h1>
-    <form method="post" action="/Controllers/signup.php" novalidate>
+    <form method="post" action="../Controllers/signup.php" novalidate>
       <div class="user-details">
         <div class="input-box">
           <label for="fname">First Name</label>
