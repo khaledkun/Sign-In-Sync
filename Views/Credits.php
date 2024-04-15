@@ -253,7 +253,7 @@
             </div>
         </div>
     </div>
-    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
     <script>
      window.addEventListener("scroll", function() {
        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
