@@ -444,12 +444,15 @@ footer {
 p {
   font-size: 0.9rem;
 }
+
 .ri-smartphone-line:before,.ri-calendar-event-line:before,.ri-lock-line:before{
   color: var(--secondary-color);
 }
+
 .ri-menu-line:before{
   color: var(--secondary-color);
 }
+
 .form-row {
   display: flex;
   gap: 10px;
@@ -474,32 +477,6 @@ p {
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-}
-
-/* Scroll Button */
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 100px;
-  background-color: #007bff;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  display: none;
-}
-
-.scroll-to-top i {
-  font-size: 20px;
-}
-
-.scroll-to-top:hover {
-  background-color: #0056b3;
 }
 
 

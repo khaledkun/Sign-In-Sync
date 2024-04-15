@@ -24,7 +24,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin-top: 80px;
+            margin-top: 120px;
             text-align: center;
         }
         h1 {
@@ -253,20 +253,5 @@
             </div>
         </div>
     </div>
-    <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
-    <script>
-     window.addEventListener("scroll", function() {
-       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.querySelector('.scroll-to-top').style.display = "block";
-         } else {
-           document.querySelector('.scroll-to-top').style.display = "none";
-         }
-        });
-
-       document.querySelector('.scroll-to-top').addEventListener("click", function() {
-            document.body.scrollTop = 0;
-           document.documentElement.scrollTop = 0;
-        });
-    </script>
 </body>
 </html>

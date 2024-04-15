@@ -33,5 +33,29 @@
             </ul>
         </div>
     </nav>
+    <footer>
+        <div class="footer__content">
+            <div class="social-media">
+                <a href="mailto:signinsyncsis@gmail.com" title="Email"><i class="ri-mail-fill"></i></a>
+                <a href="#" title="Phone"><i class="ri-phone-fill"></i></a>
+                <a href="Credits.php" title="Credits"><i class="ri-team-fill"></i></a>
+            </div>
+            <p>&copy; 2024 Sign In Sync. All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/661c8c731ec1082f04e2412a/1hrfo996a';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
