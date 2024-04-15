@@ -21,16 +21,20 @@ $user =$result->fetch_assoc();
 // echo '<pre>';
 // print_r($result);
 // echo '</pre>';
-
+echo "<br>";
+print_r($user);
 $id = $user['id'];
 // echo $id;
 
-if ($result-> num_rows > 0) {
+if ($result-> num_rows > 0 && $user['prive']==0) {
 	session_start();
 	$_SESSION['id']=$id;
-	echo $id;
-	header('location: ../Views/index.php');
+	
+	header('location: ../Views/EmployeeDashboard.php');
 
+	
+}elseif($result-> num_rows > 0 && $user['prive']==1){
+	header('location: ../Views/BossDashboard.php');
 	
 }else{
 	header('location: ../Views/login.php');

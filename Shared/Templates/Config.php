@@ -4,7 +4,7 @@
 // and everyone has its own localhost
 
 // Define the directory containing the images
-$ImgsPath = "/Shared/Imgs/";
+$ImgsPath = "../Shared/Imgs/";
 
 // Define paths for each image
 $employee1Path = $ImgsPath . "Employee.png";
@@ -19,7 +19,7 @@ $user2Path = $ImgsPath . "User-Icon.png";
 $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 
 // Define the directory containing the Css
-$CssPath = "/Shared/Css/";
+$CssPath = "../Shared/Css/";
 
 // Define paths for each Css file
 $BossDashboardPath = $CssPath . "BossDashboard.css";
