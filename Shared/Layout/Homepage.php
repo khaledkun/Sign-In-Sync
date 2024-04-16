@@ -8,7 +8,7 @@
         include '../Shared/Templates/MetaTags.php';  
         ?>
 <link rel="stylesheet" href="<?php echo $NavBarPath; ?>">
-<script type="text/javascript" src="/Shared/Layout/NavBar.js"></script>
+<script type="text/javascript" src="<?php echo $HomeLayout; ?>"></script>
 </head>
 <body>
     <nav>
