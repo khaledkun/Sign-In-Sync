@@ -8,7 +8,6 @@
         include '../Shared/Templates/MetaTags.php';
         ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
             font-family: Arial, sans-serif;
