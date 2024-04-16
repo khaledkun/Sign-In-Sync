@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pageTitle = document.title;
     const navLinks = document.querySelectorAll("nav a");
-    const scrollButton = document.querySelector('.scroll-to-top');
 
     if (pageTitle === 'HomePage') {
         function handleScroll() {

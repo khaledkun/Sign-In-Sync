@@ -52,6 +52,5 @@ $ScriptPath = "../Shared/Script/";
 // Define paths for each Script file
 $DashLayout = $ScriptPath . "DashLayout.js";
 $HomeLayout = $ScriptPath . "HomeLayout.js";
-$HomeLayout = $ScriptPath . "ScrollUp.js";
+$ScrollUp = $ScriptPath . "ScrollUp.js";
 ?>
-
