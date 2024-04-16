@@ -203,4 +203,16 @@ body {
   
     ul li a {
       font-size: 1.25rem;
-    } }
+    } 
+  }
+  @media (max-width: 750px) {
+    .footer__content {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }

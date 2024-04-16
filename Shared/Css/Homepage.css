@@ -565,12 +565,7 @@ p {
     .features__grid {
       gap: 1rem;
     }
-  
     .feature {
       width: 45%;
-    }
-    .footer__content {
-      margin-left: 2rem;
-      margin-right: 2rem;
     }
   }

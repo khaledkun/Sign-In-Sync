@@ -121,6 +121,12 @@
          .scroll-to-top:hover {
            background-color: #0056b3;
          }
+         
+         @media (max-width: 1024px) {
+            .item img {
+            margin-left: 0px;
+         }
+        }
     </style>
 </head>
 <body>

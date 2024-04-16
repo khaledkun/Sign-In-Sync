@@ -40,6 +40,11 @@
             margin-bottom: 20px;
             text-align: left;
         }
+        @media (max-width: 750px) {
+         body {
+          height: 120vh;
+         }
+        }
        </style> 
 </head>
 <body>
