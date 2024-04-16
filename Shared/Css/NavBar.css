@@ -25,6 +25,7 @@ nav {
   }
   nav .logo a:hover {
     color: var(--Accent-Text);
+    transition: 0.3s;
   }
   
   .LogoWithText{
@@ -49,6 +50,7 @@ nav {
   
   nav .checkbox i:hover {
      color: var(--Accent-Text);
+     transition: 0.3s;
   }
   
   ul {
@@ -61,6 +63,7 @@ nav {
   
   nav .logo a:hover {
     color: var(--secondary-color);
+    transition: 0.3s;
   }
   
   ul li a {
@@ -73,6 +76,7 @@ nav {
   
   ul li a:hover {
     color: var(--Accent-Text);
+    transition: 0.3s;
   }
 
   ul li a.active {
@@ -107,6 +111,7 @@ nav {
 
 .scroll-to-top:hover {
   background-color: #0056b3;
+  transition: 0.3s;
 }
 
 /* Footer */
@@ -138,6 +143,7 @@ footer {
 
 .social-media a:hover {
   color: var(--Accent-Text);
+  transition: 0.3s;
 }
 
 p {

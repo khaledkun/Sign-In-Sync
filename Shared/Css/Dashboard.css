@@ -77,6 +77,7 @@ body {
 
 .grid-item.alerts:hover {
     background-color: #ffb700;
+    transition: 0.3s;
 }
 
 .grid-item.holidays {
@@ -85,6 +86,7 @@ body {
 
 .grid-item.holidays:hover {
     background-color: #32cc66;
+    transition: 0.3s;
 }
 
 .grid-item.boss-comments {
@@ -93,6 +95,7 @@ body {
 
 .grid-item.boss-comments:hover {
     background-color: #ff3333;
+    transition: 0.3s;
 }
 
 .grid-item.sign-in-time,

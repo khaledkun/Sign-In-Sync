@@ -73,6 +73,7 @@ body {
 
 .contact-icon:hover {
     color: #007bff;
+    transition: 0.3s;
 }
 
 ul.custom-list {

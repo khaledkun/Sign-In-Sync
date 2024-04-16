@@ -84,6 +84,7 @@
 
 .mode-toggle button:hover {
   color: #ffcc00;
+  transition: 0.3s;
 }
 
 .menu-icon {

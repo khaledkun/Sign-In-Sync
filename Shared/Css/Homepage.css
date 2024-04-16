@@ -72,6 +72,7 @@ body {
 
 #read-more:hover {
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 .description {
@@ -105,6 +106,7 @@ body {
 .Signup:hover {
   background-color: var(--Button-Color-Dark);
   color: var(--Accent-Text);
+  transition: 0.3s;
 }
 
 .Signin {
@@ -114,6 +116,7 @@ body {
 .Signin:hover {
   background-color: var(--Background-color-dark);
   color: var(--secondary-color);
+  transition: 0.3s;
 }
 
 .active {
@@ -169,6 +172,7 @@ body {
   }
   .feature:hover {
     transform: translateY(-5px);
+    transition: 0.3s;
   }
   
   .feature i {
@@ -287,6 +291,7 @@ body {
   
   .watch:hover {
     background-color: var(--Button-Color-Dark);
+    transition: 0.3s;
   }
   
   .action__btns .ri-play-circle-line {
@@ -381,6 +386,7 @@ body {
   .send:hover {
     background-color: var(--Background-color);
     color:var(--secondary-color);
+    transition: 0.3s;
   }
 
 .title_contact span {
@@ -439,6 +445,7 @@ footer {
 
 .social-media a:hover {
   color: var(--Accent-Text);
+  transition: 0.3s;
 }
 
 p {
