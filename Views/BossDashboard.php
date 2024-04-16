@@ -12,7 +12,7 @@
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/DashboardNavFooter.php'; ?>
+    <?php include $BossDashboardLayout; ?>
     <div class="boss-dashboard">
         <div class="header">
             <div class="header-text">

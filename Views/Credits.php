@@ -126,7 +126,7 @@
 </head>
 <body>
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/NavBar.php'; ?>
+    <?php include $HomepageLayout; ?>
     <!-- لم اقم بربط هذة الصفحة مع باقي الصفح -->
     <div class="container">
         <h1>Our Team</h1>

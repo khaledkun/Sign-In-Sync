@@ -12,7 +12,7 @@
 <body>
 <!-- Here was the Navbar -->
 <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
+    <?php include $EmpDashboardLayout; ?>
     <form action="submit_profile.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="profile">
         <div class="profile-header">

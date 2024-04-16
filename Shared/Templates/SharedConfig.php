@@ -37,4 +37,20 @@ $NavBarPath = $CssPath . "NavBar.css";
 $PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
 $SignUpPath = $CssPath . "SignUp.css";
 $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
+
+// Define the directory containing the Layout
+$LayoutPath = "../Shared/Layout/";
+
+// Define paths for each Layout file
+$BossDashboardLayout = $LayoutPath . "BossDashboard.php";
+$EmpDashboardLayout = $LayoutPath . "EmpDashboard.php";
+$HomepageLayout = $LayoutPath . "Homepage.php";
+
+// Define the directory containing the Scripts
+$ScriptPath = "../Shared/Script/";
+
+// Define paths for each Script file
+$DashLayout = $ScriptPath . "DashLayout.js";
+$HomeLayout = $ScriptPath . "HomeLayout.js";
+$ScrollUp = $ScriptPath . "ScrollUp.js";
 ?>

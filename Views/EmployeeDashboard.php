@@ -14,7 +14,7 @@
 <body>
 <!-- Here was the Navbar -->
 <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
+    <?php include $EmpDashboardLayout; ?>
     <div class="dashboard">
         <div class="header">
             <div class="header-text">

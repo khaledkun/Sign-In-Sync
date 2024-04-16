@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/NavBar.php'; ?>
+    <?php include $HomepageLayout; ?>
     <section class="section" id="Main">
         <div class="section__container">
             <div class="content">

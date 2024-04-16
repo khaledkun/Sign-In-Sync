@@ -13,7 +13,7 @@
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/DashboardNavFooter.php'; ?>
+    <?php include $BossDashboardLayout; ?>
     <div class="dashboard">
         <div class="header">
             <h1><i class="fas fa-chart-bar"></i> Statistics</h1>
