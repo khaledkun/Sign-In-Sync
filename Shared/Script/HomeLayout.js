@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.classList.add("active");
                 }
             });
+        } else if (pageTitle === 'Services') {
+            navLinks.forEach(link => {
+                if (link.textContent === 'Services') {
+                    link.classList.add("active");
+                }
+            });
         }
     }
 });
