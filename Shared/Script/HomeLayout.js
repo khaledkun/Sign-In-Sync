@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.classList.add("active");
                 }
             });
+        } else if (pageTitle === 'Buy Now') {
+            navLinks.forEach(link => {
+                if (link.textContent === 'Home') {
+                    link.classList.add("active");
+                }
+            });
         }
     }
 });
