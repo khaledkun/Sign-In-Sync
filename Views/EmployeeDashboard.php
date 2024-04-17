@@ -51,9 +51,9 @@
                 <p id="absent-days">0 days</p>
             </div>
             <div class="grid-item">
-                <i class="fas fa-coins"></i>
-                <h2>Pay Levy</h2>
-                <p id="pay-levy">0 EGP</p>
+            <i class="fas fa-user-clock"></i>
+                <h2>Break Time</h2>
+                <p id="break-time">0 Minutes</p>
             </div>
             <div class="grid-item holidays">
                 <i class="fas fa-calendar-alt"></i>
@@ -69,7 +69,7 @@
             <div class="grid-item">
                 <i class="fas fa-money-bill-alt"></i>
                 <h2>Total Paycheck</h2>
-                <p id="total-paycheck">0 EGP</p>
+                <p id="total-paycheck">0 EGP (<span class="red-text">-0</span>)</p>
             </div>
             <div class="grid-item alerts">
                 <i class="fas fa-exclamation-triangle"></i>

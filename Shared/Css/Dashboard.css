@@ -71,6 +71,10 @@ body {
     margin: 0;
 }
 
+.red-text {
+    color:#ff3333;
+}
+
 .grid-item.alerts {
     background-color: #ffd633;
 }
