@@ -98,30 +98,6 @@
            transform: scale(1.1);
            transition: 0.3s;
         }
-        .scroll-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #007bff;
-        color: #fff;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        display: none;
-        }
-
-        .scroll-to-top i {
-         font-size: 20px;
-         }
-
-         .scroll-to-top:hover {
-           background-color: #0056b3;
-         }
-         
          @media (max-width: 1024px) {
             .item img {
             margin-left: 0px;
