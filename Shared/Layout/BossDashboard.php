@@ -27,13 +27,110 @@
             </ul>
             <!-- للدارك مود -->
             <div class="mode-toggle">
-                <button id="dark-mode-btn"><i class="fas fa-moon"></i></button>
-                <button id="light-mode-btn"><i class="fas fa-sun"></i></button>
+                <button id="dark-mode-btn" title="Dark Mode"><i class="fas fa-moon"></i></button>
+                <button id="light-mode-btn" title="Light Mode"><i class="fas fa-sun"></i></button>
             </div>
             <!-- هنا يتواجد الفوتر الخاص بالصفحه -->
             <div class="footer">
                 <p>&copy; 2024 Sign In Sync</p>
             </div>
         </div>
+
+
+        <script>
+    const darkModeBtn = document.getElementById('dark-mode-btn');
+    const lightModeBtn = document.getElementById('light-mode-btn');
+    const body = document.body;
+    const changeInputColors = (color, bgColor, borderColor) => {
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => {
+            input.style.color = color;
+            input.style.backgroundColor = bgColor;
+            input.style.border = borderColor;
+        });
+    };
+    const toggleDarkMode = () => {
+        body.style.backgroundColor = '#222';
+        const gridItems = document.querySelectorAll('.grid-item');
+        gridItems.forEach(item => {
+            if (!item.classList.contains('boss-comments') && !item.classList.contains('holidays') && !item.classList.contains('alerts')) {
+                item.style.backgroundColor = '#444';
+                item.style.color = '#fff';
+                const greenTexts = item.querySelectorAll('.green-text');
+                greenTexts.forEach(text => {
+                    text.style.color = '#00ff1a';
+                });
+                const profilePicture = item.querySelector('img');
+                if (profilePicture) {
+                    profilePicture.style.filter = 'invert(100%)';
+                }
+                const contactIcons = item.querySelectorAll('.contact-icon');
+                contactIcons.forEach(icon => {
+                    icon.style.color = '#f0f0f0';
+                });
+            }
+        });
+        const pageTitle = document.title.toLowerCase(); 
+        if (pageTitle.includes('boss settings')) { 
+            changeInputColors('#FFFFFF', '#444444', '2px solid #FFFFFF');
+            const styleElement = document.createElement('style');
+            styleElement.textContent = `
+                .text-box-container input[type="number"]::-webkit-input-placeholder {
+                    color: #fff !important;
+                }
+            `;
+            document.head.appendChild(styleElement);
+        }
+        localStorage.setItem('mode', 'dark');
+    };
+    const toggleLightMode = () => {
+        body.style.backgroundColor = '#f0f0f0';
+        const gridItems = document.querySelectorAll('.grid-item');
+        gridItems.forEach(item => {
+            if (!item.classList.contains('boss-comments') && !item.classList.contains('holidays') && !item.classList.contains('alerts')) {
+                item.style.backgroundColor = '#fff';
+                item.style.color = '#000';
+                const greenTexts = item.querySelectorAll('.green-text');
+                greenTexts.forEach(text => {
+                    text.style.color = 'green';
+                });
+                const profilePicture = item.querySelector('img');
+                if (profilePicture) {
+                    profilePicture.style.filter = 'none';
+                }
+                const contactIcons = item.querySelectorAll('.contact-icon');
+                contactIcons.forEach(icon => {
+                    icon.style.color = '#555';
+                });
+            }
+        });
+        const pageTitle = document.title.toLowerCase(); 
+        if (pageTitle.includes('boss settings')) { 
+            changeInputColors('#000000', '#ffffff', '2px solid #000000');
+            const styleElement = document.createElement('style');
+            styleElement.textContent = `
+                .text-box-container input[type="number"]::-webkit-input-placeholder {
+                    color: #000 !important;
+                }
+            `;
+            document.head.appendChild(styleElement);
+        }
+        localStorage.setItem('mode', 'light');
+    };
+    const loadModePreference = () => {
+        const mode = localStorage.getItem('mode');
+        if (mode === 'dark') {
+            toggleDarkMode(); 
+        } else {
+            toggleLightMode(); 
+        }
+    };
+    darkModeBtn.addEventListener('click', toggleDarkMode);
+    lightModeBtn.addEventListener('click', toggleLightMode);
+    window.addEventListener('DOMContentLoaded', loadModePreference);
+</script>
+
+
+            
 </body>
 </html>
