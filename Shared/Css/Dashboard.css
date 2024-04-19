@@ -1,8 +1,22 @@
+:root{
+    --background-color: #f9fafc;
+    --secondary-color: #4d69ff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --Red-Text:#ff3333;
+    --Red-Background: #ff6666;
+    --Green-Text: green;
+    --border-color: #ccc;
+    --black-background: #000000;
+    --contact-icon: #555;
+    --contact-icon-hover: #007bff;
+    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
+    --Submit-Button-Background: rgb(55, 55, 255);
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
 
 .dashboard {
@@ -11,11 +25,11 @@ body {
 }
 
 .header {
-    background-color: #4d69ff;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px var(--shadow-color);
     display: flex;
     align-items: center;
 }
@@ -30,7 +44,7 @@ body {
 }
 
 .header:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--shadow-color);
     transition: 0.3s;
 }
 
@@ -49,8 +63,8 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -60,7 +74,7 @@ body {
 .grid-item:hover {
     transform: translateY(-5px);
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
 .grid-item h2 {
@@ -72,7 +86,7 @@ body {
 }
 
 .red-text {
-    color:#ff3333;
+    color:var(--Red-Text);
 }
 
 .grid-item.alerts {
@@ -94,11 +108,11 @@ body {
 }
 
 .grid-item.boss-comments {
-    background-color: #ff6666;
+    background-color: var(--Red-Background);
 }
 
 .grid-item.boss-comments:hover {
-    background-color: #ff3333;
+    background-color: var(--Red-Text);
     transition: 0.3s;
 }
 
@@ -111,13 +125,13 @@ body {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    color: #555;
+    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
 }
 
 .contact-icon:hover {
-    color: #007bff;
+    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
