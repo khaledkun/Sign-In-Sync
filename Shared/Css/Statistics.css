@@ -122,9 +122,8 @@ ul.custom-list li a {
 }
 
 ul.custom-list li a:hover {
-    border-color: #999;
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.03);
+    transition: 0.1s;
 }
 
 @media only screen and (max-width: 750px) {
