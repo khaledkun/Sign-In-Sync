@@ -37,9 +37,9 @@
     <footer>
         <div class="footer__content">
             <div class="social-media">
-                <a href="mailto:signinsyncsis@gmail.com" title="Email"><i class="ri-mail-fill"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61558129328727" title="Facebook Page"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/signinsyncsis/" title="Instagram Page"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:signinsyncsis@gmail.com" title="Email" target="_blank"><i class="ri-mail-fill"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61558129328727" title="Facebook Page" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/signinsyncsis/" title="Instagram Page" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="Credits.php" title="Credits"><i class="ri-team-fill"></i></a>
             </div>
             <p>&copy; 2024 Sign In Sync. All rights reserved.</p>
