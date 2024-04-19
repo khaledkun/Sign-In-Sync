@@ -11,6 +11,10 @@
     --contact-icon-hover: #007bff;
     --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
     --Submit-Button-Background: rgb(55, 55, 255);
+    --Allert-Color: #ffd633;
+    --Allert-Hover:#ffb700;
+    --Holidays-Colors: #66ff99;
+    --Holidays-Hover: #32cc66;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -90,20 +94,20 @@ body {
 }
 
 .grid-item.alerts {
-    background-color: #ffd633;
+    background-color: var(--Allert-Color);
 }
 
 .grid-item.alerts:hover {
-    background-color: #ffb700;
+    background-color: var(--Allert-Hover);
     transition: 0.3s;
 }
 
 .grid-item.holidays {
-    background-color: #66ff99;
+    background-color: var(--Holidays-Colors);
 }
 
 .grid-item.holidays:hover {
-    background-color: #32cc66;
+    background-color: var(--Holidays-Hover);
     transition: 0.3s;
 }
 
