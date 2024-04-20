@@ -135,11 +135,18 @@ footer {
   margin-right: 2rem;
 }
 
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
 .social-media a {
   color: var(--secondary-color);
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
+
 
 .social-media a:hover {
   color: var(--Accent-Text);
@@ -148,6 +155,7 @@ footer {
 
 p {
   font-size: 0.9rem;
+  margin-left: 2rem;
 }
 
 html {
