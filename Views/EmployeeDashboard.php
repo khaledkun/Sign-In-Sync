@@ -66,7 +66,7 @@
                 <p id="boss-comments">None</p>
                 <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item total-paycheck">
                 <i class="fas fa-money-bill-alt"></i>
                 <h2>Total Paycheck</h2>
                 <p id="total-paycheck">0 EGP (<span class="red-text">-0</span>)</p>
