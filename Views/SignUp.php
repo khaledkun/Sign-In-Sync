@@ -32,11 +32,11 @@
         </div>
         <div class="input-box">
           <label for="password">Password</label>
-          <input type="password" id="password" minlength="6" name="password" placeholder="Enter your password" required>
+          <input type="password" onChange="onChange()" id="password" minlength="6" name="password" placeholder="Enter your password" required>
         </div>
         <div class="input-box">
           <label for="password2">Confirm Password</label>
-          <input type="password" id="password2" minlength="6" name="password2" placeholder="Confirm your password" required>
+          <input type="password" onChange="onChange()" id="password2" minlength="6" name="password2" placeholder="Confirm your password" required>
         </div>
         <div class="input-box">
           <label for="email">Email Address</label>
@@ -128,5 +128,16 @@
     </script>
     <script src="/Controllers/PopUpPage.js"></script>
   </footer>
+  <script>
+    function onChange() {
+  const password = document.querySelector('input[name=password]');
+  const confirm = document.querySelector('input[name=password2]');
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+  } else {
+    confirm.setCustomValidity('Passwords do not match');
+  }
+}
+</script>
 </body>
 </html>
