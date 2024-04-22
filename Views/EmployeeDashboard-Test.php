@@ -7,7 +7,7 @@
     // Include the Template
     include '../Shared/Templates/MetaTags.php';?>
     <link rel="stylesheet" href="/Shared/Css/Dashboard-Test.css">
-    <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
+    <link rel="stylesheet" href="/Shared/Css/StopWatch-Test.css">
     <script src="/Controllers/StopWatch.js"></script>
 </head>
 <body>

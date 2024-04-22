@@ -1,20 +1,18 @@
 :root{
+    --Heading: #fff;
+    --Sub-Text: #A3A3A3;
     --background-color: #1e1e1e;
-    --secondary-color: #4d69ff;
+    --Items: #262626;
+    --secondary-color: #002cb2;
     --shadow-color: rgba(0, 0, 0, 0.2);
-    --Red-Text:#ff3333;
-    --Red-Background: #ff6666;
-    --Green-Text: green;
+    /* --Red-Text:#ff6666; */
+    --Red-Background: #800000;
     --border-color: #ccc;
     --black-background: #000000;
-    --contact-icon: #555;
-    --contact-icon-hover: #007bff;
-    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
-    --Submit-Button-Background: rgb(55, 55, 255);
-    --Allert-Color: #ffd633;
-    --Allert-Hover:#ffb700;
-    --Holidays-Colors: #66ff99;
-    --Holidays-Hover: #32cc66;
+    --Allert-Color: #806400;
+    /* --Allert-Hover:#ffd633; */
+    --Holidays-Colors: #008000;
+    /* --Holidays-Hover: #66ff99; */
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,8 +27,8 @@ body {
 }
 
 .header {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px var(--shadow-color);
@@ -48,6 +46,7 @@ body {
 }
 
 .header:hover {
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 10px var(--shadow-color);
     transition: 0.3s;
 }
@@ -67,7 +66,7 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -76,6 +75,7 @@ body {
 }
 
 .grid-item:hover {
+    background-color: var(--secondary-color);
     transform: translateY(-5px);
     transition: 0.3s;
     box-shadow: 0 4px 10px var(--shadow-color);
@@ -83,17 +83,19 @@ body {
 
 .grid-item h2 {
     margin-top: 0;
+    color: #f6f6f6;
 }
 
 .grid-item p {
     margin: 0;
+    color: var(--Sub-Text)
 }
 
 .red-text {
     color:var(--Red-Text);
 }
 
-.grid-item.alerts {
+ .grid-item.alerts {
     background-color: var(--Allert-Color);
 }
 
@@ -118,28 +120,22 @@ body {
 .grid-item.boss-comments:hover {
     background-color: var(--Red-Text);
     transition: 0.3s;
-}
+} 
 
 .grid-item.sign-in-time,
 .grid-item.sign-out-time {
     grid-column: span 3;
 }
-
-.contact-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: var(--contact-icon);
-    text-decoration: none;
-    font-size: 24px;
-}
-
 .contact-icon:hover {
-    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
-
+.fas,.far{
+    color: var(--Sub-Text);
+}
+/* .grid-item.holidays h2,.grid-item.alerts h2,.grid-item.boss-comments h2{
+    color: #000;
+} */
 @media only screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr;

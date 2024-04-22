@@ -37,7 +37,7 @@
     </div>
 
 
-    <script>
+    <!-- <script>
     const darkModeBtn = document.getElementById('dark-mode-btn');
 const lightModeBtn = document.getElementById('light-mode-btn');
 const body = document.body;
@@ -123,7 +123,7 @@ const loadModePreference = () => {
 darkModeBtn.addEventListener('click', toggleDarkMode);
 lightModeBtn.addEventListener('click', toggleLightMode);
 window.addEventListener('DOMContentLoaded', loadModePreference);
-</script>
+</script> -->
 
 
 </body>
