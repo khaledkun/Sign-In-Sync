@@ -1,25 +1,13 @@
 :root{
-  --Primary: #1e1e1e;
-  --Primary2: #262626;
-  --primary-Text: #fff;
-  --Text: #A3A3A3;
-  --Text-Hover: #363636;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --Red-Text:#ff3333;
-  --Red-Background: #ff6666;
-  --Green-Text: green;
-  --border-color: #ccc;
-  --black-background: #000000;
-  --contact-icon: #555;
-  --contact-icon-hover: #007bff;
-  --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
-  --Submit-Button-Background: rgb(55, 55, 255);
-  --Allert-Color: #ffd633;
-  --Allert-Hover:#ffb700;
-  --Holidays-Colors: #66ff99;
-  --Holidays-Hover: #32cc66;
-  --Footer-Bacground: #1900fa;
-  --DarkMode-Icon-Hover: #ffcc00;
+  /* Dark Mode */
+  --Secondary: #4d65ff;
+  --Nav-Background: #1e1e1e;
+  --Footer-Background: #262626;
+  --Icon-Hover: #363636;
+  --Switch-Icon-Hover:#fff;
+  --Heading: #fff;
+  --Sub-Text: #A3A3A3;
+  /* Light Mode */
 }
 .navbar {
     position: fixed;
@@ -27,7 +15,7 @@
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: var(--Primary);
+    background-color: var(--Nav-Background);
     padding-top: 20px;
     align-items: center;
     z-index: 999;
@@ -45,7 +33,7 @@
 }
 
 .logo-text {
-    color: var(--primary-Text);
+    color: var(--Secondary);
     font-weight: bold;
     font-size: 18px;
 }
@@ -53,8 +41,8 @@
 .footer {
     padding: 10px;
     text-align: center;
-    color: var(--primary-Text);
-    background-color: var(--Primary2);
+    color: var(--Sub-Text);
+    background-color: var(--Footer-Background);
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -72,14 +60,14 @@
 
 .navbar ul li a {
     display: block;
-    color: var(--Text);
+    color: var(--Sub-Text);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 .navbar ul li a.active, .navbar ul li a:hover {
-    background-color: var(--Text-Hover);
+    background-color: var(--Icon-Hover);
     transition: 0.3s;
 }
 /* للدارك مود */
@@ -92,7 +80,7 @@
 .mode-toggle button {
   background-color: transparent;
   border: none;
-  color: var(--Text);
+  color: var(--Sub-Text);
   font-size: 24px;
   cursor: pointer;
   margin-right: 10px;
@@ -106,7 +94,7 @@
 }
 
 .mode-toggle button:hover {
-  color: var(--DarkMode-Icon-Hover);
+  color: var(--Switch-Icon-Hover);
   transition: 0.3s;
 }
 
@@ -120,13 +108,13 @@
 }
 
 .menu-icon:hover i {
-  color: var(--DarkMode-Icon-Hover);
+  color: var(--Switch-Icon-Hover);
   transform: scale(1.1);
   transition: 0.3s;
 }
 
 .close-icon:hover {
-  color: var(--DarkMode-Icon-Hover);
+  color: var(--Switch-Icon-Hover);
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -175,7 +163,7 @@
 
   .menu-icon i {
     font-size: 24px;
-    color: var(--Text);
+    color: var(--Sub-Text);
   }
 
   .navbar.hidden {

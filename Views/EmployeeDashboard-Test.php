@@ -5,8 +5,7 @@
     // You Can Change the Page Title as you like
     $pageTitle = "Employee Dashboard";
     // Include the Template
-    include '../Shared/Templates/MetaTags.php';    
-    ?>
+    include '../Shared/Templates/MetaTags.php';?>
     <link rel="stylesheet" href="/Shared/Css/Dashboard-Test.css">
     <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
     <script src="/Controllers/StopWatch.js"></script>

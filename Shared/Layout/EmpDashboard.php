@@ -6,8 +6,8 @@
     $pageTitle = "DashboardNavFooter";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; ?>
-    <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
-    <!-- <link rel="stylesheet" href="/Shared/Css/DashboardNavFooter-Test.Css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>"> -->
+    <link rel="stylesheet" href="/Shared/Css/DashboardNavFooter-Test.Css">
     <script src="<?php echo $DashLayout; ?>"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
     </div>
     <div class="navbar">
         <div class="logo-container">
-            <img src="<?php echo $logoIcoPath; ?>" alt="Company Logo">
+            <img src="<?php echo $navBarLogoPath; ?>" alt="Company Logo">
             <span class="logo-text">Sign In Sync</span>
         </div>
         <ul>
