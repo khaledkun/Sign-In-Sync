@@ -41,7 +41,7 @@ if (isset($_SESSION['id'])) {
                 <a href="ForgotPasswsord.php">Forgot Password?</a>
               </div>
 
-          <input type="submit" value="login" class="btn">
+            <button class="btn" type="submit">Login</button>
 
           <div class="register-link">
           <p>Don't have an account yet <a href="SignUp.php">Register</a>
