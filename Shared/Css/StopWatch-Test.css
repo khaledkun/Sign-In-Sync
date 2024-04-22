@@ -1,23 +1,6 @@
 :root{
-    --background-color: #f9fafc;
     --secondary-color: #4d69ff;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --Red-Text:#ff3333;
-    --Red-Background: #ff6666;
-    --Green-Text: green;
-    --border-color: #ccc;
-    --black-background: #000000;
     --contact-icon: #555;
-    --contact-icon-hover: #007bff;
-    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
-    --Submit-Button-Background: rgb(55, 55, 255);
-    --Allert-Color: #ffd633;
-    --Allert-Hover:#ffb700;
-    --Holidays-Colors: #66ff99;
-    --Holidays-Hover: #32cc66;
-    --Footer-Bacground: #1900fa;
-    --Nav-Active-Hover: #324b80;
-    --DarkMode-Icon-Hover: #ffcc00;
     --Timer-Border: #47414100;
   }
 #timecontainer {
