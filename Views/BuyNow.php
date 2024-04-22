@@ -165,7 +165,7 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <button class="btn" type="submit">Continue to checkout</button>
       </form>
     </div>
   </div>
