@@ -1,6 +1,9 @@
 :root{
-  --background-color: #f9fafc;
-  --secondary-color: #4d69ff;
+  --Primary: #1e1e1e;
+  --Primary2: #262626;
+  --primary-Text: #fff;
+  --Text: #A3A3A3;
+  --Text-Hover: #363636;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --Red-Text:#ff3333;
   --Red-Background: #ff6666;
@@ -16,7 +19,6 @@
   --Holidays-Colors: #66ff99;
   --Holidays-Hover: #32cc66;
   --Footer-Bacground: #1900fa;
-  --Nav-Active-Hover: #324b80;
   --DarkMode-Icon-Hover: #ffcc00;
 }
 .navbar {
@@ -25,7 +27,7 @@
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--Primary);
     padding-top: 20px;
     align-items: center;
     z-index: 999;
@@ -43,7 +45,7 @@
 }
 
 .logo-text {
-    color: var(--background-color);
+    color: var(--primary-Text);
     font-weight: bold;
     font-size: 18px;
 }
@@ -51,8 +53,8 @@
 .footer {
     padding: 10px;
     text-align: center;
-    color: var(--background-color);
-    background-color: var(--Footer-Bacground);
+    color: var(--primary-Text);
+    background-color: var(--Primary2);
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -70,14 +72,14 @@
 
 .navbar ul li a {
     display: block;
-    color: var(--background-color);
+    color: var(--Text);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 .navbar ul li a.active, .navbar ul li a:hover {
-    background-color: var(--Nav-Active-Hover);
+    background-color: var(--Text-Hover);
     transition: 0.3s;
 }
 /* للدارك مود */
@@ -90,7 +92,7 @@
 .mode-toggle button {
   background-color: transparent;
   border: none;
-  color: var(--background-color);
+  color: var(--Text);
   font-size: 24px;
   cursor: pointer;
   margin-right: 10px;
@@ -173,7 +175,7 @@
 
   .menu-icon i {
     font-size: 24px;
-    color: var(--background-color);
+    color: var(--Text);
   }
 
   .navbar.hidden {
