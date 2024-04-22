@@ -1,3 +1,14 @@
+<?php
+session_start();
+$id =$_SESSION['id'];
+
+include_once "../Controllers/connect.php";
+$query1 ="SELECT * FROM employee WHERE id ='$id'";
+$result1=$conn->query($query1);
+$userdata1 =$result1->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,10 +27,10 @@
     <div class="boss-dashboard">
         <div class="header">
             <div class="header-text">
-                <h1 id="welcomeMessage"><i class="fas fa-user-tie"></i> Welcome, <span id="employeeName">Boss</span></h1>
+                <h1 id="welcomeMessage"><i class="fas fa-user-tie"></i> Welcome, <span id="employeeName"><?=$userdata1['firstname']?></span></h1>
             </div>
             <div class="date-section">
-                <p class="current-date"><i class="far fa-calendar-alt"></i> April 6, 2024</p>
+                <p class="current-date"><i class="far fa-calendar-alt"></i> <?=date(' d M, Y');?></p>
             </div>
         </div>
         <div class="search-container">

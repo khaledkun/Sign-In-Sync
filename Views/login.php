@@ -18,10 +18,11 @@ if (isset($_SESSION['id'])) {
         // You Can Change the Page Title as you like
         $pageTitle = "Sign In";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php'; 
+        include '../Shared/Templates/MetaTags.php';
+        include '../Shared/Templates/Config.php'; 
         ?>
       <link rel="stylesheet" href="<?php echo $LoginPath; ?>" />
-      <link rel="stylesheet" hr ef="<?php echo $MainStylePath; ?>">
+      <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
     </head>
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->

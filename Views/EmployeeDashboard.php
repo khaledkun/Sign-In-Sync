@@ -1,11 +1,23 @@
+<?php
+session_start();
+$id =$_SESSION['id'];
+
+include_once "../Controllers/connect.php";
+$query1 ="SELECT * FROM employee WHERE id ='$id'";
+$result1=$conn->query($query1);
+$userdata1 =$result1->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php
+    include_once '../controllers/connect.php';
     // You Can Change the Page Title as you like
     $pageTitle = "Employee Dashboard";
     // Include the Template
-    include '../Shared/Templates/MetaTags.php';    
+    include_once '../Shared/Templates/MetaTags.php';    
     ?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
@@ -14,14 +26,14 @@
 <body>
 <!-- Here was the Navbar -->
 <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
+    <?php include_once '../Shared/NavBar/EmpDashNavFooter.php'; ?>
     <div class="dashboard">
         <div class="header">
             <div class="header-text">
-                <h1 id="welcomeMessage"><i class="fas fa-handshake"></i> Welcome, <span id="employeeName">Employee</span></h1>
+                <h1 id="welcomeMessage"><i class="fas fa-handshake"></i> Welcome, <span id="employeeName"><?=$userdata1['firstname']?></span></h1>
             </div>
             <div class="date-section">
-                <p class="current-date"><i class="far fa-calendar-alt"></i> April 6, 2024</p>
+                <p class="current-date"><i class="far fa-calendar-alt"></i><?= date(' d M, Y');?></p>
             </div>
         </div>
         <div class="grid-container">

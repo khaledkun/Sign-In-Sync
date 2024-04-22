@@ -34,6 +34,8 @@ if ($result-> num_rows > 0 && $user['prive']==0) {
 
 	
 }elseif($result-> num_rows > 0 && $user['prive']==1){
+	session_start();
+	$_SESSION['id']=$id;
 	header('location: ../Views/BossDashboard.php');
 	
 }else{
