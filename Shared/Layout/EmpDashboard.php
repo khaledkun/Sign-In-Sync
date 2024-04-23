@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>"> -->
     <link rel="stylesheet" href="/Shared/Css/DashboardNavFooter-Test.Css">
     <script src="<?php echo $DashLayout; ?>"></script>
+    <script src="/Shared/Script/Switch-Colors.js"></script>
 </head>
 <body>
 <div class="menu-icon">

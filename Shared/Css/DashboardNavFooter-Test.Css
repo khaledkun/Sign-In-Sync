@@ -1,13 +1,17 @@
 :root{
   /* Dark Mode */
-  --Secondary: #57a0fa;
+  --Secondary: #3572cc;
   --Nav-Background: #262626;
-  --Footer-Background: #1e1e1e;
-  --Icon-Hover: #363636;
+  --Footer-Background: #000;
+  --Icon-Hover: #333333;
   --Switch-Icon-Hover:#fff;
-  --Heading: #fff;
-  --Sub-Text: #A3A3A3;
+
   /* Light Mode */
+  /* --Secondary: #3572cc;
+  --Nav-Background: #eaeaea;
+  --Footer-Background: #fff;
+  --Icon-Hover: #d4d4d4;
+  --Switch-Icon-Hover:#000;*/
 }
 .navbar {
     position: fixed;
