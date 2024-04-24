@@ -45,7 +45,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 #current-date {
     margin: 0;
     font-size: 18px;
@@ -144,9 +143,6 @@ body {
 .Icons{
     color: var(--Icons);
 }
-/* .grid-item.holidays h2,.grid-item.alerts h2,.grid-item.boss-comments h2{
-    color: #000;
-} */
 @media only screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr;

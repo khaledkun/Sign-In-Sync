@@ -17,8 +17,9 @@
     </div>
     <div class="navbar">
         <div class="logo-container">
+        <a href="EmployeeDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeDashboard.php" ? 'class="active"' : ''; ?>>
             <img src="<?php echo $navBarLogoPath; ?>" alt="Company Logo">
-            <span class="logo-text">Sign In Sync</span>
+            <span class="logo-text">Sign In Sync</span></a>
         </div>
         <ul>
             <li><a href="EmployeeDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeDashboard.php" ? 'class="active"' : ''; ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
