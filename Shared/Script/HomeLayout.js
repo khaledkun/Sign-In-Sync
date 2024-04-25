@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Check if it's the homepage
     const pageTitle = document.title;
     const navLinks = document.querySelectorAll("nav a");
 
@@ -22,21 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
         window.addEventListener("scroll", handleScroll);
-
-        window.addEventListener("scroll", function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.querySelector('.scroll-to-top').style.display = "block";
-            } else {
-                document.querySelector('.scroll-to-top').style.display = "none";
-            }
-        });
     } else {
-        // Remove active class from all links
         navLinks.forEach(link => {
             link.classList.remove("active");
         });
 
-        // Set active link based on page title
         if (pageTitle === 'About Us') {
             navLinks.forEach(link => {
                 if (link.textContent === 'About Us') {
@@ -50,6 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else if (pageTitle === 'Company Vision') {
+            navLinks.forEach(link => {
+                if (link.textContent === 'Home') {
+                    link.classList.add("active");
+                }
+            });
+        } else if (pageTitle === 'Services') {
+            navLinks.forEach(link => {
+                if (link.textContent === 'Services') {
+                    link.classList.add("active");
+                }
+            });
+        } else if (pageTitle === 'Buy Now') {
             navLinks.forEach(link => {
                 if (link.textContent === 'Home') {
                     link.classList.add("active");

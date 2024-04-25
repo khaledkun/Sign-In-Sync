@@ -65,6 +65,7 @@ img{
 }
 .remember-forget a:hover{
   text-decoration: underline;
+  transition: 0.3s;
 }
 .wrapper .btn{
   width: 100%;
@@ -92,4 +93,5 @@ img{
 }
 .register-link p a:hover{
   text-decoration: underline;
+  transition: 0.3s;
 }

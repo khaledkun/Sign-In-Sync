@@ -21,19 +21,19 @@ if (isset($_SESSION['id'])) {
         include '../Shared/Templates/MetaTags.php';
         include '../Shared/Templates/Config.php'; 
         ?>
-      <link rel="stylesheet" href="<?php echo $LoginPath; ?>" />
+      <link rel="stylesheet" href="<?php echo $LoginPath; ?>">
       <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
     </head>
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
       <div class="wrapper">
-        <form method="post" action="../Controllers/login.php" novalidate>
+        <form method="post" action="../Controllers/login.php">
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">
-                <label for="email">Email or phone number<input type="text" placeholder="Email or phone number" name="email" required></label>
+              <label for="email">Email<input type="email" placeholder="Email" name="email" required></label>
                 <img class="user-img" src="<?php echo $user1Path; ?>" alt="user-icon">
-                <label for="password">Password<input type="password" placeholder="Enter your password" name="password" required></label>    
+                <label for="password">Password<input type="password"  minlength="6" placeholder="Enter your password" name="password" required></label>    
                 <img class="lock-img" src="<?php echo $lockPath; ?>" alt="lock-icon for the password">
               </div>
 
@@ -42,7 +42,7 @@ if (isset($_SESSION['id'])) {
                 <a href="ForgotPasswsord.php">Forgot Password?</a>
               </div>
 
-          <input type="submit" value="login" class="btn">
+            <button class="btn" type="submit">Login</button>
 
           <div class="register-link">
           <p>Don't have an account yet <a href="SignUp.php">Register</a>

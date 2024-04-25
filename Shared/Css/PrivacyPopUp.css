@@ -60,4 +60,5 @@
   .close:focus {
     color: #ff0000;
     text-decoration: none;
+    transition: 0.3s;
   }

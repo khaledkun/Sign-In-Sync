@@ -44,12 +44,14 @@
 </head>
 <body>
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/NavBar.php'; ?>
+    <?php include $HomepageLayout; ?>
         <!-- لم اقم بربط هذة الصفحة مع باقي الصفح  -->
         <div class="container">
     <h1> </h1>
         <p>
-        <B><I><U>
+        <B><I><U>We aim to streamline administrative processes to enhance your organizational success, syncing quality, cost, time, and operational ease. <br><br>
+        We believe in the importance of improving work performance, offering various communication methods with your employees. <br><br>
+        We are eager to hear your feedback on our services and any future services you would like to see added to meet your company's needs. <br><br>
         </p>
     </div>
 </body>

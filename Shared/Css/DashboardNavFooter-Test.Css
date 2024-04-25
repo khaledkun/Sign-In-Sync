@@ -35,7 +35,10 @@
     align-items: center;
     z-index: 999;
 }
+.logo-container a{
+  text-decoration: none;
 
+}
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -45,13 +48,17 @@
 
 .logo-container img {
     width: 100px;
+    cursor: pointer;
 }
 
 .logo-text {
     color: var(--Secondary);
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
+    display: block;
 }
+
 
 .footer {
     padding: 10px;

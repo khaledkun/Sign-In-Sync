@@ -21,7 +21,7 @@
 <body>
   <div class="wrapper">
     <h1>Sign Up</h1>
-    <form method="post" action="../Controllers/signup.php" novalidate>
+    <form method="post" action="../Controllers/signup.php">
       <div class="user-details">
         <div class="input-box">
           <label for="fname">First Name</label>
@@ -33,11 +33,11 @@
         </div>
         <div class="input-box">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input type="password" onChange="onChange()" id="password" minlength="6" name="password" placeholder="Enter your password" required>
         </div>
         <div class="input-box">
           <label for="password2">Confirm Password</label>
-          <input type="password" id="password2" name="password2" placeholder="Confirm your password" required>
+          <input type="password" onChange="onChange()" id="password2" minlength="6" name="password2" placeholder="Confirm your password" required>
         </div>
         <div class="input-box">
           <label for="email">Email Address</label>
@@ -46,11 +46,11 @@
         <div class="container">
             <form id="login" onsubmit="process(event)">
               <label for="phone">Phone Number</label>
-              <input id="phone" type="tel" name="phone" />
+              <input id="phone" pattern="[0]{1}[1]{1}[0125]{1}[0-9]{8}" title="Please enter valid phone number" type="text" name="phone" required/>
       </div>
       <div class="input-box" id="age-input-box">
         <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="50">
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="50" required>
       </div>
       <div class="radio-group">
         <h2>Your Gender:</h2>
@@ -129,5 +129,16 @@
     </script>
     <script src="/Controllers/PopUpPage.js"></script>
   </footer>
+  <script>
+    function onChange() {
+  const password = document.querySelector('input[name=password]');
+  const confirm = document.querySelector('input[name=password2]');
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+  } else {
+    confirm.setCustomValidity('Passwords do not match');
+  }
+}
+</script>
 </body>
 </html>

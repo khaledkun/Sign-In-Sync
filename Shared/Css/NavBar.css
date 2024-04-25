@@ -25,6 +25,7 @@ nav {
   }
   nav .logo a:hover {
     color: var(--Accent-Text);
+    transition: 0.3s;
   }
   
   .LogoWithText{
@@ -49,6 +50,7 @@ nav {
   
   nav .checkbox i:hover {
      color: var(--Accent-Text);
+     transition: 0.3s;
   }
   
   ul {
@@ -61,6 +63,7 @@ nav {
   
   nav .logo a:hover {
     color: var(--secondary-color);
+    transition: 0.3s;
   }
   
   ul li a {
@@ -73,6 +76,7 @@ nav {
   
   ul li a:hover {
     color: var(--Accent-Text);
+    transition: 0.3s;
   }
 
   ul li a.active {
@@ -82,6 +86,97 @@ nav {
   .section {
     background-color: var(--Accent-Text-Text);
   }
+  
+  /* Scroll Button */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  background-color: #007bff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  transition: 0.3s;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--Background-color-dark);
+  color: var(--secondary-color);
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__content {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.social-media a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.social-media a:hover {
+  color: var(--Accent-Text);
+  transition: 0.3s;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-left: 2rem;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 7rem;
+}
+
+.ri-smartphone-line:before,
+.ri-calendar-event-line:before,
+.ri-lock-line:before {
+  color: var(--secondary-color);
+}
+
+.ri-menu-line:before {
+  color: var(--secondary-color);
+}
   @media (width < 1024px) {
     nav .checkbox {
       display: block;
@@ -116,4 +211,16 @@ nav {
   
     ul li a {
       font-size: 1.25rem;
-    } }
+    } 
+  }
+  @media (max-width: 750px) {
+    .footer__content {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }

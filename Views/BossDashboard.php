@@ -23,7 +23,7 @@ $userdata1 =$result1->fetch_assoc();
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/DashboardNavFooter.php'; ?>
+    <?php include $BossDashboardLayout; ?>
     <div class="boss-dashboard">
         <div class="header">
             <div class="header-text">
@@ -55,6 +55,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
@@ -64,6 +65,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
@@ -73,6 +75,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
@@ -82,6 +85,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
@@ -91,6 +95,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
@@ -100,6 +105,7 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
                     <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
         </div>

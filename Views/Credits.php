@@ -8,7 +8,6 @@
         include '../Shared/Templates/MetaTags.php';
         ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +23,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin-top: 80px;
+            margin-top: 120px;
             text-align: center;
         }
         h1 {
@@ -99,34 +98,16 @@
            transform: scale(1.1);
            transition: 0.3s;
         }
-        .scroll-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #007bff;
-        color: #fff;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        display: none;
+         @media (max-width: 1024px) {
+            .item img {
+            margin-left: 0px;
+         }
         }
-
-        .scroll-to-top i {
-         font-size: 20px;
-         }
-
-         .scroll-to-top:hover {
-           background-color: #0056b3;
-         }
     </style>
 </head>
 <body>
     <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/NavBar.php'; ?>
+    <?php include $HomepageLayout; ?>
     <!-- لم اقم بربط هذة الصفحة مع باقي الصفح -->
     <div class="container">
         <h1>Our Team</h1>
@@ -138,8 +119,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,8 +131,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -162,8 +143,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -174,8 +155,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -186,8 +167,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -198,8 +179,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -210,8 +191,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -222,8 +203,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -234,8 +215,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
@@ -246,27 +227,12 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
-    <script>
-     window.addEventListener("scroll", function() {
-       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.querySelector('.scroll-to-top').style.display = "block";
-         } else {
-           document.querySelector('.scroll-to-top').style.display = "none";
-         }
-        });
-
-       document.querySelector('.scroll-to-top').addEventListener("click", function() {
-            document.body.scrollTop = 0;
-           document.documentElement.scrollTop = 0;
-        });
-    </script>
 </body>
 </html>

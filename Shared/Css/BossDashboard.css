@@ -1,8 +1,21 @@
+:root{
+    --background-color: #f9fafc;
+    --secondary-color: #4d69ff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --Red-Text:#ff3333;
+    --Red-Background: #ff6666;
+    --Green-Text: green;
+    --border-color: #ccc;
+    --black-background: black;
+    --contact-icon: #555;
+    --contact-icon-hover: #007bff;
+    --listBox-Shadow: rgba(77, 105, 255, 0.5);
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
 
 
@@ -13,11 +26,11 @@ body {
 }
 
 .header {
-    background-color: #4d69ff;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px var(--shadow-color);
     display: flex;
     align-items: center;
 }
@@ -32,7 +45,7 @@ body {
 }
 
 .header:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--shadow-color);
     transition: 0.3s;
 }
 
@@ -52,8 +65,8 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -67,13 +80,13 @@ body {
 }
 
 .green-text {
-    color: green;
+    color: var(--Green-Text);
     font-size: 25px;
     font-weight: bold;
 }
 
 .red-text {
-    color:#ff3333;
+    color:var(--Red-Text);
     font-size: 25px;
     font-weight: bold;
 }
@@ -87,27 +100,27 @@ p span {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     height: 100px;
-    background-color: #ff6666;
+    background-color: var(--Red-Background);
     border-radius: 5px;
     resize: vertical;
-    color: black;
+    color: var(--black-background);
 }
 
 .grid-item textarea:hover {
-    background-color: #ff3333;
+    background-color: var(--Red-Text);
     transition: 0.3s;
 }
 
 .grid-item textarea::placeholder {
-    color: #000000;
+    color: var(--black-background);
 }
 
 .grid-item:hover {
     transform: translateY(-5px);
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
 .grid-item h2 {
@@ -127,13 +140,13 @@ p span {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #555;
+    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
 }
 
 .contact-icon:hover {
-    color: #007bff;
+    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -152,56 +165,49 @@ p span {
 
 #search-input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     width: 300px;
     padding-bottom: 20px;
     margin-top: 30px;
-    background-color: #4d69ff;
-    color: rgb(255, 255, 255);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
 }
 
 #search-input::placeholder {
-    color: rgb(255, 255, 255);
+    color: var(--background-color);
 }
 
 #list-box {
     padding: 10px;
     width: 350px !important;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #4d69ff;
-    color: #fafafa;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     cursor: pointer;
     margin-top: 30px;
     width: 150px;
     outline: none;
 }
 
-#list-box:hover {
-    border-color: #999;
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-
 #list-box:focus {
-    border-color: #4d69ff;
-    box-shadow: 0 0 5px rgba(77, 105, 255, 0.5);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--listBox-Shadow);
 }
 
 #search-button {
-    background-color: #4d69ff;
+    background-color: var(--secondary-color);
     margin-top: 30px;
-    color: #fff;
+    color: var(--background-color);
     border: none;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
     margin-right: 8px;
 }
-
-#search-button:hover,
+/* مش كويس ان الحاجات دي تكبر لان بتغطي عالي جمبها */
+/* #search-button:hover,
 #search-button:hover + #search-input {
     transform: scale(1.05);
     transition: 0.3s;
@@ -212,6 +218,11 @@ p span {
     transform: scale(1.05);
     transition: 0.3s;
 }
+#list-box:hover {
+    border-color: #999;
+    transform: scale(1.05);
+    transition: 0.3s;
+} */
 
 @media only screen and (max-width: 750px) {
     .header-text h1 {

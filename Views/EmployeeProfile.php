@@ -12,7 +12,7 @@
 <body>
 <!-- Here was the Navbar -->
 <!-- Include the navbar -->
-    <?php include '../Shared/NavBar/EmpDashNavFooter.php'; ?>
+    <?php include $EmpDashboardLayout; ?>
     <form action="submit_profile.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="profile">
         <div class="profile-header">
@@ -29,10 +29,10 @@
             <div class="profile-details grid-container">
                 <div class="profile-item profile-info">
                     <label for="name"><i class="fas fa-user"></i> Name :</label>
-                    <input type="text" id="name" value="John Doe">
+                    <input type="text" id="name" value="samah aymen">
                     
                     <label for="email"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email" value="john.doe@example.com">
+                    <input type="email" id="email" value="samah.aymen@example.com">
                     
                     <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">

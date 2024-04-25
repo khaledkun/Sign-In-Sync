@@ -1,10 +1,31 @@
+:root{
+  --background-color: #f9fafc;
+  --secondary-color: #4d69ff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --Red-Text:#ff3333;
+  --Red-Background: #ff6666;
+  --Green-Text: green;
+  --border-color: #ccc;
+  --black-background: #000000;
+  --contact-icon: #555;
+  --contact-icon-hover: #007bff;
+  --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
+  --Submit-Button-Background: rgb(55, 55, 255);
+  --Allert-Color: #ffd633;
+  --Allert-Hover:#ffb700;
+  --Holidays-Colors: #66ff99;
+  --Holidays-Hover: #32cc66;
+  --Footer-Bacground: #1900fa;
+  --Nav-Active-Hover: #324b80;
+  --DarkMode-Icon-Hover: #ffcc00;
+}
 .navbar {
     position: fixed;
     display: block;
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: #4d69ff;
+    background-color: var(--secondary-color);
     padding-top: 20px;
     align-items: center;
     z-index: 999;
@@ -22,7 +43,7 @@
 }
 
 .logo-text {
-    color: #fff;
+    color: var(--background-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -30,8 +51,8 @@
 .footer {
     padding: 10px;
     text-align: center;
-    color: #fff;
-    background-color: #1900fa;
+    color: var(--background-color);
+    background-color: var(--Footer-Bacground);
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -49,14 +70,14 @@
 
 .navbar ul li a {
     display: block;
-    color: #fff;
+    color: var(--background-color);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 .navbar ul li a.active, .navbar ul li a:hover {
-    background-color: #324b80;
+    background-color: var(--Nav-Active-Hover);
     transition: 0.3s;
 }
 /* للدارك مود */
@@ -69,7 +90,7 @@
 .mode-toggle button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--background-color);
   font-size: 24px;
   cursor: pointer;
   margin-right: 10px;
@@ -83,7 +104,8 @@
 }
 
 .mode-toggle button:hover {
-  color: #ffcc00;
+  color: var(--DarkMode-Icon-Hover);
+  transition: 0.3s;
 }
 
 .menu-icon {
@@ -96,13 +118,13 @@
 }
 
 .menu-icon:hover i {
-  color: #ffcc00;
+  color: var(--DarkMode-Icon-Hover);
   transform: scale(1.1);
   transition: 0.3s;
 }
 
 .close-icon:hover {
-  color: #ffcc00;
+  color: var(--DarkMode-Icon-Hover);
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -151,7 +173,7 @@
 
   .menu-icon i {
     font-size: 24px;
-    color: #fff;
+    color: var(--background-color);
   }
 
   .navbar.hidden {

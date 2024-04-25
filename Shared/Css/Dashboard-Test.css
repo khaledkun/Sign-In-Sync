@@ -1,26 +1,34 @@
 :root{
-    --background-color: #f9fafc;
-    --secondary-color: #4d69ff;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --Red-Text:#ff3333;
-    --Red-Background: #ff6666;
-    --Green-Text: green;
-    --border-color: #ccc;
-    --black-background: #000000;
-    --contact-icon: #555;
-    --contact-icon-hover: #007bff;
-    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
-    --Submit-Button-Background: rgb(55, 55, 255);
-    --Allert-Color: #ffd633;
-    --Allert-Hover:#ffb700;
-    --Holidays-Colors: #66ff99;
-    --Holidays-Hover: #32cc66;
+/* Light Mode */
+/* Shared */
+--Heading: #000;
+--Sub-Text: #666666;
+/* Navbar */
+--Secondary: #3572cc;
+--Nav-Background: #f5f5f5;
+--Footer-Background: #fff;
+--Icon-Hover: #e0e0e0;
+--Switch-Icon-Hover:#000;
+/* Timer */
+--Buttons-Colors: #A3A3A3;
+--Timer-Hover: #363636;
+--Timer-Border: #47414100;
+--Time-Color: #000;
+/* Emp-Dashboard */
+--Icons: #555555;
+--Body-Background: #f0f0f0;
+--Items: #e5e5e5;
+--Hover: #b2d1ff;
+--shadow-color: rgba(0, 0, 0, 0.2);
+--Red: #ff7f7f;
+--Orange: #ffae7f;
+--Green: #7fff8f;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--Body-Background);
 }
 
 .dashboard {
@@ -29,15 +37,14 @@ body {
 }
 
 .header {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px var(--shadow-color);
     display: flex;
     align-items: center;
 }
-
 #current-date {
     margin: 0;
     font-size: 18px;
@@ -48,7 +55,9 @@ body {
 }
 
 .header:hover {
+    background-color: var(--Hover);
     box-shadow: 0 4px 10px var(--shadow-color);
+    color: var(--Heading);
     transition: 0.3s;
 }
 
@@ -67,7 +76,7 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -76,6 +85,7 @@ body {
 }
 
 .grid-item:hover {
+    background-color: var(--Hover);
     transform: translateY(-5px);
     transition: 0.3s;
     box-shadow: 0 4px 10px var(--shadow-color);
@@ -83,63 +93,56 @@ body {
 
 .grid-item h2 {
     margin-top: 0;
+    color: var(--Heading);
 }
 
 .grid-item p {
     margin: 0;
+    color: var(--Sub-Text)
 }
 
 .red-text {
     color:var(--Red-Text);
 }
 
-.grid-item.alerts {
-    background-color: var(--Allert-Color);
+ .grid-item.alerts {
+    background-color: var(--Orange);
 }
 
 .grid-item.alerts:hover {
-    background-color: var(--Allert-Hover);
+    background-color: var(--Hover);
     transition: 0.3s;
 }
 
 .grid-item.holidays {
-    background-color: var(--Holidays-Colors);
+    background-color: var(--Green);
 }
 
 .grid-item.holidays:hover {
-    background-color: var(--Holidays-Hover);
+    background-color: var(--Hover);
     transition: 0.3s;
 }
 
 .grid-item.boss-comments {
-    background-color: var(--Red-Background);
+    background-color: var(--Red);
 }
 
 .grid-item.boss-comments:hover {
-    background-color: var(--Red-Text);
+    background-color: var(--Hover);
     transition: 0.3s;
-}
+} 
 
 .grid-item.sign-in-time,
 .grid-item.sign-out-time {
     grid-column: span 3;
 }
-
-.contact-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: var(--contact-icon);
-    text-decoration: none;
-    font-size: 24px;
-}
-
 .contact-icon:hover {
-    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
-
+.Icons{
+    color: var(--Icons);
+}
 @media only screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -148,6 +151,10 @@ body {
     .grid-item.sign-in-time,
     .grid-item.sign-out-time {
         grid-column: span 1;
+    }
+
+    .grid-item.boss-comments {
+        order: 9999;
     }
 
     .header-text h1 {
@@ -160,14 +167,4 @@ body {
     .date-section {
         margin-right: 60px;
     }
-
-  .grid-item.sign-in-time { order: 1; }
-  .grid-item:nth-child(2) { order: 2; }
-  .grid-item:nth-child(3) { order: 3; }
-  .grid-item:nth-child(4) { order: 4; }
-  .grid-item:nth-child(5) { order: 5; }
-  .grid-item.total-paycheck { order: 6; }
-  .grid-item:nth-child(6) { order: 7; }
-  .grid-item:nth-child(9) { order: 8; }
-  .grid-item.boss-comments { order: 9; }
 }
