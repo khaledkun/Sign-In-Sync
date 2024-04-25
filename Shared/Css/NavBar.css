@@ -23,6 +23,9 @@ nav {
     transition: 0.3s;
     margin-left: 10px;
   }
+  nav img {
+    width: 80px;
+  }
   nav .logo a:hover {
     color: var(--Accent-Text);
     transition: 0.3s;
