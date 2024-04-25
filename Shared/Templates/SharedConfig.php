@@ -38,6 +38,7 @@ $NavBarPath = $CssPath . "NavBar.css";
 $PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
 $SignUpPath = $CssPath . "SignUp.css";
 $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
+$StopwatchPath = $CssPath . "StopWatch.css";
 
 // Define the directory containing the Layout
 $LayoutPath = "../Shared/Layout/";
