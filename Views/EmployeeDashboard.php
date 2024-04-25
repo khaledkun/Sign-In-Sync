@@ -18,8 +18,8 @@ $userdata1 =$result1->fetch_assoc();
     $pageTitle = "Employee Dashboard";
     // Include the Template
     include '../Shared/Templates/MetaTags.php';?>
-    <link rel="stylesheet" href="/Shared/Css/Dashboard-Test.css">
-    <link rel="stylesheet" href="/Shared/Css/StopWatch-Test.css">
+    <link rel="stylesheet" href="/Shared/Css/Dashboard.css">
+    <link rel="stylesheet" href="/Shared/Css/StopWatch.css">
     <script src="/Controllers/StopWatch.js"></script>
 </head>
 <body>
