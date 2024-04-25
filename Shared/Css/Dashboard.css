@@ -33,13 +33,13 @@
     
     .dashboard {
         margin-left: 200px;
-        padding: 20px;
+        padding: 5px 20px;
     }
     
     .header {
         background-color: var(--Items);
         color: var(--Heading);
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 0 2px 5px var(--shadow-color);
         display: flex;
@@ -73,7 +73,7 @@
     }
     
     .grid-item {
-        padding: 20px;
+        padding: 10px;
         position: relative;
         border-radius: 10px;
         background-color: var(--Items);
@@ -104,7 +104,9 @@
     .red-text {
         color:var(--Red-Text);
     }
-    
+    .grid-item.sign-in-time {
+        padding: 5px;
+    }
      .grid-item.alerts {
         background-color: var(--Orange);
     }
@@ -127,10 +129,10 @@
         background-color: var(--Red);
     }
     .grid-item.boss-comments p {
-        margin: 50;
+        margin: 40px;
     }
     .grid-item.tasks p {
-        margin: 50;
+        margin: 40px;
     }
     .contact-icon {
         position: absolute;
