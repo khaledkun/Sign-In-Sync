@@ -6,7 +6,6 @@
     $pageTitle = "Sign Up";
     // Include the Template
     include '../Shared/Templates/MetaTags.php'; 
-    include '../Shared/Templates/Config.php'; 
     ?>
 </head>
 <link rel="stylesheet" href="<?php echo $SignUpPath; ?>">

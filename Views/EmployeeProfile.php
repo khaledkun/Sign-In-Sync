@@ -29,10 +29,10 @@
             <div class="profile-details grid-container">
                 <div class="profile-item profile-info">
                     <label for="name"><i class="fas fa-user"></i> Name :</label>
-                    <input type="text" id="name" value="samah aymen">
+                    <input type="text" id="name" value="sameh aymen">
                     
                     <label for="email"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email" value="samah.aymen@example.com">
+                    <input type="email" id="email" value="sameh.aymen@example.com">
                     
                     <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">
