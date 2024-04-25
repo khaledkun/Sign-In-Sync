@@ -19,7 +19,6 @@ if (isset($_SESSION['id'])) {
         $pageTitle = "Sign In";
         // Include the Template
         include '../Shared/Templates/MetaTags.php';
-        include '../Shared/Templates/Config.php'; 
         ?>
       <link rel="stylesheet" href="<?php echo $LoginPath; ?>">
       <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">
