@@ -49,13 +49,9 @@ $userdata1 =$result1->fetch_assoc();
             <div class="grid-item">
                 <i class="fas fa-clock Icons"></i>
                 <h2>Late Arrival</h2>
-                <p id="late-time">0 hours</p>
+                <p id="late-time">0 hours (0 days)</p>
             </div>
-            <div class="grid-item">
-                <i class="fas fa-calendar-day Icons"></i>
-                <h2>Days Late</h2>
-                <p id="days-late">0 days</p>
-            </div>
+            
             <div class="grid-item">
                 <i class="far fa-calendar-times Icons"></i>
                 <h2>Absent Days</h2>
@@ -66,26 +62,26 @@ $userdata1 =$result1->fetch_assoc();
                 <h2>Break Time</h2>
                 <p id="break-time">0 Minutes</p>
             </div>
-            <div class="grid-item holidays">
-                <i class="fas fa-calendar-alt Icons"></i>
-                <h2>Next Holidays</h2>
-                <p id="next-holidays">No holidays</p>
-            </div>
-            <div class="grid-item boss-comments" style="grid-column: span 1; grid-row: span 2;">
-                <i class="fas fa-comments Icons"></i>
-                <h2>Boss Comments</h2>
-                <p id="boss-comments">None</p>
-                <a href="#" class="contact-icon"><i class="fas fa-envelope Icons"></i></a>
-            </div>
             <div class="grid-item">
                 <i class="fas fa-money-bill-alt Icons"></i>
                 <h2>Total Paycheck</h2>
                 <p id="total-paycheck">0 EGP (<span class="red-text">-0</span>)</p>
             </div>
-            <div class="grid-item alerts">
-                <i class="fas fa-exclamation-triangle Icons"></i>
-                <h2>Alerts</h2>
-                <p id="alerts">No alerts</p>
+            <div class="grid-item tasks" style="grid-column: span 1; grid-row: span 2;">
+                <i class="fas fa-tasks Icons"></i>
+                <h2>Tasks</h2>
+                <p id="alerts">No tasks</p>
+            </div>
+            <div class="grid-item boss-comments" style="grid-column: span 1; grid-row: span 2;">
+                <i class="fas fa-comments Icons"></i>
+                <h2>Alerts & Boss Comments</h2>
+                <p id="boss-comments">None</p>
+                <a href="#" class="contact-icon"><i class="fas fa-envelope Icons"></i></a>
+            </div>
+            <div class="grid-item holidays">
+                <i class="fas fa-calendar-alt Icons"></i>
+                <h2>Next Holidays</h2>
+                <p id="next-holidays">No holidays</p>
             </div>
         </div>
     </div>

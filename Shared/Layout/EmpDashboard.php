@@ -18,7 +18,7 @@
     <div class="navbar">
         <div class="logo-container">
         <a href="EmployeeDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeDashboard.php" ? 'class="active"' : ''; ?>>
-        <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home" width="90px" height="90px"/>
+        <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
             <span class="logo-text">Sign In Sync</span></a>
         </div>
         <ul>

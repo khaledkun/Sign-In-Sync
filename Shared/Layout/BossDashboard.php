@@ -16,7 +16,7 @@
         </div>
         <div class="navbar">
             <div class="logo-container">
-            <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home" width="90px" height="90px"/>
+            <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
                 <span class="logo-text">Sign In Sync</span>
             </div>
             <ul>
