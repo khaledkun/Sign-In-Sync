@@ -167,7 +167,11 @@
         }
     
         .grid-item.boss-comments {
-            order: 9999;
+            order: 8;
+        }
+
+        .grid-item.tasks {
+            order: 7;
         }
     
         .header-text h1 {
