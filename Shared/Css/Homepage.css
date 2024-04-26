@@ -261,6 +261,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 4rem;
   }
   .content_about {
     display: flex;
