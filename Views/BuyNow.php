@@ -67,6 +67,14 @@ input[type=text] {
 label {
   margin-bottom: 10px;
   display: block;
+  color: black;
+}
+.privacy-Page {
+  color: red;
+  font-size: 17px;
+}
+.privacy-Page:hover {
+  text-decoration: underline;
 }
 
 .icon-container {
@@ -163,7 +171,7 @@ span.price {
           </div>
         </div>
         <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          <input type="checkbox" checked="terms-and-conditions" class="inline" required> I accept the <a href="TermsConditions.php" target="_blank" class="privacy-Page">Terms and Conditions</a>
         </label>
         <button class="btn" type="submit">Continue to checkout</button>
       </form>

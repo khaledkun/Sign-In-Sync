@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.classList.add("active");
                 }
             });
+        } else if (pageTitle === 'Terms and Conditions') {
+            navLinks.forEach(link => {
+                if (link.textContent === 'Home') {
+                    link.classList.add("active");
+                }
+            });
         }
     }
 });
