@@ -15,7 +15,7 @@ $userdata1 =$result1->fetch_assoc();
     <?php
     include_once '../controllers/connect.php';
 // You Can Change the Page Title as you like
-    $pageTitle = "Employee Dashboard";
+    $pageTitle = "My Dashboard";
     // Include the Template
     include '../Shared/Templates/MetaTags.php';?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">

@@ -3,7 +3,7 @@
 <head>
 <?php
     // You Can Change the Page Title as you like
-    $pageTitle = "Employee Profile";
+    $pageTitle = "My Profile";
     // Include the Template
     include '../Shared/Templates/MetaTags.php';    
     ?>
@@ -28,24 +28,29 @@
             </div>
             <div class="profile-details grid-container">
                 <div class="profile-item profile-info">
-                    <label for="name"><i class="fas fa-user"></i> Name :</label>
-                    <input type="text" id="name" value="sameh aymen">
+                    <label for="name"><i class="fas fa-user"></i> First Name :</label>
+                    <input type="text" id="name" value="Sameh" disabled>
+
+                    <label for="name"><i class="fas fa-user"></i> Last Name :</label>
+                    <input type="text" id="name" value="Ayman" disabled>
                     
                     <label for="email"><i class="fas fa-envelope"></i> Email :</label>
                     <input type="email" id="email" value="sameh.aymen@example.com">
                     
                     <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">
+
+                    <label for="name"><i class="fas fa-transgender"></i> Gender :</label>
+                    <input type="text" id="name" value="Male" disabled>
+
+                    <label for="name"><i class="fas fa-lock"></i> Password :</label>
+                    <input type="text" id="name" value="*********" disabled><button type="button" class="change">Change</button>
                     
                     <label for="department"><i class="fas fa-building"></i> Department :</label>
-                    <input type="text" id="department" value="IT">
+                    <input type="text" id="department" value="IT" disabled>
                     
                     <label for="position"><i class="fas fa-briefcase"></i> Position :</label>
-                    <select id="position" name="position">
-                        <option value="manager">Manager</option>
-                        <option value="supervisor">Supervisor</option>
-                        <option value="employee" selected>Employee</option>
-                    </select>
+                    <input type="text" id="position" value="Employee" disabled>
                     
                     <button type="submit" class="submit-button"><i class="fas fa-save"></i> Save</button>
                 </div>

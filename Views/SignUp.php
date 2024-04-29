@@ -56,10 +56,14 @@
         <label for="male"><input id="male" type="radio" name="gender" value='0' required>Male</label>
         <label for="female"><input id="female" type="radio" name="gender" value="1" required>Female</label>
       </div>
-      <div class="radio-group">
+      <div class="list-box">
         <h2>Sign as:</h2>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type"  checked required value="0">Employee</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type"  required value="1">Business Owner</label>
+        <select id="position" name="position">
+          <option value="manager">Admin</option>
+          <option value="supervisor">Manager</option>
+          <option value="employee">Supervisor</option>
+          <option value="employee" selected>Employee</option>
+       </select>
       </div>
       <label for="terms-and-conditions">
         <input type="checkbox" id="terms-and-conditions" class="inline" required> I accept the <a href="#" class="privacy-Page">Terms and Conditions</a>

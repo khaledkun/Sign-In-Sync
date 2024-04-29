@@ -30,7 +30,7 @@ if ($result-> num_rows > 0 && $user['prive']==0) {
 	session_start();
 	$_SESSION['id']=$id;
 	
-	header('location: ../Views/EmployeeDashboard.php');
+	header('location: ../Views/MyDashboard.php');
 
 	
 }elseif($result-> num_rows > 0 && $user['prive']==1){

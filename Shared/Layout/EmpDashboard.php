@@ -17,14 +17,17 @@
     </div>
     <div class="navbar">
         <div class="logo-container">
-        <a href="EmployeeDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeDashboard.php" ? 'class="active"' : ''; ?>>
+        <a href="MyDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyDashboard.php" ? 'class="active"' : ''; ?>>
         <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
             <span class="logo-text">Sign In Sync</span></a>
         </div>
         <ul>
-            <li><a href="EmployeeDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeDashboard.php" ? 'class="active"' : ''; ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="EmployeeProfile.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeProfile.php" ? 'class="active"' : ''; ?>><i class="fas fa-user"></i> Profile</a></li>
-            <li><a href="EmployeeSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeeSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="MyDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyDashboard.php" ? 'class="active"' : ''; ?>><i class="fas fa-tachometer-alt"></i> My Dashboard</a></li>
+            <li><a href="MyProfile.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyProfile.php" ? 'class="active"' : ''; ?>><i class="fas fa-user"></i> My Profile</a></li>
+            <li><a href="GeneralSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "GeneralSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-cog"></i> General Settings</a></li>
+            <li><a href="MyEmployees.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyEmployees.php" ? 'class="active"' : ''; ?>><i class="fas fa-user-tie"></i> My Employees</a></li>
+            <li><a href="EmployeesStatistics.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeesStatistics.php" ? 'class="active"' : ''; ?>><i class="fas fa-chart-bar"></i> Employees Statistics</a></li>
+            <li><a href="EmployeesSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeesSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-user-cog"></i> Employees Settings</a></li>
             <li><a href="../controllers/logout.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "login.php" ? 'class="active"' : ''; ?>><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
         <!-- للدارك مود -->

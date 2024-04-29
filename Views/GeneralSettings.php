@@ -3,7 +3,7 @@
 <head>
 <?php
     // You Can Change the Page Title as you like
-    $pageTitle = "Employee Dashboard";
+    $pageTitle = "General Settings";
     // Include the Template
     include '../Shared/Templates/MetaTags.php';    
     ?>
@@ -16,7 +16,7 @@
     <form action="submit_settings.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="dashboard">
         <div class="header">
-                <h1><i class="fas fa-cog"></i> Settings</h1>
+                <h1><i class="fas fa-cog"></i> General Settings</h1>
         </div>
         <div class="grid-item">
             <h2><i class="fas fa-bell"></i> Notification Settings</h2>
