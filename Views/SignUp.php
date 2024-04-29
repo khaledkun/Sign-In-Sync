@@ -51,10 +51,12 @@
         <label for="age">Age</label>
         <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="50" required>
       </div>
-      <div class="radio-group">
-        <h2>Your Gender:</h2>
-        <label for="male"><input id="male" type="radio" name="gender" value='0' required>Male</label>
-        <label for="female"><input id="female" type="radio" name="gender" value="1" required>Female</label>
+      <div class="list-box2">
+      <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+       </select>
       </div>
       <div class="list-box">
         <h2>Sign as:</h2>
