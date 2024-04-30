@@ -42,6 +42,7 @@
                 <a href="https://www.youtube.com/@SigninsyncSIS" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></i></a>
                 <a href="https://twitter.com/signinsync_SIS" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></i></a>
                 <a href="https://www.tiktok.com/@sign.in.sync.sis?_t=8llFqrzNr0v&_r=1" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></i></a>
+                <a href="https://signinsync.blogspot.com/" title="Blogger" target="_blank"><i class="fab fa-blogger"></i></i></a>
                 <a href="mailto:signinsyncsis@gmail.com" title="Email" target="_blank"><i class="ri-mail-fill"></i></a>
                 <a href="Credits.php" title="Credits"><i class="ri-team-fill"></i></a>
                 
