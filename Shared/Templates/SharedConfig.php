@@ -23,12 +23,12 @@ $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 $CssPath = "../Shared/Css/";
 
 // Define paths for each Css file
-$BossDashboardPath = $CssPath . "BossDashboard.css";
-$BossSettingsPath = $CssPath . "BossSettings.css";
-$StatisticsPath = $CssPath . "Statistics.css";
-$ProfilePath = $CssPath . "Profile.css";
-$SettingsPath = $CssPath . "Settings.css";
-$DashboardPath = $CssPath . "Dashboard.css";
+$BossDashboardPath = $CssPath . "MyEmployees.css";
+$BossSettingsPath = $CssPath . "EmployeesSettings.css";
+$StatisticsPath = $CssPath . "EmployeesStatistics.css";
+$ProfilePath = $CssPath . "MyProfile.css";
+$SettingsPath = $CssPath . "GeneralSettings.css";
+$DashboardPath = $CssPath . "MyDashboard.css";
 $ForgotPasswsordPath = $CssPath . "ForgotPasswsord.css";
 $HomepagePath = $CssPath . "Homepage.css";
 $CompanyVisionPath = $CssPath . "CompanyVision.css";
@@ -44,7 +44,6 @@ $StopwatchPath = $CssPath . "StopWatch.css";
 $LayoutPath = "../Shared/Layout/";
 
 // Define paths for each Layout file
-$BossDashboardLayout = $LayoutPath . "BossDashboard.php";
 $EmpDashboardLayout = $LayoutPath . "EmpDashboard.php";
 $HomepageLayout = $LayoutPath . "Homepage.php";
 
