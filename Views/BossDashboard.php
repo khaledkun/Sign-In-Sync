@@ -2,6 +2,14 @@
 session_start();
 $id =$_SESSION['id'];
 
+                
+
+    if (!isset($_SESSION['id'])) {
+        header('location:login.php');
+        exit();
+        
+    }
+
 include_once "../Controllers/connect.php";
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
