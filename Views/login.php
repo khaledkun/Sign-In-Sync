@@ -1,11 +1,35 @@
 <?php
   session_start();
 
-if (isset($_SESSION['id'])) {
 
-  header('location:index.php');
+  if (isset($_SESSION['id'])) {
+    $id =$_SESSION['id'];
+    include '../Controllers/connect.php';
+    $query1 ="SELECT * FROM employee WHERE id ='$id'";
+    $result1=$conn->query($query1);
+    $userdata1 =$result1->fetch_assoc();
+    
+
+
+
+   
+    if ($result1-> num_rows > 0 && $userdata1['prive']==0) {
+    
+  
+    header('location: ../Views/EmployeeDashboard.php');
+    exit();
+  
+}elseif($result1-> num_rows > 0 && $userdata1['prive']==1){
+  
+  header('location: ../Views/BossDashboard.php');
   exit();
+
+
+ 
 }
+  
+}
+
 ?>
 
 
