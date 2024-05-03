@@ -94,8 +94,8 @@ nav {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 100px;
+  bottom: 100px;
+  right: 35px;
   background-color: #007bff;
   color: #fff;
   width: 40px;
@@ -115,6 +115,32 @@ nav {
 .scroll-to-top:hover {
   background-color: #0056b3;
   transition: 0.3s;
+}
+
+#dark-mode-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 100px;
+  background-color: #007bff;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  z-index: 98;
+}
+#dark-mode-btn i {
+  font-size: 20px;
+  margin-top: 11px;
+}
+
+#dark-mode-btn:hover {
+  background-color: #0056b3;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -201,7 +227,6 @@ body {
       flex-direction: column;
       justify-content: center;
       gap: 3rem;
-      align-items: center;
     }
   
     ul li:first-child {

@@ -38,19 +38,20 @@ $userdata1 =$result1->fetch_assoc();
                 <option value="" disabled selected hidden>Sort by</option>
                 <option value="value1">All</option>
                 <option value="value2">Manager</option>
-                <option value="value3">Empoloyee</option>
+                <option value="value3">Employee</option>
                 <option value="value4">Supervisor</option>
             </select>
             <div class="search-input-container">
                 <input type="text" id="search-input" placeholder="Search...">
                 <button id="search-button"><i class="fas fa-search"></i></button>
-                
             </div>
         </div>        
         <div class="grid-container">
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="type-icon"><i class="fas fa-user"></i>
+                    <a href="#" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
@@ -61,6 +62,8 @@ $userdata1 =$result1->fetch_assoc();
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
@@ -71,6 +74,8 @@ $userdata1 =$result1->fetch_assoc();
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
@@ -81,6 +86,8 @@ $userdata1 =$result1->fetch_assoc();
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
@@ -91,6 +98,8 @@ $userdata1 =$result1->fetch_assoc();
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
@@ -101,6 +110,8 @@ $userdata1 =$result1->fetch_assoc();
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
                     <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>

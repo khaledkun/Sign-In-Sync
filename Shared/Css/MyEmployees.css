@@ -138,11 +138,30 @@ p span {
 
 .contact-icon {
     position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: var(--contact-icon);
+    text-decoration: none;
+    font-size: 24px;
+}
+.type-icon {
+    position: absolute;
     top: 20px;
     right: 20px;
     color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
+    pointer-events: none;
+}
+
+.state-icon {
+    position: absolute;
+    left: 20px;
+    left: 20px;
+    color: var(--contact-icon);
+    text-decoration: none;
+    font-size: 24px;
+    pointer-events: none;
 }
 
 .contact-icon:hover {

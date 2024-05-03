@@ -16,12 +16,12 @@
     if ($result1-> num_rows > 0 && $userdata1['prive']==0) {
     
   
-    header('location: ../Views/EmployeeDashboard.php');
+    header('location: ../Views/MyDashboard.php');
     exit();
   
 }elseif($result1-> num_rows > 0 && $userdata1['prive']==1){
   
-  header('location: ../Views/BossDashboard.php');
+  header('location: ../Views/MyEmployees.php');
   exit();
 
 
