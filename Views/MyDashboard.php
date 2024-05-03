@@ -75,7 +75,7 @@ $userdata1 =$result1->fetch_assoc();
             <div class="grid-item boss-comments" style="grid-column: span 1; grid-row: span 2;">
                 <i class="fas fa-comments Icons"></i>
                 <h2>Alerts & Boss Comments</h2>
-                <p id="boss-comments">None</p>
+                <p id="boss-comments">asdjoaj doawdop akdoaksopd kawodkopak doakdopakdop awdasd asdjoaj doawdop akdoaksopd kawodkopak doakdopakdop awdasd asdjoaj doawdop akdoaksopd kawodkopak doakdopakdop awdasd asdjoaj doawdop akdoaksopd kawodkopak doakdopakdop awdasd asdjoaj doawdop akdoaksopd kawodkopak doakdopakdop awdasd dawdasd sdawdasd awdawdas</p>
                 <a href="#" class="contact-icon"><i class="fas fa-envelope Icons"></i></a>
             </div>
             <div class="grid-item holidays">

@@ -127,13 +127,21 @@
     
     .grid-item.boss-comments {
         background-color: var(--Red);
+        overflow-y: auto;
+        height: 215px;
     }
+    
     .grid-item.boss-comments p {
-        margin: 40px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
     }
+
     .grid-item.tasks p {
-        margin: 40px;
+        margin: auto;
+        text-align: center;
     }
+
     .contact-icon {
         position: absolute;
         bottom: 20px;
@@ -142,6 +150,7 @@
         text-decoration: none;
         font-size: 24px;
     }
+
     .grid-item.boss-comments:hover {
         background-color: var(--Hover);
         transition: 0.3s;
@@ -151,13 +160,16 @@
     .grid-item.sign-out-time {
         grid-column: span 3;
     }
+
     .contact-icon:hover {
         transform: scale(1.1);
         transition: 0.3s;
     }
+
     .Icons{
         color: var(--Icons);
     }
+    
     @media only screen and (max-width: 750px) {
         .grid-container {
             grid-template-columns: 1fr;
@@ -183,7 +195,16 @@
         .dashboard {
             margin-left: 0px;
         }
+
         .date-section {
             margin-right: 60px;
+        }
+
+        .grid-item.boss-comments {
+            height: 200px;
+        }
+
+        .grid-item.grid-item.tasks {
+            height: 200px;
         }
     }
