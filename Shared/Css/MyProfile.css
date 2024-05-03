@@ -189,6 +189,23 @@ body {
     transition: 0.3s;
 }
 
+@media only screen and (max-width: 751px) {
+.profile-item.profile-info input[type="text"],
+.profile-item.profile-info input[type="email"],
+.profile-item.profile-info input[type="tel"],
+.profile-info select {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    outline: none;
+    margin-bottom: 40px;
+    color: var(--contact-icon);
+}
+}
+
 @media only screen and (max-width: 750px) {
     .profile {
         margin-left: 0px;
