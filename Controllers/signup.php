@@ -38,11 +38,11 @@ if ( $userArray['prive']==0) {
 	
 	
 	
-	header('location: ../Views/EmployeeDashboard.php');
+	header('location: ../Views/MyDashboard.php');
 
 	
 }elseif( $userArray['prive']==1){
-	header('location: ../Views/BossDashboard.php');
+	header('location: ../Views/MyDashboard.php');
 	
 }else{
 	header('location: ../Views/login.php');
