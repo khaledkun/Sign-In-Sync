@@ -106,6 +106,7 @@ p span {
     border-radius: 5px;
     resize: vertical;
     color: var(--black-background);
+    scrollbar-width: thin;
 }
 
 .grid-item textarea:hover {
