@@ -20,6 +20,7 @@ $userdata1 =$result1->fetch_assoc();
         ?>
     </head>
     <link rel="stylesheet" href="<?php echo $BossDashboardPath; ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
@@ -37,9 +38,9 @@ $userdata1 =$result1->fetch_assoc();
             <select id="list-box">
                 <option value="" disabled selected hidden>Sort by</option>
                 <option value="value1">All</option>
-                <option value="value2">Manager</option>
-                <option value="value3">Employee</option>
-                <option value="value4">Supervisor</option>
+                <option value="value3">&#xf007; Employee</option>
+                <option value="value2">&#xf508; Manager</option>
+                <option value="value4">&#xf505; Supervisor</option>
             </select>
             <div class="search-input-container">
                 <input type="text" id="search-input" placeholder="Search...">

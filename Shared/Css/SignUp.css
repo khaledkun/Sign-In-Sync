@@ -171,3 +171,6 @@ button {
   text-decoration: underline;
   transition: 0.3s;
 }
+select, select option {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
+}

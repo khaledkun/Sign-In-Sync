@@ -54,17 +54,17 @@
       <div class="list-box2">
       <label for="gender">Gender</label>
         <select id="gender" name="gender">
-          <option value="male" selected>Male</option>
-          <option value="female">Female</option>
+          <option value="male" selected>&#xf222; Male</option>
+          <option value="female">&#xf221; Female</option>
        </select>
       </div>
       <div class="list-box">
         <h2>Sign as:</h2>
         <select id="position" name="position">
-          <option value="manager">Admin</option>
-          <option value="supervisor">Manager</option>
-          <option value="employee">Supervisor</option>
-          <option value="employee" selected>Employee</option>
+          <option value="manager">&#xf502; Admin</option>
+          <option value="value3" selected>&#xf007; Employee</option>
+          <option value="value2">&#xf508; Manager</option>
+          <option value="value4">&#xf505; Supervisor</option>
        </select>
       </div>
       <label for="terms-and-conditions">

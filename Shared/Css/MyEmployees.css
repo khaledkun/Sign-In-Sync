@@ -226,6 +226,9 @@ p span {
     cursor: pointer;
     margin-right: 8px;
 }
+select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
+  }
 /* مش كويس ان الحاجات دي تكبر لان بتغطي عالي جمبها */
 /* #search-button:hover,
 #search-button:hover + #search-input {
