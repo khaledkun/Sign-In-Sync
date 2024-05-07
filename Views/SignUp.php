@@ -40,7 +40,7 @@
         </div>
         <div class="input-box">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" pattern=".+@(gmail\.com|hotmail\.com|yahoo\.com)" required>
         </div>
         <div class="container">
             <form id="login" onsubmit="process(event)">
