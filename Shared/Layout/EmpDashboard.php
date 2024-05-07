@@ -17,7 +17,7 @@
     </div>
     <div class="navbar">
         <div class="logo-container">
-        <a href="MyDashboard.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyDashboard.php" ? 'class="active"' : ''; ?>>
+        <a href="HomePage.php" target="_blank" <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?>>
         <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
             <span class="logo-text">Sign In Sync</span></a>
         </div>
