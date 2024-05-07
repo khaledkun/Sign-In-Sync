@@ -32,11 +32,11 @@
         </div>
         <div class="input-box">
           <label for="password">Password</label>
-          <input type="password" onChange="onChange()" id="password" minlength="6" name="password" placeholder="Enter your password" required>
+          <input type="password" onChange="onChange()" id="password" pattern="^(?=.*[A-Z])(?=.*[!@#$%^&*_])(?=.{8,}).*$" title="Password must contain at least one uppercase letter, one special character (!@#$%^&*_), and be at least 8 characters long." name="password" placeholder="Enter your password" required>
         </div>
         <div class="input-box">
           <label for="password2">Confirm Password</label>
-          <input type="password" onChange="onChange()" id="password2" minlength="6" name="password2" placeholder="Confirm your password" required>
+          <input type="password" onChange="onChange()" id="password2" name="password2" placeholder="Confirm your password" required>
         </div>
         <div class="input-box">
           <label for="email">Email Address</label>
