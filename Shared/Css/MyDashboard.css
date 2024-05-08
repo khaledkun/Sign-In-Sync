@@ -219,6 +219,10 @@
         width: 200px;
         margin-bottom: 20px;
     }
+    
+    .loading {
+        color: white;
+    }
 
     .loading:after {
         content: ' .';
