@@ -50,7 +50,7 @@ $userdata1 =$result1->fetch_assoc();
         <div class="grid-container">
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#" class="type-icon"><i class="fas fa-user"></i>
                     <a href="#" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
@@ -62,7 +62,7 @@ $userdata1 =$result1->fetch_assoc();
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#1" class="type-icon"><i class="fas fa-user"></i>
                     <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
@@ -74,7 +74,7 @@ $userdata1 =$result1->fetch_assoc();
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
                     <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
@@ -86,7 +86,7 @@ $userdata1 =$result1->fetch_assoc();
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
                     <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
@@ -98,7 +98,7 @@ $userdata1 =$result1->fetch_assoc();
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
                     <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
@@ -110,7 +110,7 @@ $userdata1 =$result1->fetch_assoc();
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
                     <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
                     <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">

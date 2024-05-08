@@ -8,6 +8,7 @@
         include '../Shared/Templates/MetaTags.php';
         ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -120,7 +121,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -132,7 +133,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -144,7 +145,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +157,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -168,7 +169,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -180,7 +181,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -192,7 +193,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -204,7 +205,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -216,7 +217,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -228,7 +229,7 @@
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
                     <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><i class="fas fa-users"></i></a>
+                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>

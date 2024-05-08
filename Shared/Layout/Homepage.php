@@ -37,8 +37,8 @@
     <footer>
         <div class="footer__content">
             <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=61558129328727" title="Facebook Page" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/signinsyncsis/" title="Instagram Page" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61558129328727" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/signinsyncsis/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@SigninsyncSIS" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></i></a>
                 <a href="https://twitter.com/signinsync_SIS" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></i></a>
                 <a href="https://www.tiktok.com/@sign.in.sync.sis?_t=8llFqrzNr0v&_r=1" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></i></a>

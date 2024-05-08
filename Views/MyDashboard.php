@@ -56,9 +56,9 @@ $userdata1 =$result1->fetch_assoc();
                 <h2>Sign In Time</h2>
                 <div id="timecontainer">
             <div id="timedisplay">00:00:00</div>
-            <button id="startbutton" class="timer-button"><i class="fas fa-play Icons"></i></button>
-            <button id="pausebutton" class="timer-button"><i class="fas fa-pause Icons"></i></button>
-            <button id="resetbutton" class="timer-button"><i class="fas fa-stop Icons"></i></button>
+            <button id="startbutton" class="timer-button" title="Start"><i class="fas fa-play Icons"></i></button>
+            <button id="pausebutton" class="timer-button" title="Pause"><i class="fas fa-pause Icons"></i></button>
+            <button id="resetbutton" class="timer-button" title="Reset"><i class="fas fa-stop Icons"></i></button>
             </div>
             </div>
             <div class="grid-item">
@@ -99,7 +99,7 @@ $userdata1 =$result1->fetch_assoc();
                  <p>Additional text content...</p>
                  <p>More text content...</p>
                 </div>
-                <a href="#" class="contact-icon"><i class="fas fa-envelope Icons"></i></a>
+                <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
             </div>
             <div class="grid-item holidays">
                 <i class="fas fa-calendar-alt Icons"></i>
