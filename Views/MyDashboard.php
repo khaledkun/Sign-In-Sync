@@ -1,6 +1,12 @@
 <?php
 session_start();
 $id =$_SESSION['id'];
+$first_login = isset($_SESSION['first_login']) && $_SESSION['first_login'];
+
+// Reset the flag after the first login
+if ($first_login) {
+    $_SESSION['first_login'] = false;
+}
 
 include_once "../Controllers/connect.php";
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
@@ -26,6 +32,19 @@ $userdata1 =$result1->fetch_assoc();
 <!-- Here was the Navbar -->
 <!-- Include the navbar -->
     <?php include $EmpDashboardLayout; ?>
+    <?php if ($first_login): ?>
+    <div id="preloader">
+    <div class="spinner">
+        <img src="../Shared/Imgs/NavBarLogo.svg" alt="Company Logo" class="logo" />
+        <div class="spinning-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+    </div>
+</div>
+<?php endif; ?>
     <div class="dashboard">
         <div class="header">
             <div class="header-text">
@@ -93,5 +112,15 @@ $userdata1 =$result1->fetch_assoc();
             </div>
         </div>
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        setTimeout(() => {
+            preloader.style.display = "none"; 
+        }, 2000);
+    }
+});
+    </script>
 </body>
 </html>

@@ -193,6 +193,88 @@
     .Icons{
         color: var(--Icons);
     }
+
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--Body-Background); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; 
+    }
+    
+    .spinner {
+        text-align: center;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .spinner .logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .spinner .loading-text {
+        font-size: 20px; 
+        color: var(--Heading); 
+        margin-top: 10px;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .spinning-dots {
+        position: relative;
+        width: 70px; 
+        height: 70px;
+        animation: spin 1.5s linear infinite; 
+    }
+    
+    .spinning-dots .dot {
+        position: absolute;
+        text-align: center;
+        width: 10px; 
+        height: 10px;
+        background: var(--Heading);
+        border-radius: 50%; 
+    }
+    
+    .spinning-dots .dot:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .spinning-dots .dot:nth-child(2) {
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .spinning-dots .dot:nth-child(3) {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .spinning-dots .dot:nth-child(4) {
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .spinner .loading-icon {
+        animation: spin 1s linear infinite;
+    }
     
     @media only screen and (max-width: 750px) {
         .grid-container {

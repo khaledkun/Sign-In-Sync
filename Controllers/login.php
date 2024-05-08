@@ -4,6 +4,7 @@ $password = $_POST['password'];
 // $username=$_POST['username'];
 // $password=md5($_POST['password']);
 require 'connect.php';
+session_start();
 $query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";
 $result = $conn->query($query);// mysqli result object ==>current_field  ==> feild_count ==>  lengths ==>num_rows ==>type ==>
 // var_dump($result);
@@ -27,6 +28,13 @@ $user =$result->fetch_assoc();
 $id = $user['id'];
 // echo $id;
 
+if (!isset($_SESSION['first_login'])) {
+	// If it's the first time this session is created
+	$_SESSION['first_login'] = true;
+} else {
+	// Otherwise, it's not the first login in this session
+	$_SESSION['first_login'] = false;
+}
 if ($result-> num_rows > 0 && $user['prive']==0) {
 	session_start();
 	$_SESSION['id']=$id;

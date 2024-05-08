@@ -92,4 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function pad(unit) {
         return ("0" + unit).slice(-2); // Pad with leading zero
     }
+    setTimeout(() => {
+        startTimer(); 
+    }, 2000);
 });
