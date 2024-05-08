@@ -121,8 +121,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -133,8 +133,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -145,8 +145,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -157,8 +157,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -169,8 +169,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -181,8 +181,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -193,8 +193,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -205,8 +205,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -217,8 +217,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
@@ -229,8 +229,8 @@
                     <h3>Track</h3>
                     <p>Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example Description Example </p>
                     <div class="social-icons">
-                    <a href="#" title="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" title="Microsoft Teams"><span class="mdi mdi-microsoft-teams"></span></a>
+                    <a href="#" title="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="#" title="Microsoft Teams" target="_blank"><span class="mdi mdi-microsoft-teams"></span></a>
                     </div>
                 </div>
             </div>
