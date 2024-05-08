@@ -25,6 +25,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-top: 120px;
+            margin-bottom: 50px;
             text-align: center;
         }
         h1 {
