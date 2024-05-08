@@ -36,11 +36,7 @@ $userdata1 =$result1->fetch_assoc();
     <div id="preloader">
     <div class="spinner">
         <img src="../Shared/Imgs/NavBarLogo.svg" alt="Company Logo" class="logo" />
-        <div class="spinning-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <p class="loading">Loading</p>
             </div>
     </div>
 </div>
