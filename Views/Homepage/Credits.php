@@ -5,7 +5,7 @@
         // You Can Change the Page Title as you like
         $pageTitle = "Our Team";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php';
+        include '../../Templates/MetaTags.php';
         ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">

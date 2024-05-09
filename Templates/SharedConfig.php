@@ -40,8 +40,8 @@ $SignUpPath = $CssPath . "SignUp.css";
 $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 $StopwatchPath = $CssPath . "StopWatch.css";
 
-// Define the directory containing the Layout
-$LayoutPath = "/Shared/Layout/";
+// Define the directory containing the Layout For
+$LayoutPath = "../../Shared/Layout/";
 
 // Define paths for each Layout file
 $EmpDashboardLayout = $LayoutPath . "EmpDashboard.php";

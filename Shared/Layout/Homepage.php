@@ -5,7 +5,7 @@
         // You Can Change the Page Title as you like
         $pageTitle = "NavBar";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php';  
+        include '../../Templates/MetaTags.php';  
         ?>
 <link rel="stylesheet" href="<?php echo $NavBarPath; ?>">
 <script type="text/javascript" src="<?php echo $HomeLayout; ?>"></script>
