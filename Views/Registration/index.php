@@ -16,7 +16,7 @@ session_start();
 
 
 
-				require '../Controllers/connect.php';
+				require '../../Controllers/Registration/connect.php';
 				$id = $_SESSION['id'];
 				$query="SELECT * FROM employee WHERE id ='$id'";
 				$result = $conn->query($query);
@@ -47,6 +47,6 @@ print_r($user);
 <body>
 	<br>
 
-<a href="../Controllers/logout.php">logout</a>
+<a href="../../Controllers/Registration/logout.php">logout</a>
 </body>
 </html>

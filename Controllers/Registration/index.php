@@ -1,7 +1,7 @@
 <?php
 //test some change
 echo "<h1>index</h1>";
-include "connect.php";
+include "../../Controllers/Registration/connect.php";
 
 $query="SELECT * FROM employee";
 

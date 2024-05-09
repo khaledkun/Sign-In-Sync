@@ -55,11 +55,18 @@ $DashLayout = $ScriptPath . "DashLayout.js";
 $HomeLayout = $ScriptPath . "HomeLayout.js";
 $ScrollUp = $ScriptPath . "ScrollUp.js";
 
-// Define the directory containing the Controllers Registration
+// Define the directory containing the Controllers Registration For Views
 $RegestrationPath = "/Controllers/Registration/";
 // Define paths for each File inside the Regestration
 $SignUpContrl =  $RegestrationPath . "signup.php";
 $NewPassContrl =  $RegestrationPath . "NewPassword.php";
 $ConnectContrl =  $RegestrationPath . "connect.php";
 $loginContrl =  $RegestrationPath . "login.php";
+$ForgetPassContrl =  $RegestrationPath . "ForgotPasswsord.php";
+
+// Define the directory containing the views Registration For Controllers
+$ViewsPath = "/Views/Registration/";
+$ForgetPassView = $ViewsPath . "ForgotPasswsord.php";
+$NewPassView = $ViewsPath . "NewPassword.php";
+$LoginView = $ViewsPath . "login.php";
 ?>

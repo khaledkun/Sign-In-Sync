@@ -16,7 +16,7 @@ echo "<pre>";
 print_r($_POST);
 echo "</pre>";
 
-include "connect.php";
+include "../../Controllers/Registration/connect.php";
 
 $query="INSERT INTO employee ( firstname, lastname, email , gender, password, age,prive) VALUES ( '$firstname', '$lastname' ,'$email', $gender, '$password','$age','$sginas')";
 
@@ -38,13 +38,13 @@ if ( $userArray['prive']==0) {
 	
 	
 	
-	header('location: ../Views/MyDashboard.php');
+	header('location: ../../Views/Dashboard/MyDashboard.php');
 
 	
 }elseif( $userArray['prive']==1){
-	header('location: ../Views/MyDashboard.php');
+	header('location: ../../Views/Dashboard/MyDashboard.php');
 	
 }else{
-	header('location: ../Views/login.php');
+	header('location: .../../Views/Registration/login.php');
 }
 //INSERT INTO `employee`( `firstname`, `lastname`, `address`, `email`, `gender`, `password`, `age`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]','[value-13]')

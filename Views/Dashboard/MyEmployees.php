@@ -2,7 +2,7 @@
 session_start();
 $id =$_SESSION['id'];
 
-include_once "../Controllers/connect.php";
+include_once "../../Controllers/Registration/connect.php";
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();

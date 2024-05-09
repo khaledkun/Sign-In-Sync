@@ -8,7 +8,7 @@ if ($first_login) {
     $_SESSION['first_login'] = false;
 }
 
-include_once "../Controllers/connect.php";
+include_once "../../Controllers/Registration/connect.php";
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();
@@ -19,14 +19,14 @@ $userdata1 =$result1->fetch_assoc();
 <html lang="en">
 <head>
     <?php
-    include_once '../controllers/connect.php';
+    include_once '../../Controllers/Registration/connect.php';
 // You Can Change the Page Title as you like
     $pageTitle = "My Dashboard";
     // Include the Template
     include '../../Templates/MetaTags.php';?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
-    <script src="/Controllers/StopWatch.js"></script>
+    <script src="../../Controllers/Dashboard/StopWatch.js"></script>
 </head>
 <body>
 <!-- Here was the Navbar -->

@@ -28,7 +28,7 @@
             <li><a href="MyEmployees.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "MyEmployees.php" ? 'class="active"' : ''; ?>><i class="fas fa-user-tie"></i> My Employees</a></li>
             <li><a href="EmployeesStatistics.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeesStatistics.php" ? 'class="active"' : ''; ?>><i class="fas fa-chart-bar"></i> Employees Statistics</a></li>
             <li><a href="EmployeesSettings.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "EmployeesSettings.php" ? 'class="active"' : ''; ?>><i class="fas fa-user-cog"></i> Employees Settings</a></li>
-            <li><a href="../controllers/logout.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "login.php" ? 'class="active"' : ''; ?>><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li><a href="../../Controllers/Registration/logout.php" <?php echo basename($_SERVER['SCRIPT_NAME']) == "login.php" ? 'class="active"' : ''; ?>><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
         <!-- للدارك مود -->
         <div class="mode-toggle">

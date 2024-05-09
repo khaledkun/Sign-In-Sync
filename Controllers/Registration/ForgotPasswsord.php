@@ -1,7 +1,7 @@
 <?php
 session_start ();
     if(isset($_POST["email"])){
-        include('connect.php');
+        include('../Registration/connect.php');
         $email = $_POST["email"];
 
         $sql = mysqli_query($conn, "SELECT * FROM employee WHERE email='$email'");
@@ -12,7 +12,7 @@ session_start ();
             ?>
             <script>
                 alert("<?php  echo "Sorry, no emails exists "?>");
-                window.location.replace("/Views/ForgotPasswsord.php");				
+                window.location.replace("/Views/Registration/ForgotPasswsord.php");				
             </script>
             <?php
         }else{
@@ -44,7 +44,7 @@ session_start ();
             $mail->Body="<b>Dear $fetch[1]</b>
             <h3>We received a request to reset your password.</h3>
             <p>Kindly click the below link to reset your password</p>
-            http://$URL/Views/NewPassword.php?token=$token
+            http://$URL/Views/Registration/NewPassword.php?token=$token
             <br><br>
             <p>With regrads,</p>";
 			$sql = mysqli_query($conn, "UPDATE employee set token = '$token' WHERE email='$email'"); // نحط التوكين فالداتا بيز عشان نقارنها لما اليوزر يدخل علي اللينك
@@ -53,7 +53,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo " Invalid Email1 "?>");
-                        window.location.replace("/Views/ForgotPasswsord.php");
+                        window.location.replace("/Views/Registration/ForgotPasswsord.php");
 						
                     </script>
                 <?php
@@ -61,7 +61,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo "  Email sent "?>");
-                        window.location.replace("/Views/index.php");						
+                        window.location.replace("/Views/Registration/login.php");						
                     </script>
                 <?php
             }

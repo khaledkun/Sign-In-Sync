@@ -3,7 +3,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 // $username=$_POST['username'];
 // $password=md5($_POST['password']);
-require 'connect.php';
+require '../../Controllers/Registration/connect.php';
 session_start();
 $query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";
 $result = $conn->query($query);// mysqli result object ==>current_field  ==> feild_count ==>  lengths ==>num_rows ==>type ==>
@@ -41,7 +41,7 @@ if ($result-> num_rows > 0 && $user['prive']==0) {
 	
 
 	
-	header('location: ../Views/MyDashboard.php');
+	header('location: ../../Views/Dashboard/MyDashboard.php');
 
 	
 }elseif($result-> num_rows > 0 && $user['prive']==1){
@@ -60,8 +60,8 @@ if ($result-> num_rows > 0 && $user['prive']==0) {
 	//type on anothor time will be work
 	$query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
 	// $result3=$conn->query($query3);
-	header('location: ../Views/BossDashboard.php');
+	header('location: ../../Views/Dashboard/BossDashboard.php');
 	
 }else{
-	header('location: ../Views/login.php');
+	header('location: ../../Views/Registration/login.php');
 }

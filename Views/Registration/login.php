@@ -4,7 +4,7 @@
 
   if (isset($_SESSION['id'])) {
     $id =$_SESSION['id'];
-    include '../Controllers/connect.php';
+    include '../../Controllers/Registration/connect.php';
     $query1 ="SELECT * FROM employee WHERE id ='$id'";
     $result1=$conn->query($query1);
     $userdata1 =$result1->fetch_assoc();
@@ -16,12 +16,12 @@
     if ($result1-> num_rows > 0 && $userdata1['prive']==0) {
     
   
-    header('location: ../Views/MyDashboard.php');
+    header('location: ../../Views/Dashboard/MyDashboard.php');
     exit();
   
 }elseif($result1-> num_rows > 0 && $userdata1['prive']==1){
   
-  header('location: ../Views/MyEmployees.php');
+  header('location: ../../Views/Dashboard/MyEmployees.php');
   exit();
 
 
@@ -50,7 +50,7 @@
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
       <div class="wrapper">
-        <form method="post" action="../Controllers/login.php">
+        <form method="post" action="../../Controllers/Registration/login.php">
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">
