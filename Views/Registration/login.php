@@ -42,7 +42,7 @@
         // You Can Change the Page Title as you like
         $pageTitle = "Sign In";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php';
+        include '../../Templates/MetaTags.php';
         ?>
       <link rel="stylesheet" href="<?php echo $LoginPath; ?>">
       <link rel="stylesheet" href="<?php echo $MainStylePath; ?>">

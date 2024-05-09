@@ -4,7 +4,7 @@
 // and everyone has its own localhost
 
 // Define the directory containing the images
-$ImgsPath = "../Shared/Imgs/";
+$ImgsPath = "/Shared/Imgs/";
 
 // Define paths for each image
 $employee1Path = $ImgsPath . "Employee.png";
@@ -20,7 +20,7 @@ $user2Path = $ImgsPath . "User-Icon.png";
 $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 
 // Define the directory containing the Css
-$CssPath = "../Shared/Css/";
+$CssPath = "/Shared/Css/";
 
 // Define paths for each Css file
 $BossDashboardPath = $CssPath . "MyEmployees.css";
@@ -41,14 +41,14 @@ $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 $StopwatchPath = $CssPath . "StopWatch.css";
 
 // Define the directory containing the Layout
-$LayoutPath = "../Shared/Layout/";
+$LayoutPath = "/Shared/Layout/";
 
 // Define paths for each Layout file
 $EmpDashboardLayout = $LayoutPath . "EmpDashboard.php";
 $HomepageLayout = $LayoutPath . "Homepage.php";
 
 // Define the directory containing the Scripts
-$ScriptPath = "../Shared/Script/";
+$ScriptPath = "/Shared/Script/";
 
 // Define paths for each Script file
 $DashLayout = $ScriptPath . "DashLayout.js";
