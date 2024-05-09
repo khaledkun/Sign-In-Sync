@@ -40,7 +40,7 @@ $SignUpPath = $CssPath . "SignUp.css";
 $DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
 $StopwatchPath = $CssPath . "StopWatch.css";
 
-// Define the directory containing the Layout For
+// Define the directory containing the Layout For Homepage - dasboard
 $LayoutPath = "../../Shared/Layout/";
 
 // Define paths for each Layout file
@@ -54,4 +54,12 @@ $ScriptPath = "/Shared/Script/";
 $DashLayout = $ScriptPath . "DashLayout.js";
 $HomeLayout = $ScriptPath . "HomeLayout.js";
 $ScrollUp = $ScriptPath . "ScrollUp.js";
+
+// Define the directory containing the Controllers Registration
+$RegestrationPath = "/Controllers/Registration/";
+// Define paths for each File inside the Regestration
+$SignUpContrl =  $RegestrationPath . "signup.php";
+$NewPassContrl =  $RegestrationPath . "NewPassword.php";
+$ConnectContrl =  $RegestrationPath . "connect.php";
+$loginContrl =  $RegestrationPath . "login.php";
 ?>
