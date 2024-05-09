@@ -146,7 +146,63 @@ ul.custom-list li a:hover {
     transform: scale(1.03);
     transition: 0.1s;
 }
+.guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
 
+.guide-step {
+    display: none;
+    color: white;
+    padding: 20px;
+    margin-top: 550px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.guide-step.active {
+    display: block;
+}
+.guide-step.alt {
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+.next-btn,
+.skip-btn,
+.back-btn {
+    padding: 10px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.next-btn:hover,
+.skip-btn:hover,
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+.highlight {
+    background-color: rgba(13, 0, 255, 0); 
+    border: 2px solid rgb(0, 4, 255);
+    box-shadow: 0 0 10px 5px rgba(0, 4, 255);
+    z-index: 1001;
+}
 @media only screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr;

@@ -42,6 +42,7 @@ body {
 
 .date-section {
     margin-left: auto;
+    padding: 0px 10px;
 }
 
 .header:hover {
@@ -229,6 +230,57 @@ p span {
 select {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
   }
+  .guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-step {
+    display: none;
+    color: white;
+    padding: 20px;
+    margin-top: 550px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.guide-step.active {
+    display: block;
+}
+
+.next-btn,
+.skip-btn,
+.back-btn {
+    padding: 10px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.next-btn:hover,
+.skip-btn:hover,
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+.highlight {
+    background-color: rgba(13, 0, 255, 0); 
+    border: 2px solid rgb(0, 4, 255);
+    box-shadow: 0 0 10px 5px rgba(0, 4, 255);
+    z-index: 1001;
+}
 /* مش كويس ان الحاجات دي تكبر لان بتغطي عالي جمبها */
 /* #search-button:hover,
 #search-button:hover + #search-input {
