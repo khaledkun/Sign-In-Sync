@@ -61,23 +61,23 @@ $userdata1 =$result1->fetch_assoc();
             <button id="resetbutton" class="timer-button" title="Reset"><i class="fas fa-stop Icons"></i></button>
             </div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item late-time">
                 <i class="fas fa-clock Icons"></i>
                 <h2>Late Arrival</h2>
                 <p id="late-time">0 hours (0 days)</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item absent-days">
                 <i class="far fa-calendar-times Icons"></i>
                 <h2>Absent Days</h2>
                 <p id="absent-days">0 days</p>
             </div>
-            <div class="grid-item">
+            <div class="grid-item break-time">
             <i class="fas fa-user-clock Icons"></i>
                 <h2>Break Time</h2>
                 <p id="break-time">0 Minutes</p>
             </div>
-            <div class="grid-item">
+            <div class="grid-item total-paycheck">
                 <i class="fas fa-money-bill-alt Icons"></i>
                 <h2>Total Paycheck</h2>
                 <p id="total-paycheck">0 EGP (<span class="red-text">-0</span>)</p>
@@ -108,6 +108,313 @@ $userdata1 =$result1->fetch_assoc();
             </div>
         </div>
     </div>
+
+
+
+
+
+    <?php if ($first_login): ?>
+ <div id="guide-container" class="guide">
+        <div class="guide-content">
+            <!-- Step 1 -->
+            <div class="guide-step active" id="step1">
+                <p>Welcome to sign in sync. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="guide-step" id="step2">
+                <p>Step 2: This section covers the date section. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="guide-step" id="step3">
+                <p>Step 3: Let's explore the sign-in time section. Click "Next" to continue.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="guide-step" id="step4">
+                <p>Step 4: The late arrival section is covered here. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="guide-step" id="step5">
+                <p>Step 5: Here's the section about absent days. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="guide-step" id="step6">
+                <p>Step 6: This step discusses break time. Click "Next" to continue.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="guide-step" id="step7">
+                <p>Step 7: This is about the total paycheck. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="guide-step" id="step8">
+                <p>Step 8: This step explores next holidays. Click "Next" to continue.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="guide-step" id="step9">
+                <p>Step 9: This step explores tasks. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 10 -->
+            <div class="guide-step" id="step10">
+                <p>Step 10: This step explores boss comments . Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 11 -->
+            <div class="guide-step" id="step11">
+                <p>Step 11: This is the navigation bar. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 12 -->
+            <div class="guide-step" id="step12">
+                <p>Step 12: This is your dashboard. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 13 -->
+            <div class="guide-step" id="step13">
+                <p>Step 13: This is your profile. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 14 -->
+            <div class="guide-step" id="step14">
+                <p>Step 14: This is your general settings. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 15 -->
+            <div class="guide-step" id="step15">
+                <p>Step 15: This is your employees. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 16 -->
+            <div class="guide-step" id="step16">
+                <p>Step 16: This is employee statistics. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 17 -->
+            <div class="guide-step" id="step17">
+                <p>Step 17: This is employees settings. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="skipGuide()">Skip</button>
+                <button  class="next-btn" onclick="goToNextStep()">Next</button>
+            </div>
+
+            <!-- Step 18 -->
+            <div class="guide-step" id="step18">
+                <p>Step 18: This is an option to toggle dark mode. Click "Next" to proceed.</p>
+                <button  class="skip-btn" onclick="closeGuide()">Finish</button>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
+
+
+
+
+
+
+    
+<script>
+ 
+const guideContainer = document.getElementById("guide-container");
+const steps = document.querySelectorAll(".guide-step");
+let currentStep = 0; 
+
+
+function goToNextStep() {
+    if (currentStep < steps.length - 1) {
+ 
+        removeHighlight(currentStep);
+
+        
+        steps[currentStep].classList.remove("active"); 
+        currentStep++; 
+        steps[currentStep].classList.add("active"); 
+
+        highlightStep(currentStep);
+    }
+}
+
+
+function closeGuide() {
+   
+    guideContainer.style.display = "none";
+
+
+    removeHighlight(currentStep);
+}
+function skipGuide() {
+
+    guideContainer.style.display = "none";
+
+   
+    if (currentStep < steps.length) {
+        removeHighlight(currentStep + 1); 
+    }
+}
+
+
+function highlightStep(stepIndex) {
+    switch (stepIndex) {
+        case 1:
+            document.querySelector(".date-section").classList.add("highlight");
+            break;
+        case 2:
+            document.querySelector(".sign-in-time").classList.add("highlight");
+            break;
+        case 3:
+            document.querySelector(".late-time").classList.add("highlight");
+            break;
+        case 4:
+            document.querySelector(".absent-days").classList.add("highlight");
+            break;
+        case 5:
+            document.querySelector(".break-time").classList.add("highlight");
+            break;
+        case 6:
+            document.querySelector(".total-paycheck").classList.add("highlight");
+            break;
+        case 7:
+            document.querySelector(".holidays").classList.add("highlight");
+            break;
+        case 8:
+            document.querySelector(".tasks").classList.add("highlight");
+            break;
+        case 9:
+            document.querySelector(".boss-comments").classList.add("highlight");
+            break;
+        case 10:
+            document.querySelector(".navbar").classList.add("highlight");
+            break;
+            case 11:
+            document.querySelector("#MyDashboard").classList.add("highlight");
+            break;
+            case 12:
+            document.querySelector("#MyProfile").classList.add("highlight");
+            break;
+            case 13:
+            document.querySelector("#GeneralSettings").classList.add("highlight");
+            break;
+            case 14:
+            document.querySelector("#MyEmployees").classList.add("highlight");
+            break;
+            case 15:
+            document.querySelector("#EmployeesStatistics").classList.add("highlight");
+            break;
+            case 16:
+            document.querySelector("#EmployeesSettings").classList.add("highlight");
+            break;
+            case 17:
+            document.querySelector(".mode-toggle").classList.add("highlight");
+            break;
+        default:
+            break;
+    }
+}
+
+function removeHighlight(stepIndex) {
+    switch (stepIndex) {
+        case 1:
+            document.querySelector(".date-section").classList.remove("highlight");
+            break;
+        case 2:
+            document.querySelector(".sign-in-time").classList.remove("highlight");
+            break;
+        case 3:
+            document.querySelector(".late-time").classList.remove("highlight");
+            break;
+        case 4:
+            document.querySelector(".absent-days").classList.remove("highlight");
+            break;
+        case 5:
+            document.querySelector(".break-time").classList.remove("highlight");
+            break;
+        case 6:
+            document.querySelector(".total-paycheck").classList.remove("highlight");
+            break;
+        case 7:
+            document.querySelector(".holidays").classList.remove("highlight");
+            break;
+        case 8:
+            document.querySelector(".tasks").classList.remove("highlight");
+            break;
+        case 9:
+            document.querySelector(".boss-comments").classList.remove("highlight");
+            break;
+        case 10:
+            document.querySelector(".navbar").classList.remove("highlight");
+            break;
+            case 11:
+            document.querySelector("#MyDashboard").classList.remove("highlight");
+            break;
+            case 12:
+            document.querySelector("#MyProfile").classList.remove("highlight");
+            break;
+            case 13:
+            document.querySelector("#GeneralSettings").classList.remove("highlight");
+            break;
+            case 14:
+            document.querySelector("#MyEmployees").classList.remove("highlight");
+            break;
+            case 15:
+            document.querySelector("#EmployeesStatistics").classList.remove("highlight");
+            break;
+            case 16:
+            document.querySelector("#EmployeesSettings").classList.remove("highlight");
+            break;
+            case 17:
+            document.querySelector(".mode-toggle").classList.remove("highlight");
+            break;
+        default:
+            break;
+    }
+}
+
+
+guideContainer.style.display = "block"; 
+
+
+
+</script>
+
+
+
     <script>
 document.addEventListener("DOMContentLoaded", function() {
     const preloader = document.getElementById("preloader");
@@ -118,5 +425,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
     </script>
+
+
+
 </body>
 </html>
