@@ -23,7 +23,7 @@ $userdata1 =$result1->fetch_assoc();
 // You Can Change the Page Title as you like
     $pageTitle = "My Dashboard";
     // Include the Template
-    include '../Shared/Templates/MetaTags.php';?>
+    include '../../Templates/MetaTags.php';?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
     <script src="/Controllers/StopWatch.js"></script>

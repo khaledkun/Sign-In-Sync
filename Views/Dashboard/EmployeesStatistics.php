@@ -6,7 +6,7 @@
     // You Can Change the Page Title as you like
     $pageTitle = "Employees Statistics";
     // Include the Template
-    include '../Shared/Templates/MetaTags.php'; 
+    include '../../Templates/MetaTags.php'; 
     ?>
     <link rel="stylesheet" href="<?php echo $StatisticsPath; ?>">
     </head>

@@ -16,7 +16,7 @@ $userdata1 =$result1->fetch_assoc();
         // You Can Change the Page Title as you like
         $pageTitle = "My Employees";
         // Include the Template
-        include '../Shared/Templates/MetaTags.php'; 
+        include '../../Templates/MetaTags.php'; 
         ?>
     </head>
     <link rel="stylesheet" href="<?php echo $BossDashboardPath; ?>">
