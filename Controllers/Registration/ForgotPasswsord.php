@@ -1,8 +1,8 @@
 <?php
 session_start ();
     if(isset($_POST["email"])){
-        include('../Registration/connect.php');
         include('../../Templates/SharedConfig.php');
+        include($ConnectContrl);
         $email = $_POST["email"];
 
         $sql = mysqli_query($conn, "SELECT * FROM employee WHERE email='$email'");
@@ -48,7 +48,8 @@ session_start ();
             http://$URL/$NewPassView?token=$token
             <br><br>
             <p>With regrads,</p>";
-			$sql = mysqli_query($conn, "UPDATE employee set token = '$token' WHERE email='$email'"); // نحط التوكين فالداتا بيز عشان نقارنها لما اليوزر يدخل علي اللينك
+            // نحط التوكين فالداتا بيز عشان نقارنها لما اليوزر يدخل علي اللينك
+			$sql = mysqli_query($conn, "UPDATE employee set token = '$token' WHERE email='$email'"); 
 
             if(!$mail->send()){
                 ?>
