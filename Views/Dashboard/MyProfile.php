@@ -35,7 +35,7 @@
                     <input type="text" id="name" value="Ayman" disabled>
                     
                     <label for="email"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email" value="sameh.aymen@example.com"><a href="EmailVerify.php" target="_blank" class="change">Verify</a>
+                    <input type="email" id="email" value="sameh.aymen@example.com"><a href="<?php echo $EmailVerifyView; ?>" target="_blank" class="change">Verify</a>
                     
                     <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">
@@ -44,7 +44,7 @@
                     <input type="text" id="name" value="Male" disabled>
 
                     <label for="name"><i class="fas fa-lock"></i> Password :</label>
-                    <input type="text" id="name" value="*********" disabled><a href="NewPassword.php" target="_blank" class="change">Change</a>
+                    <input type="text" id="name" value="*********" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
                     
                     <label for="department"><i class="fas fa-building"></i> Department :</label>
                     <input type="text" id="department" value="IT" disabled>
