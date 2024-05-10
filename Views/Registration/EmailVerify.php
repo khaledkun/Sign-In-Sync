@@ -17,7 +17,8 @@
     <h1>Verify Your Email Address</h1>
     <p>Enter Your Confirmation Code To Create Your Account</p>
     <!-- هنحتاج نعمل ملف عشان الصفحه دي تشتغل -->
-        <form method="post" action="../../Controllers/Registration/EmailVerify.php" novalidate>
+    <!-- عملت الملف باقي نكتب فيه الكود وبعدين يعمل علامه صح عالبروفايل لو موثق -->
+        <form method="post" action="<?php echo $EmailVerifyContrl; ?>" novalidate>
       <div class="input-box">
         <label for="email"><b>Confirmation Code</b></label>
         <input type="text" id="email" name="email" placeholder="Enter Your Confirmation Code" required>

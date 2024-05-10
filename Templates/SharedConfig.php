@@ -68,6 +68,7 @@ $ControllersPath = "../../Controllers/";
         $phpmailerContrl =  $RegestrationContrl . "class.phpmailer.php";
         $smtpContrl =  $RegestrationContrl . "class.smtp.php";
         $ConnectContrl =  $RegestrationContrl . "connect.php";
+        $EmailVerifyContrl =  $RegestrationContrl . "EmailVerify.php";
         $ForgetPassContrl =  $RegestrationContrl . "ForgotPasswsord.php";
         $IndexContrl =  $RegestrationContrl . "index.php";
         $loginContrl =  $RegestrationContrl . "login.php";
