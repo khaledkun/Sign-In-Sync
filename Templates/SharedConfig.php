@@ -21,28 +21,28 @@ $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 
 // Define the directory containing the Css
 $CssPath = "../../Shared/Css/";
+$DashboardCss = $CssPath . "Dashboard/";
+$HomepageCss = $CssPath . "Homepage/";
+$RegestrationCss = $CssPath . "Registration/";
         // Define paths for each File inside the Dashboard
+        $BossDashboardPath = $DashboardCss . "MyEmployees.css";
+        $BossSettingsPath = $DashboardCss . "EmployeesSettings.css";
+        $StatisticsPath = $DashboardCss . "EmployeesStatistics.css";
+        $ProfilePath = $DashboardCss . "MyProfile.css";
+        $SettingsPath = $DashboardCss . "GeneralSettings.css";
+        $DashboardPath = $DashboardCss . "MyDashboard.css";
+        $DashboardNavFooterPath = $DashboardCss . "DashboardNavFooter.Css";
+        $StopwatchPath = $DashboardCss . "StopWatch.css";
         // Define paths for each File inside the Homepage
+        $HomepagePath = $HomepageCss . "Homepage.css";
+        $CompanyVisionPath = $HomepageCss . "CompanyVision.css";
+        $NavBarPath = $HomepageCss . "NavBar.css";
         // Define paths for each File inside the Regestration
-
-// Define paths for each Css file
-$BossDashboardPath = $CssPath . "MyEmployees.css";
-$BossSettingsPath = $CssPath . "EmployeesSettings.css";
-$StatisticsPath = $CssPath . "EmployeesStatistics.css";
-$ProfilePath = $CssPath . "MyProfile.css";
-$SettingsPath = $CssPath . "GeneralSettings.css";
-$DashboardPath = $CssPath . "MyDashboard.css";
-$ForgotPasswsordPath = $CssPath . "ForgotPasswsord.css";
-$HomepagePath = $CssPath . "Homepage.css";
-$CompanyVisionPath = $CssPath . "CompanyVision.css";
-$LoginPath = $CssPath . "Login.css";
-$MainStylePath = $CssPath . "MainStyle.css";
-$NavBarPath = $CssPath . "NavBar.css";
-$PrivacyPopUpPath = $CssPath . "PrivacyPopUp.css";
-$SignUpPath = $CssPath . "SignUp.css";
-$DashboardNavFooterPath = $CssPath . "DashboardNavFooter.Css";
-$StopwatchPath = $CssPath . "StopWatch.css";
-
+        $ForgotPasswsordPath = $RegestrationCss . "ForgotPasswsord.css";
+        $LoginPath = $RegestrationCss . "Login.css";
+        $MainStylePath = $RegestrationCss . "MainStyle.css";
+        $SignUpPath = $RegestrationCss . "SignUp.css";
+        $PrivacyPopUpPath = $RegestrationCss . "PrivacyPopUp.css";
 // Define the directory containing the Layout For Homepage - dasboard
 $LayoutPath = "../../Shared/Layout/";
 
