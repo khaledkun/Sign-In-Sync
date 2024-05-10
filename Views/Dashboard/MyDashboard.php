@@ -7,8 +7,8 @@ $first_login = isset($_SESSION['first_login']) && $_SESSION['first_login'];
 if ($first_login) {
     $_SESSION['first_login'] = false;
 }
-
-include_once "../../Controllers/Registration/connect.php";
+include '../../Templates/SharedConfig.php';
+include_once($ConnectContrl);
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();
@@ -19,14 +19,14 @@ $userdata1 =$result1->fetch_assoc();
 <html lang="en">
 <head>
     <?php
-    include_once '../../Controllers/Registration/connect.php';
 // You Can Change the Page Title as you like
     $pageTitle = "My Dashboard";
     // Include the Template
-    include '../../Templates/MetaTags.php';?>
+    include '../../Templates/MetaTags.php';
+    include_once($ConnectContrl);?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
-    <script src="../../Controllers/Dashboard/StopWatch.js"></script>
+    <script src="<?php echo $StopWatchContrl; ?>"></script>
 </head>
 <body>
 <!-- Here was the Navbar -->
@@ -35,7 +35,7 @@ $userdata1 =$result1->fetch_assoc();
     <?php if ($first_login): ?>
     <div id="preloader">
     <div class="spinner">
-        <img src="../Shared/Imgs/NavBarLogo.svg" alt="Company Logo" class="logo" />
+        <img src="<?php echo $navBarLogoPath; ?>" alt="Company Logo" class="logo" />
                 <p class="loading">Loading</p>
             </div>
     </div>
