@@ -21,6 +21,9 @@ $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 
 // Define the directory containing the Css
 $CssPath = "../../Shared/Css/";
+        // Define paths for each File inside the Dashboard
+        // Define paths for each File inside the Homepage
+        // Define paths for each File inside the Regestration
 
 // Define paths for each Css file
 $BossDashboardPath = $CssPath . "MyEmployees.css";
