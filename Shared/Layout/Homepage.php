@@ -28,8 +28,8 @@
                 <li><a href="HomePage.php#About">About Us</a></li>
                 <li><a href="HomePage.php#Contact">Contact Us</a></li>
                 <div class="action__btns">
-                    <a href="/Views/BuyNow.php"><button class="Signup">Start a Free Trial</button></a>
-                    <a href="/Views/BuyNow.php"><button class="Signin">Buy Now</button></a>
+                    <a href="<?php echo $BuyNowView; ?>"><button class="Signup">Start a Free Trial</button></a>
+                    <a href="<?php echo $BuyNowView; ?>"><button class="Signin">Buy Now</button></a>
                 </div>
             </ul>
         </div>
