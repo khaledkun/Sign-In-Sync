@@ -1,7 +1,8 @@
 <?php
 session_start ();
     if(isset($_POST["password"]) && isset($_POST["token"])){
-        include('connect.php');
+        include('../../Templates/SharedConfig.php');
+        include($ConnectContrl);
         $token = $_POST["token"];
         $password = $_POST["password"];
         $sql = mysqli_query($conn, "SELECT * FROM employee WHERE token = '$token'");
@@ -12,7 +13,7 @@ session_start ();
             ?>
             <script>
                 alert("<?php  echo "Sorry, link expired "?>");
-                window.location.replace("../../Views/Registration/ForgotPasswsord.php");				
+                window.location.replace("<?php echo $ForgetPassView; ?>");				
             </script>
             <?php
         }else{
@@ -20,7 +21,7 @@ session_start ();
                 ?>
                     <script>
                         alert("<?php echo "  Password changed successfully "?>");
-                        window.location.replace("../../Views/Registration/login.php");
+                        window.location.replace("<?php echo $LoginView; ?>");
                     </script>
                 <?php
         }
@@ -33,7 +34,7 @@ session_start ();
 		                ?>
                     <script>
                         alert("No Token");
-                        window.location.replace("../../Views/Registration/ForgotPasswsord.php");						
+                        window.location.replace("<?php echo $ForgetPassView; ?>");						
                     </script>
 					<?php
 	}
