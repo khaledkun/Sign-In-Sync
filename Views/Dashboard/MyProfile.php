@@ -40,7 +40,7 @@
                     <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">
 
-                    <label for="name"><i class="fas fa-transgender"></i> Gender :</label>
+                    <label for="name"><i class="fa-solid fa-mars-and-venus"></i> Gender :</label>
                     <input type="text" id="name" value="Male" disabled>
 
                     <label for="name"><i class="fas fa-lock"></i> Password :</label>
