@@ -3,6 +3,7 @@
 
 :root {
   --Background-color: #1e1e1e;
+  --Body-Background: #1e1e1e;
   --Background-color-dark: #262626;
   --secondary-color: #f9fafc;
   --Accent-Text: #ff0128;
@@ -24,7 +25,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--Background-color);
+  background: var(--Body-Background);
 }
 /* Nav Section */ 
 
@@ -88,11 +89,10 @@ body {
 }
 
 .action__btns button {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  outline: none;
+  letter-spacing: 1px;
+  padding: 0.8rem 2rem;
   border: 2px solid var(--Background-color);
   border-radius: 10px;
   transition: 0.3s;
