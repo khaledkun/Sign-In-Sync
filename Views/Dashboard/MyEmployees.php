@@ -306,28 +306,35 @@ function highlightStep(stepIndex) {
             break;
         case 5:
             document.querySelector(".grid-item.first .type-icon").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         case 6:
             document.querySelector(".grid-item.first .state-icon").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         case 7:
             document.querySelector(".grid-item.first p i.fas.fa-sign-in-alt + span").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         case 8:
             document.querySelector(".grid-item.first p i.fas.fa-sign-out-alt + span").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         case 9:
             document.querySelector(".grid-item.first p i.fas.fa-clock + span").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         case 10:
             document.querySelector(".grid-item.first p i.fas.fa-user-clock + span").classList.add("highlight");
+            document.querySelector(".grid-item.first").classList.add("highlight");
             break;
             case 11:
-               
                 document.querySelector(".grid-item.first textarea").classList.add("highlight");
+                document.querySelector(".grid-item.first").classList.add("highlight");
             break;
             case 12:
                 document.querySelector(".grid-item.first .contact-icon").classList.add("highlight");
+                document.querySelector(".grid-item.first").classList.add("highlight");
             break;
         default:
             break;
@@ -368,11 +375,11 @@ function removeHighlight(stepIndex) {
             document.querySelector(".grid-item.first p i.fas.fa-user-clock + span").classList.remove("highlight");
             break;
             case 11:
-            
             document.querySelector(".grid-item.first textarea").classList.remove("highlight");
             break;
             case 12:
             document.querySelector(".grid-item.first .contact-icon").classList.remove("highlight");
+            document.querySelector(".grid-item.first").classList.remove("highlight");
             break;
         default:
             break;

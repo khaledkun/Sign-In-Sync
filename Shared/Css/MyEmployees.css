@@ -73,6 +73,17 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.grid-item.first {
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .grid-item img {
     width: 100px;
@@ -141,10 +152,11 @@ p span {
 .contact-icon {
     position: absolute;
     bottom: 25px;
-    right: 25px;
+    right: 20px;
     color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
+    padding: 5px;
 }
 .type-icon {
     position: absolute;
@@ -154,6 +166,7 @@ p span {
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
+    padding: 5px;
 }
 
 .state-icon {
@@ -164,6 +177,7 @@ p span {
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
+    padding: 5px;
 }
 
 .contact-icon:hover {
