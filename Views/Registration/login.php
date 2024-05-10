@@ -4,7 +4,8 @@
 
   if (isset($_SESSION['id'])) {
     $id =$_SESSION['id'];
-    include '../../Controllers/Registration/connect.php';
+    include '../../Templates/SharedConfig.php';
+    include $ConnectContrl;
     $query1 ="SELECT * FROM employee WHERE id ='$id'";
     $result1=$conn->query($query1);
     $userdata1 =$result1->fetch_assoc();
@@ -16,12 +17,12 @@
     if ($result1-> num_rows > 0 && $userdata1['prive']==0) {
     
   
-    header('location: ../../Views/Dashboard/MyDashboard.php');
+    header('Location: ' . $MydashboardView);
     exit();
   
 }elseif($result1-> num_rows > 0 && $userdata1['prive']==1){
   
-  header('location: ../../Views/Dashboard/MyEmployees.php');
+  header('Location: ' . $MyEmpView);
   exit();
 
 
@@ -50,7 +51,7 @@
     <body>  
       <!-- ده بمعني ابسط  ايطار نضع فيه كل بيانات -->
       <div class="wrapper">
-        <form method="post" action="../../Controllers/Registration/login.php">
+        <form method="post" action="<?php echo $loginContrl; ?>">
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">
@@ -62,13 +63,13 @@
 
               <div class="remember-forget">
                 <label><input type="checkbox" id="rememberMe"> Remember me</label>
-                <a href="ForgotPasswsord.php">Forgot Password?</a>
+                <a href="<?php echo $ForgetPassView; ?>">Forgot Password?</a>
               </div>
 
             <button class="btn" type="submit">Login</button>
 
           <div class="register-link">
-          <p>Don't have an account yet <a href="SignUp.php">Register</a>
+          <p>Don't have an account yet <a href="<?php echo $SignUpView; ?>">Register</a>
           </p></div>
         </form>
       </div>
