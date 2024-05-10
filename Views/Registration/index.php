@@ -5,18 +5,16 @@
 
 //-----------------
 
-session_start();
-				
-
+session_start();			
 				if (!isset($_SESSION['id'])) {
-					header('location:login.php');
+					header('location: '. $LoginView);
 					exit();
 					
 				}
 
 
-
-				require '../../Controllers/Registration/connect.php';
+				include '../../Templates/SharedConfig.php';
+				require $ConnectContrl;
 				$id = $_SESSION['id'];
 				$query="SELECT * FROM employee WHERE id ='$id'";
 				$result = $conn->query($query);
@@ -47,6 +45,6 @@ print_r($user);
 <body>
 	<br>
 
-<a href="../../Controllers/Registration/logout.php">logout</a>
+<a href="<?php echo $LogoutContrl; ?>">logout</a>
 </body>
 </html>
