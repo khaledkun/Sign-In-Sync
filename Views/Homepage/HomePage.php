@@ -23,8 +23,8 @@
                     <a id="read-more" href="CompanyVision.php">Read More</a>
                 </p>
                 <div class="action__btns">
-                    <a href="/Views/SignUp.php"><button class="Signup">Start a Free Trial</button></a>
-                    <a href="/Views/login.php"><button class="Signin">Buy Now</button></a>
+                    <a href="<?php echo $SignUpView; ?>"><button class="Signup">Start a Free Trial</button></a>
+                    <a href="<?php echo $LoginView; ?>"><button class="Signin">Buy Now</button></a>
                 </div>
             </div>
             <div class="image">
