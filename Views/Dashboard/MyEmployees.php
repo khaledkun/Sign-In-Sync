@@ -9,7 +9,8 @@ if ($showGuide) {
 }
 $id =$_SESSION['id'];
 
-include_once "../../Controllers/Registration/connect.php";
+include '../../Templates/SharedConfig.php';
+include_once($ConnectContrl);
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();
@@ -25,9 +26,8 @@ $userdata1 =$result1->fetch_assoc();
         // Include the Template
         include '../../Templates/MetaTags.php'; 
         ?>
-    </head>
-    <link rel="stylesheet" href="<?php echo $BossDashboardPath; ?>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="<?php echo $BossDashboardPath; ?>">
+    </head>   
 <body>
 <!-- Here was the Navbar -->
     <!-- Include the navbar -->
