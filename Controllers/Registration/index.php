@@ -1,7 +1,8 @@
 <?php
 //test some change
 echo "<h1>index</h1>";
-include "../../Controllers/Registration/connect.php";
+include('../../Templates/SharedConfig.php');
+include($ConnectContrl);
 
 $query="SELECT * FROM employee";
 
