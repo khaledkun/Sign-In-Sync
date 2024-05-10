@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #004baa;
+            background-color: var(--Background-color);
             margin: 0;
             display: flex;
             justify-content: center;

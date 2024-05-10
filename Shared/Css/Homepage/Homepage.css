@@ -68,6 +68,7 @@ body {
 
 #read-more {
   color:#ff0128;
+  display: block;
 }
 
 #read-more:hover {
