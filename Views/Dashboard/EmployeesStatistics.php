@@ -87,7 +87,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 2 -->
             <div class="guide-step" id="step2">
-                <p>Step 2: This section covers the date section. Click "Next" to proceed.</p>
+                <p>Step 2: This section indicates how you want your statistics. Click "Next" to proceed.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -95,7 +95,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 3 -->
             <div class="guide-step" id="step3">
-                <p>Step 3: Let's explore the search bar. Click "Next" to continue.</p>
+                <p>Step 3: This is Currently Working Employees. Click "Next" to continue.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -103,7 +103,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 4 -->
             <div class="guide-step" id="step4">
-                <p>Step 4: an option to sort employees. Click "Next" to proceed.</p>
+                <p>Step 4: This is Late Employees. Click "Next" to proceed.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -111,7 +111,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 5 -->
             <div class="guide-step" id="step5">
-                <p>Step 5: Here's the Employee Info. Click "Next" to proceed.</p>
+                <p>Step 5: Here's Absent Employees. Click "Next" to proceed.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -119,7 +119,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 6 -->
             <div class="guide-step alt" id="step6">
-                <p>Step 6: This icon to define employee type. Click "Next" to continue.</p>
+                <p>Step 6: This is Total Pay Levies. Click "Next" to continue.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -127,7 +127,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 7 -->
             <div class="guide-step alt" id="step7">
-                <p>Step 7: This is to indicate online status for employee. Click "Next" to proceed.</p>
+                <p>Step 7: This is Total Alerts. Click "Next" to proceed.</p>
                 <button  class="skip-btn" onclick="skipGuide()">Skip</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
                 <button  class="next-btn" onclick="goToNextStep()">Next</button>
@@ -135,7 +135,7 @@ $userdata1 =$result1->fetch_assoc();
 
             <!-- Step 8 -->
             <div class="guide-step alt" id="step8">
-                <p>Step 8: This is a button to send an email to the employee. Click "Next" to proceed.</p>
+                <p>Step 8: This is Total Comments. Click "Next" to proceed.</p>
                 <button  class="skip-btn" onclick="closeGuide()">Finish</button>
                 <button class="back-btn" onclick="goToPreviousStep()">Back</button>
             </div>
