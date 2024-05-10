@@ -65,6 +65,8 @@ $ControllersPath = "../../Controllers/";
         // Define paths for each File inside the Homepage
 
         // Define paths for each File inside the Regestration
+        $phpmailerContrl =  $RegestrationContrl . "class.phpmailer.php";
+        $smtpContrl =  $RegestrationContrl . "class.smtp.php";
         $ConnectContrl =  $RegestrationContrl . "connect.php";
         $ForgetPassContrl =  $RegestrationContrl . "ForgotPasswsord.php";
         $IndexContrl =  $RegestrationContrl . "index.php";
