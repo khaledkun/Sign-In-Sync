@@ -2,5 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-
-header('location: ../../Views/Registration/login.php');
+include('../../Templates/SharedConfig.php');
+include($ConnectContrl);
+header('Location: ' . $LoginView);
