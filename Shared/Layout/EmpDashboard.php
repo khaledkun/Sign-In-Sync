@@ -6,8 +6,7 @@
     $pageTitle = "DashboardNavFooter";
     // Include the Template
     include '../../Templates/MetaTags.php'; ?>
-    <!-- <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>"> -->
-    <link rel="stylesheet" href="/Shared/Css/DashboardNavFooter.Css">
+    <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
     <script src="<?php echo $DashLayout; ?>"></script>
     <script src="/Shared/Script/Switch-Colors.js"></script>
 </head>
