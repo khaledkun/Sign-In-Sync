@@ -1,31 +1,3 @@
-:root{
-  /* Dark Mode */
-  /* Shared */
-  --Heading: #fff;
-  --Sub-Text: #999999;
-  --Secondary: #3572cc;
-  /* Nav bar */ 
-  --Nav-Background: #262626;
-  --Footer-Background: #000;
-  --Icon-Hover: #333333;
-  --Switch-Icon-Hover:#fff; 
-  /* Timer */
-  --Buttons-Colors: #A3A3A3;
-  --Timer-Hover: #363636;
-  --Timer-Border: #47414100;
-  --Time-Color: #fff;
-  /* Emp-Dashboard */
-  --Icons: #cccccc;
-  --Body-Background: #1e1e1e;
-  --Items: #262626;
-  --Hover: #002cb2;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --Red: #800000;
-  --Orange: #a63e00;
-  --Green: #005c33;
-  --max-width: 1200px;
-  scroll-behavior: smooth;
-}
 nav {
     width: 100%;
     position: fixed;
@@ -148,7 +120,7 @@ nav {
   transition: 0.3s;
 }
 
-#dark-mode-btn {
+#dark-mode-btn,#light-mode-btn {
   position: fixed;
   bottom: 25px;
   right: 100px;
@@ -162,13 +134,18 @@ nav {
   border-color: transparent;
   z-index: 98;
 }
-#dark-mode-btn i {
+#light-mode-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 100px;
+}
+#dark-mode-btn i,#light-mode-btn i {
   color: var(--Heading);
   font-size: 20px;
   margin-top: 11px;
 }
 
-#dark-mode-btn:hover {
+#dark-mode-btn:hover, #light-mode-btn:hover {
   background-color: var(--Hover);
   transition: 0.3s;
   cursor: pointer;

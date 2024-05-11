@@ -7,8 +7,8 @@
     // Include the Template
     include '../../Templates/MetaTags.php'; ?>
     <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
-    <link rel="stylesheet" href="<?php echo $DarkDashPath; ?>">
-    <link rel="stylesheet" href="<?php echo $LightDashPath; ?>">
+    <link rel="stylesheet" href="<?php echo $DarkPath; ?>">
+    <link rel="stylesheet" href="<?php echo $LightPath; ?>">
     <script src="<?php echo $DashLayout; ?>"></script>
     <script src="<?php echo $SwitchColors; ?>"></script>
 </head>

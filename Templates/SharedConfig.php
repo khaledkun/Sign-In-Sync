@@ -46,8 +46,8 @@ $SwitchCss = $CssPath . "SwitchMode/";
         $SignUpPath = $RegestrationCss . "SignUp.css";
         $PrivacyPopUpPath = $RegestrationCss . "PrivacyPopUp.css";
         // Define paths for each File inside the SwitchMode
-        $DarkDashPath = $SwitchCss . "DarkDash.css";
-        $LightDashPath = $SwitchCss . "LightDash.css";
+        $DarkPath = $SwitchCss . "Dark.css";
+        $LightPath = $SwitchCss . "Light.css";
 // Define the directory containing the Layout For Homepage - dasboard
 $LayoutPath = $Shared . "Layout/";
 

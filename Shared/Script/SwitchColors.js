@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightModeBtn = document.getElementById('light-mode-btn');
 
     // Selecting the dark mode CSS link
-    const darkModeCSS = document.querySelector("link[href='../../Shared/Css/SwitchMode/DarkDash.css']");
+    const darkModeCSS = document.querySelector("link[href='../../Shared/Css/SwitchMode/Dark.css']");
 
     // Selecting the light mode CSS link
-    const lightModeCSS = document.querySelector("link[href='../../Shared/Css/SwitchMode/LightDash.css']");
+    const lightModeCSS = document.querySelector("link[href='../../Shared/Css/SwitchMode/Light.css']");
 
     // Toggle function for dark mode
     const toggleDarkMode = () => {

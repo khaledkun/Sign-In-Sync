@@ -23,4 +23,6 @@
     --Red: #ff7f7f;
     --Orange: #ffae7f;
     --Green: #7fff8f;
+    --max-width: 1200px;
+    scroll-behavior: smooth;
     }

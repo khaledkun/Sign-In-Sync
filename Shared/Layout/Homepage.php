@@ -7,9 +7,12 @@
         // Include the Template
         include '../../Templates/MetaTags.php';  
         ?>
-<link rel="stylesheet" href="<?php echo $NavBarPath; ?>">
-<script type="text/javascript" src="<?php echo $HomeLayout; ?>"></script>
-<script type="text/javascript" src="<?php echo $ScrollUp; ?>"></script>
+        <link rel="stylesheet" href="<?php echo $NavBarPath; ?>">
+        <link rel="stylesheet" href="<?php echo $DarkPath; ?>">
+        <link rel="stylesheet" href="<?php echo $LightPath; ?>">
+        <script type="text/javascript" src="<?php echo $HomeLayout; ?>"></script>
+        <script type="text/javascript" src="<?php echo $ScrollUp; ?>"></script>
+        <script src="<?php echo $SwitchColors; ?>"></script>
 </head>
 <body>
     <nav>
@@ -56,9 +59,9 @@
     </footer>
     <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
     <button id="dark-mode-btn" title="Dark Mode"><i class="fas fa-moon"></i></button>
+    <button id="light-mode-btn" title="Light Mode"><i class="fas fa-sun"></i></button>
 
-
-    <script>
+    <!-- <script>
 const darkModeBtn = document.getElementById("dark-mode-btn");
 darkModeBtn.addEventListener("click", function() {
   const currentIcon = darkModeBtn.querySelector("i");
@@ -70,7 +73,7 @@ darkModeBtn.addEventListener("click", function() {
     darkModeBtn.title = "Dark Mode";
   }
 });
-    </script>
+    </script> -->
 
     
     <!--Start of Tawk.to Script-->
