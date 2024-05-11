@@ -108,11 +108,6 @@ body {
   transition: 0.3s;
 }
 
-.active {
-  border-top-color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
-  color: var(--Red);
-}
 .image {
   display: grid;
   place-items: center;
