@@ -122,14 +122,15 @@ ul.custom-list {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    display: inline-block;
+    display: flex;
     background-color: var(--background-color);
+    justify-content: center;
 }
 
 ul.custom-list li {
     display: inline-block;
     padding: 20px;
-    margin: 0px 115px;
+    margin: 0px 100px;
     margin-left: 0px;
     width: 100px;
 }
