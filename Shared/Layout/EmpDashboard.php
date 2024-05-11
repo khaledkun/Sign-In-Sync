@@ -7,8 +7,10 @@
     // Include the Template
     include '../../Templates/MetaTags.php'; ?>
     <link rel="stylesheet" href="<?php echo $DashboardNavFooterPath; ?>">
+    <link rel="stylesheet" href="<?php echo $DarkDashPath; ?>">
+    <link rel="stylesheet" href="<?php echo $LightDashPath; ?>">
     <script src="<?php echo $DashLayout; ?>"></script>
-    <script src="/Shared/Script/Switch-Colors.js"></script>
+    <script src="<?php echo $SwitchColors; ?>"></script>
 </head>
 <body>
 <div class="menu-icon">

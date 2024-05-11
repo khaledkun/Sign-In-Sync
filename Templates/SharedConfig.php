@@ -2,9 +2,10 @@
 // No need to define a base path
 // because we are on localhost
 // and everyone has its own localhost
-
+// Define the directory containing the Shared Folder
+$Shared = "../../Shared/";
 // Define the directory containing the images
-$ImgsPath = "../../Shared/Imgs/";
+$ImgsPath = $Shared . "Imgs/";
 
 // Define paths for each image
 $employee1Path = $ImgsPath . "Employee.png";
@@ -20,10 +21,11 @@ $user2Path = $ImgsPath . "User-Icon.png";
 $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 
 // Define the directory containing the Css
-$CssPath = "../../Shared/Css/";
+$CssPath = $Shared . "Css/";
 $DashboardCss = $CssPath . "Dashboard/";
 $HomepageCss = $CssPath . "Homepage/";
 $RegestrationCss = $CssPath . "Registration/";
+$SwitchCss = $CssPath . "SwitchMode/";
         // Define paths for each File inside the Dashboard
         $BossDashboardPath = $DashboardCss . "MyEmployees.css";
         $BossSettingsPath = $DashboardCss . "EmployeesSettings.css";
@@ -43,20 +45,24 @@ $RegestrationCss = $CssPath . "Registration/";
         $MainStylePath = $RegestrationCss . "MainStyle.css";
         $SignUpPath = $RegestrationCss . "SignUp.css";
         $PrivacyPopUpPath = $RegestrationCss . "PrivacyPopUp.css";
+        // Define paths for each File inside the SwitchMode
+        $DarkDashPath = $SwitchCss . "DarkDash.css";
+        $LightDashPath = $SwitchCss . "LightDash.css";
 // Define the directory containing the Layout For Homepage - dasboard
-$LayoutPath = "../../Shared/Layout/";
+$LayoutPath = $Shared . "Layout/";
 
 // Define paths for each Layout file
 $EmpDashboardLayout = $LayoutPath . "EmpDashboard.php";
 $HomepageLayout = $LayoutPath . "Homepage.php";
 
 // Define the directory containing the Scripts
-$ScriptPath = "../../Shared/Script/";
+$ScriptPath = $Shared . "Script/";
 
 // Define paths for each Script file
 $DashLayout = $ScriptPath . "DashLayout.js";
 $HomeLayout = $ScriptPath . "HomeLayout.js";
 $ScrollUp = $ScriptPath . "ScrollUp.js";
+$SwitchColors = $ScriptPath . "SwitchColors.js";
 
 // Define the directory containing the Controllers Registration For Views
 $ControllersPath = "../../Controllers/";
