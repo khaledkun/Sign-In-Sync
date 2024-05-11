@@ -3,8 +3,8 @@
     /* Shared */
     --Heading: #fff;
     --Sub-Text: #999999;
-    /* Nav bar */
     --Secondary: #3572cc;
+    /* Nav bar */ 
     --Nav-Background: #262626;
     --Footer-Background: #000;
     --Icon-Hover: #333333;
@@ -60,13 +60,15 @@ body {
 .profile-item {
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--Body-Background);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
-
+.profile-item:hover {
+    background-color: var(--Hover);
+}
 .profile-picture img {
     width: 150px;
     border-radius: 50%;
@@ -86,11 +88,10 @@ body {
 }
 /* Smaller Change Button CSS */
 .change {
-    background: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    background: var(--Secondary);
     border-radius: 5px;
     padding: 4px 0px;
-    color: var(--Body-Background);
+    color: var(--Heading);
     cursor: pointer;
     display: inline-block;
     font-size: 0.8em;
@@ -102,7 +103,7 @@ body {
 }
 
 .change:hover {
-    background-color: var(--Submit-Button-Background);
+    background-color: var(--Hover);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: 0.3s;
     transform: translateY(-2px);
@@ -120,21 +121,7 @@ body {
     width: 300px;
     outline: none;
     margin-bottom: 40px;
-    color: var(--contact-icon);
-}
-
-.profile-item.profile-info input[type="text"]:focus,
-.profile-item.profile-info input[type="email"]:focus,
-.profile-item.profile-info input[type="tel"]:focus,
-.profile-info select:focus {
-    border-bottom: 2px solid var(--secondary-color);
-}
-
-.profile-item.profile-info h2 input {
-    margin-top: 0;
-    font-size: 18px;
-    color: var(--secondary-color);
-    font-weight: bold;
+    color: var(--Sub-Text);
 }
 
 .profile-item.profile-info p {
@@ -144,7 +131,7 @@ body {
 .profile-item.profile-info {
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--Body-Background);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
@@ -156,17 +143,18 @@ body {
 }
 
 .profile-info label {
+    color: var(--Heading);
     display: block;
     margin-bottom: 20px;
     margin-right: 10px;
     font-weight: bold;
 }
 .submit-button {
-    background: var(--Submit-Button-Background);
-    border: 1px solid var(--secondary-color);
+    background: var(--Secondary);
+    border: 1px solid var(--Secondary);
     border-radius: 5px;
     padding: 10px 20px;
-    color: var(--Body-Background);
+    color: var(--Heading);
     cursor: pointer;
     margin-top: 20px;
     max-width: 20%;
@@ -177,11 +165,11 @@ body {
 }
 
 .submit-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--Hover);
     box-shadow: 0 4px 10px var(--shadow-color);
     transform: translateY(-5px);
     transition: 0.3s;
-    color: var(--Body-Background);
+    border: 1px solid var(--Hover);
 }
 
 .submit-button:focus {
@@ -189,9 +177,12 @@ body {
 }
 
 .profile-item.profile-picture label:hover i {
-    color: var(--Footer-Bacground);
     transform: scale(1.1);
+    cursor: pointer;
     transition: 0.3s;
+}
+.Icons{
+    color: var(--Icons);
 }
 
 @media only screen and (max-width: 751px) {
@@ -200,14 +191,12 @@ body {
 .profile-item.profile-info input[type="tel"],
 .profile-info select {
     border: none;
-    background-color: transparent;
     font-size: inherit;
     padding: 0;
     margin: 0;
     width: 200px;
     outline: none;
     margin-bottom: 40px;
-    color: var(--contact-icon);
 }
 }
 
