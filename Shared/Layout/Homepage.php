@@ -60,21 +60,6 @@
     <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
     <button id="dark-mode-btn" title="Dark Mode"><i class="fas fa-moon"></i></button>
     <button id="light-mode-btn" title="Light Mode"><i class="fas fa-sun"></i></button>
-
-    <!-- <script>
-const darkModeBtn = document.getElementById("dark-mode-btn");
-darkModeBtn.addEventListener("click", function() {
-  const currentIcon = darkModeBtn.querySelector("i");
-  if (currentIcon.classList.contains("fa-moon")) {
-    darkModeBtn.innerHTML = '<i class="fas fa-sun"></i>';
-    darkModeBtn.title = "Light Mode";
-  } else {
-    darkModeBtn.innerHTML = '<i class="fas fa-moon"></i>';
-    darkModeBtn.title = "Dark Mode";
-  }
-});
-    </script> -->
-
     
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
