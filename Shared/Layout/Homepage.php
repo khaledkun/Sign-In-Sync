@@ -15,9 +15,13 @@
     <nav>
         <div class="nav__content">
             <div class="LogoWithText">
-            <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/>
+            <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'HomePage.php#Main' : 'HomePage.php'; ?>"
+            <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?>>
+            <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/></a>
             <div class="logo">
-                <a id="#Home">Sign In Sync</a>
+                <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'HomePage.php#Main' : 'HomePage.php'; ?>"
+            <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?> 
+            id="#Home">Sign In Sync</a>
             </div>
             </div>
             <label for="check" class="checkbox"><i class="ri-menu-line"></i></label>

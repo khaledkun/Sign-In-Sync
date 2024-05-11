@@ -1,21 +1,8 @@
-:root{
-    --background-color: #f9fafc;
-    --secondary-color: #4d69ff;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --Red-Text:#ff3333;
-    --Red-Background: #ff6666;
-    --Green-Text: green;
-    --border-color: #ccc;
-    --black-background: black;
-    --contact-icon: #555;
-    --contact-icon-hover: #007bff;
-    --listBox-Shadow: rgba(77, 105, 255, 0.5);
-}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--Body-Background);
 }
 
 
@@ -26,8 +13,8 @@ body {
 }
 
 .header {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px var(--shadow-color);
@@ -47,6 +34,7 @@ body {
 
 .header:hover {
     box-shadow: 0 4px 10px var(--shadow-color);
+    background-color: var(--Hover);
     transition: 0.3s;
 }
 
@@ -66,7 +54,7 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -77,7 +65,6 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: var(--background-color);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -92,13 +79,13 @@ body {
 }
 
 .green-text {
-    color: var(--Green-Text);
+    color: var(--Heading);
     font-size: 25px;
     font-weight: bold;
 }
 
 .red-text {
-    color:var(--Red-Text);
+    color:var(--Heading);
     font-size: 25px;
     font-weight: bold;
 }
@@ -107,28 +94,28 @@ p span {
     font-weight: bold;
     font-size: 25px;
 }
-
+.grid-item textarea::placeholder {
+    color: var(--Sub-Text);
+}
 .grid-item textarea {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--Secondary);
     height: 100px;
-    background-color: var(--Red-Background);
+    background-color: var(--Items);
     border-radius: 5px;
     resize: vertical;
-    color: var(--black-background);
+    color: var(--Heading);
     scrollbar-width: thin;
+    resize: none;
 }
 
 .grid-item textarea:hover {
-    background-color: var(--Red-Text);
     transition: 0.3s;
 }
 
-.grid-item textarea::placeholder {
-    color: var(--black-background);
-}
+
 
 .grid-item:hover {
     transform: translateY(-5px);
@@ -141,6 +128,7 @@ p span {
 }
 
 .grid-item p {
+    color: var(--Sub-Text);
     margin: 0;
 }
 
@@ -153,7 +141,6 @@ p span {
     position: absolute;
     bottom: 25px;
     right: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     padding: 5px;
@@ -164,7 +151,6 @@ p span {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
@@ -175,7 +161,6 @@ p span {
     position: absolute;
     left: 20px;
     left: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
@@ -183,7 +168,6 @@ p span {
 }
 
 .contact-icon:hover {
-    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -202,26 +186,26 @@ p span {
 
 #search-input {
     padding: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--Secondary);
     border-radius: 5px;
     width: 300px;
     padding-bottom: 20px;
     margin-top: 30px;
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
 }
 
 #search-input::placeholder {
-    color: var(--background-color);
+    color: var(--Sub-Text);
 }
 
 #list-box {
     padding: 10px;
     width: 350px !important;
     border-radius: 5px;
-    border: 1px solid var(--border-color);
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    border: 1px solid var(--Secondary);
+    background-color: var(--Items);
+    color: var(--Heading);
     cursor: pointer;
     margin-top: 30px;
     width: 150px;
@@ -234,15 +218,19 @@ p span {
 }
 
 #search-button {
-    background-color: var(--secondary-color);
+    background-color: var(--Items);
     margin-top: 30px;
-    color: var(--background-color);
-    border: none;
+    border: 1px solid var(--Secondary);
+    border-left: 0px;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
     margin-right: 8px;
 }
+.Icons{
+    color: var(--Icons);
+}
+
 select {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
   }
@@ -304,23 +292,7 @@ select {
     box-shadow: 0 0 10px 5px rgba(0, 4, 255);
     z-index: 1001;
 }
-/* مش كويس ان الحاجات دي تكبر لان بتغطي عالي جمبها */
-/* #search-button:hover,
-#search-button:hover + #search-input {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
 
-#search-input:hover,
-#search-input:hover + #search-button {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-#list-box:hover {
-    border-color: #999;
-    transform: scale(1.05);
-    transition: 0.3s;
-} */
 
 @media only screen and (max-width: 750px) {
     .header-text h1 {

@@ -16,10 +16,10 @@
     <form action="submit_settings.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="dashboard">
         <div class="header">
-                <h1><i class="fas fa-cog"></i> General Settings</h1>
+                <h1><i class="fas fa-cog Icons"></i> General Settings</h1>
         </div>
         <div class="grid-item">
-            <h2><i class="fas fa-bell"></i> Notification Settings</h2>
+            <h2><i class="fas fa-bell Icons"></i> Notification Settings</h2>
             <div class="checkbox-container">
                 <label class="checkbox-label">
                     <input type="checkbox" id="notification1" name="notification1">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="grid-item">
-            <h2><i class="fas fa-lock"></i> Security Settings</h2>
+            <h2><i class="fas fa-lock Icons"></i> Security Settings</h2>
             <div class="checkbox-container">
                 <label class="checkbox-label">
                     <input type="checkbox" id="security1" name="security1">
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="grid-item">
-            <h2><i class="fas fa-language"></i> Language Settings</h2>
+            <h2><i class="fas fa-language Icons"></i> Language Settings</h2>
             <div class="radio-container">
                 <label class="radio-label">
                     <input type="radio" id="language1" name="language" checked value="english">
@@ -57,7 +57,7 @@
                 </label><br>
             </div>
         </div>
-        <button type="submit" class="submit-button"><i class="fas fa-save"></i> Save</button>
+        <button type="submit" class="submit-button"><i class="fas fa-save Icons"></i> Save</button>
       </div>
     </form>
 </body>

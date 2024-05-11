@@ -16,43 +16,43 @@
     <form action="submit_profile.php" method="POST"> <!-- ده عشان الباك لما ييجي يبرمجه -->
     <div class="profile">
         <div class="profile-header">
-            <h1><i class="fas fa-user"></i> My Profile</h1>
+            <h1><i class="fas fa-user Icons"></i> My Profile</h1>
         </div>
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
                 <label for="profile-picture-input">
                     <img id="profile-picture-preview" src="<?php echo $user2Path; ?>" alt="Profile Picture">
                     <input type="file" id="profile-picture-input" accept="image/*" style="display: none;">
-                    <i class="fas fa-camera"></i>
+                    <i class="fas fa-camera Icons"></i>
                 </label>
             </div>
             <div class="profile-details grid-container">
                 <div class="profile-item profile-info">
-                    <label for="name"><i class="fas fa-user"></i> First Name :</label>
+                    <label for="name"><i class="fas fa-user Icons"></i> First Name :</label>
                     <input type="text" id="name" value="Sameh" disabled>
 
-                    <label for="name"><i class="fas fa-user"></i> Last Name :</label>
+                    <label for="name"><i class="fas fa-user Icons"></i> Last Name :</label>
                     <input type="text" id="name" value="Ayman" disabled>
                     
-                    <label for="email"><i class="fas fa-envelope"></i> Email :</label>
+                    <label for="email"><i class="fas fa-envelope Icons"></i> Email :</label>
                     <input type="email" id="email" value="sameh.aymen@example.com"><a href="<?php echo $EmailVerifyView; ?>" target="_blank" class="change">Verify</a>
                     
-                    <label for="phone"><i class="fas fa-phone"></i> Phone :</label>
+                    <label for="phone"><i class="fas fa-phone Icons"></i> Phone :</label>
                     <input type="tel" id="phone" value="+201012345678">
 
-                    <label for="name"><i class="fa-solid fa-mars-and-venus"></i> Gender :</label>
+                    <label for="name"><i class="fa-solid fa-mars-and-venus Icons"></i> Gender :</label>
                     <input type="text" id="name" value="Male" disabled>
 
-                    <label for="name"><i class="fas fa-lock"></i> Password :</label>
+                    <label for="name"><i class="fas fa-lock Icons"></i> Password :</label>
                     <input type="text" id="name" value="*********" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
                     
-                    <label for="department"><i class="fas fa-building"></i> Department :</label>
+                    <label for="department"><i class="fas fa-building Icons"></i> Department :</label>
                     <input type="text" id="department" value="IT" disabled>
                     
-                    <label for="position"><i class="fas fa-briefcase"></i> Position :</label>
+                    <label for="position"><i class="fas fa-briefcase Icons"></i> Position :</label>
                     <input type="text" id="position" value="Employee" disabled>
                     
-                    <button type="submit" class="submit-button"><i class="fas fa-save"></i> Save</button>
+                    <button type="submit" class="submit-button"><i class="fas fa-save Icons"></i> Save</button>
                 </div>
             </div>
         </div>

@@ -35,10 +35,10 @@ $userdata1 =$result1->fetch_assoc();
     <div class="boss-dashboard">
         <div class="header">
             <div class="header-text">
-                <h1 id="welcomeMessage"><i class="fas fa-user-tie"></i> My Employees</h1>
+                <h1 id="welcomeMessage"><i class="fas fa-user-tie Icons"></i> My Employees</h1>
             </div>
             <div class="date-section">
-                <p class="current-date"><i class="far fa-calendar-alt"></i> <?=date(' d M, Y');?></p>
+                <p class="current-date"><i class="far fa-calendar-alt Icons"></i> <?=date(' d M, Y');?></p>
             </div>
         </div>
         <div class="search-container">
@@ -51,80 +51,80 @@ $userdata1 =$result1->fetch_assoc();
             </select>
             <div class="search-input-container">
                 <input type="text" id="search-input" placeholder="Search...">
-                <button id="search-button"><i class="fas fa-search"></i></button>
+                <button id="search-button"><i class="fas fa-search Icons"></i></button>
             </div>
         </div>        
         <div class="grid-container">
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="type-icon"><i class="fas fa-user"></i>
-                    <a href="#" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#" class="type-icon"><i class="fas fa-user Icons"></i>
+                    <a href="#" class="state-icon"><i class="fas fa-circle Icons" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#1" class="type-icon"><i class="fas fa-user"></i>
-                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: green;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user Icons"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle Icons" style="color: green;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item first">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
-                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-shield Icons"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle Icons" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#1" class="type-icon"><i class="fas fa-user-shield"></i>
-                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: red;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-shield Icons"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle Icons" style="color: red;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
-                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-tie Icons"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle Icons" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
-                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="#1" class="type-icon"><i class="fas fa-user-tie"></i>
-                    <a href="#1" class="state-icon"><i class="fas fa-circle" style="color: grey;"></i></a>
+                    <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
+                    <a href="#1" class="type-icon"><i class="fas fa-user-tie Icons"></i>
+                    <a href="#1" class="state-icon"><i class="fas fa-circle Icons" style="color: grey;"></i></a>
                     <img src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <p><i class="fas fa-sign-in-alt"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
-                    <p><i class="fas fa-sign-out-alt"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
-                    <p><i class="fas fa-clock"></i> Late Time: <span class="red-text">5 Minutes</span></p>
-                    <p><i class="fas fa-user-clock"></i> Break Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-sign-in-alt Icons"></i> Sign In Time: <span class="green-text">9:00 AM</span></p>
+                    <p><i class="fas fa-sign-out-alt Icons"></i> Sign Out Time: <span class="green-text">5:00 PM</span></p>
+                    <p><i class="fas fa-clock Icons"></i> Late Time: <span class="red-text">5 Minutes</span></p>
+                    <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
         </div>
