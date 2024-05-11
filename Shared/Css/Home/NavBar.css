@@ -1,9 +1,37 @@
+:root{
+  /* Dark Mode */
+  /* Shared */
+  --Heading: #fff;
+  --Sub-Text: #999999;
+  --Secondary: #3572cc;
+  /* Nav bar */ 
+  --Nav-Background: #262626;
+  --Footer-Background: #000;
+  --Icon-Hover: #333333;
+  --Switch-Icon-Hover:#fff; 
+  /* Timer */
+  --Buttons-Colors: #A3A3A3;
+  --Timer-Hover: #363636;
+  --Timer-Border: #47414100;
+  --Time-Color: #fff;
+  /* Emp-Dashboard */
+  --Icons: #cccccc;
+  --Body-Background: #1e1e1e;
+  --Items: #262626;
+  --Hover: #002cb2;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --Red: #800000;
+  --Orange: #a63e00;
+  --Green: #005c33;
+  --max-width: 1200px;
+  scroll-behavior: smooth;
+}
 nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--Background-color-dark);
+    background-color: var(--Nav-Background);
     z-index: 9999999999;
   }
   
@@ -19,7 +47,7 @@ nav {
   nav .logo a {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--Heading);
     transition: 0.3s;
     margin-left: 10px;
   }
@@ -27,7 +55,7 @@ nav {
     width: 80px;
   }
   nav .logo a:hover {
-    color: var(--Accent-Text);
+    color: var(--Red);
     transition: 0.3s;
   }
   
@@ -46,13 +74,13 @@ nav {
   
   nav .checkbox i {
     font-size: 2rem;
-    color: var(--secondary-color);
+    color: var(--Heading);
     cursor: pointer;
     transition: 0.3s;
   }
   
   nav .checkbox i:hover {
-     color: var(--Accent-Text);
+     color: var(--Red);
      transition: 0.3s;
   }
   
@@ -65,7 +93,7 @@ nav {
   }
   
   nav .logo a:hover {
-    color: var(--secondary-color);
+    color: var(--Secondary);
     transition: 0.3s;
   }
   
@@ -73,21 +101,21 @@ nav {
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--Heading);
     transition: 0.3s;
   }
   
   ul li a:hover {
-    color: var(--Accent-Text);
+    color: var(--Secondary);
     transition: 0.3s;
   }
 
   ul li a.active {
-    color: var(--Accent-Text);
+    color: var(--Secondary);
   }
 
   .section {
-    background-color: var(--Accent-Text-Text);
+    background-color: var(--Body-Background);
   }
   
   /* Scroll Button */
@@ -96,8 +124,8 @@ nav {
   position: fixed;
   bottom: 100px;
   right: 35px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--Secondary);
+  color: var(--Heading);
   width: 40px;
   height: 40px;
   text-align: center;
@@ -109,11 +137,14 @@ nav {
 }
 
 .scroll-to-top i {
+  background-color: var(--Secondary);
+  color: var(--Heading);
   font-size: 20px;
 }
 
-.scroll-to-top:hover {
-  background-color: #0056b3;
+.scroll-to-top:hover,.scroll-to-top i:hover {
+  background-color: var(--Hover);
+  color: var(--Heading);
   transition: 0.3s;
 }
 
@@ -121,8 +152,7 @@ nav {
   position: fixed;
   bottom: 25px;
   right: 100px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--Secondary);
   width: 45px;
   height: 45px;
   text-align: center;
@@ -133,12 +163,13 @@ nav {
   z-index: 98;
 }
 #dark-mode-btn i {
+  color: var(--Heading);
   font-size: 20px;
   margin-top: 11px;
 }
 
 #dark-mode-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--Hover);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -146,8 +177,8 @@ nav {
 /* Footer */
 
 footer {
-  background-color: var(--Background-color-dark);
-  color: var(--secondary-color);
+  background-color: var(--Items);
+  color: var(--Heading);
   padding: 2rem 0;
   position: absolute;
   bottom: 0;
@@ -171,14 +202,14 @@ footer {
 }
 
 .social-media a {
-  color: var(--secondary-color);
+  color: var(--Sub-Text);
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
 
 .social-media a:hover {
-  color: var(--Accent-Text);
+  color: var(--Secondary);
   transition: 0.3s;
 }
 
@@ -197,15 +228,6 @@ body {
   padding-bottom: 7rem;
 }
 
-.ri-smartphone-line:before,
-.ri-calendar-event-line:before,
-.ri-lock-line:before {
-  color: var(--secondary-color);
-}
-
-.ri-menu-line:before {
-  color: var(--secondary-color);
-}
   @media (width < 1024px) {
     nav .checkbox {
       display: block;
