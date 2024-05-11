@@ -45,9 +45,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-.profile-item:hover {
-    background-color: var(--Hover);
-}
 .profile-picture img {
     width: 150px;
     border-radius: 50%;
