@@ -23,7 +23,7 @@ $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
 // Define the directory containing the Css
 $CssPath = $Shared . "Css/";
 $DashboardCss = $CssPath . "Dashboard/";
-$HomepageCss = $CssPath . "Homepage/";
+$HomeCss = $CssPath . "Home/";
 $RegestrationCss = $CssPath . "Registration/";
 $SwitchCss = $CssPath . "SwitchMode/";
         // Define paths for each File inside the Dashboard
@@ -36,9 +36,9 @@ $SwitchCss = $CssPath . "SwitchMode/";
         $DashboardNavFooterPath = $DashboardCss . "DashboardNavFooter.Css";
         $StopwatchPath = $DashboardCss . "StopWatch.css";
         // Define paths for each File inside the Homepage
-        $HomepagePath = $HomepageCss . "Homepage.css";
-        $CompanyVisionPath = $HomepageCss . "CompanyVision.css";
-        $NavBarPath = $HomepageCss . "NavBar.css";
+        $HomepagePath = $HomeCss . "Homepage.css";
+        $CompanyVisionPath = $HomeCss . "CompanyVision.css";
+        $NavBarPath = $HomeCss . "NavBar.css";
         // Define paths for each File inside the Regestration
         $ForgotPasswsordPath = $RegestrationCss . "ForgotPasswsord.css";
         $LoginPath = $RegestrationCss . "Login.css";
@@ -67,7 +67,7 @@ $SwitchColors = $ScriptPath . "SwitchColors.js";
 // Define the directory containing the Controllers Registration For Views
 $ControllersPath = "../../Controllers/";
     $DashboardContrl = $ControllersPath . "Dashboard/";
-    $HomepageContrl = $ControllersPath . "Homepage/";
+    $HomeContrl = $ControllersPath . "Home/";
     $RegestrationContrl = $ControllersPath . "Registration/";
         // Define paths for each File inside the Dashboard
         $StopWatchContrl =  $DashboardContrl . "StopWatch.js";
@@ -90,7 +90,7 @@ $ControllersPath = "../../Controllers/";
 // Define the directory containing the views Registration For Controllers
 $ViewsPath = "../../Views/";
     $DashboardView = $ViewsPath . "Dashboard/";
-    $HomepageView = $ViewsPath . "Homepage/";
+    $HomeView = $ViewsPath . "Home/";
     $RegestrationView = $ViewsPath . "Registration/";
         // Define paths for each File inside the Dashboard
         $EmpSettView = $DashboardView . "EmployeesSettings.php";
@@ -100,13 +100,13 @@ $ViewsPath = "../../Views/";
         $MyEmpView = $DashboardView . "MyEmployees.php";
         $MyprofileView = $DashboardView . "MyProfile.php";
         // Define paths for each File inside the Homepage
-        $AboutUsView = $HomepageView . "AboutUs.php";
-        $BuyNowView = $HomepageView . "BuyNow.php";
-        $CompanyVisionView = $HomepageView . "CompanyVision.php";
-        $CreditsView = $HomepageView . "Credits.php";
-        $HomePageView = $HomepageView . "HomePage.php";
-        $ServicesView = $HomepageView . "Services.php";
-        $TermsView = $HomepageView . "TermsConditions.php";
+        $AboutUsView = $HomeView . "AboutUs.php";
+        $BuyNowView = $HomeView . "BuyNow.php";
+        $CompanyVisionView = $HomeView . "CompanyVision.php";
+        $CreditsView = $HomeView . "Credits.php";
+        $HomePageView = $HomeView . "HomePage.php";
+        $ServicesView = $HomeView . "Services.php";
+        $TermsView = $HomeView . "TermsConditions.php";
         // Define paths for each File inside the Regestration
         $EmailVerifyView = $RegestrationView . "EmailVerify.php";
         $ForgetPassView = $RegestrationView . "ForgotPasswsord.php";
