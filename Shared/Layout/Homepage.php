@@ -15,11 +15,11 @@
     <nav>
         <div class="nav__content">
             <div class="LogoWithText">
-            <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'HomePage.php#Main' : 'HomePage.php'; ?>"
+            <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? '#Main' : 'HomePage.php'; ?>"
             <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?>>
             <img src="<?php echo $navBarLogoPath; ?>" alt="WebSiteLogo" class="NavBarLogo" id="Home"/></a>
             <div class="logo">
-                <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'HomePage.php#Main' : 'HomePage.php'; ?>"
+                <a href="<?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? '#Main' : 'HomePage.php'; ?>"
             <?php echo basename($_SERVER['SCRIPT_NAME']) == "HomePage.php" ? 'class="active"' : ''; ?> 
             id="#Home">Sign In Sync</a>
             </div>
