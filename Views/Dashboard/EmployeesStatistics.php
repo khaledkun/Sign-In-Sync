@@ -45,7 +45,7 @@ $userdata1 =$result1->fetch_assoc();
         <div class="grid-container">
             <div class="grid-item currently-working-employees">
                 <i class="fas fa-user-clock Icons"></i>
-                <h2>Currently Working Employees</h2>
+                <h2>Online Employees</h2>
                 <p id="currently-working-employees">0 employees</p>
             </div>
             <div class="grid-item late-employees">
