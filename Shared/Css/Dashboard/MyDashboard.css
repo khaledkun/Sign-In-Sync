@@ -82,9 +82,6 @@
     .grid-item.sign-in-time {
         padding: 5px;
     }
-     .grid-item.alerts {
-        background-color: var(--Orange);
-    }
     
     .grid-item.alerts:hover {
         background-color: var(--Hover);
