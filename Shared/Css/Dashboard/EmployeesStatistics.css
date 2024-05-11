@@ -54,13 +54,6 @@ body {
     height: 140px;
 }
 
-.grid-item:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    background-color: var(--Hover);
-}
-
 .grid-item h2 {
     margin-top: 0;
     color: var(--Heading);
@@ -72,6 +65,13 @@ body {
 }
 .grid-item.boss-comments,.grid-item.alerts {
     background-color: var(--Red);
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    background-color: var(--Hover);
 }
 
 ul.custom-list {
