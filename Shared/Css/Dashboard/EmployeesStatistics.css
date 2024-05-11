@@ -1,29 +1,34 @@
 :root{
-    --background-color: #f9fafc;
-    --secondary-color: #4d69ff;
+    /* Dark Mode */
+    /* Shared */
+    --Heading: #fff;
+    --Sub-Text: #999999;
+    --Secondary: #3572cc;
+    /* Nav bar */ 
+    --Nav-Background: #262626;
+    --Footer-Background: #000;
+    --Icon-Hover: #333333;
+    --Switch-Icon-Hover:#fff; 
+    /* Timer */
+    --Buttons-Colors: #A3A3A3;
+    --Timer-Hover: #363636;
+    --Timer-Border: #47414100;
+    --Time-Color: #fff;
+    /* Emp-Dashboard */
+    --Icons: #cccccc;
+    --Body-Background: #1e1e1e;
+    --Items: #262626;
+    --Hover: #002cb2;
     --shadow-color: rgba(0, 0, 0, 0.2);
-    --Red-Text:#ff3333;
-    --Red-Background: #ff6666;
-    --Green-Text: green;
-    --border-color: #ccc;
-    --black-background: #000000;
-    --contact-icon: #555;
-    --contact-icon-hover: #007bff;
-    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
-    --Submit-Button-Background: rgb(55, 55, 255);
-    --Allert-Color: #ffd633;
-    --Allert-Hover:#ffb700;
-    --Holidays-Colors: #66ff99;
-    --Holidays-Hover: #32cc66;
-    --Footer-Bacground: #1900fa;
-    --Nav-Active-Hover: #324b80;
-    --DarkMode-Icon-Hover: #ffcc00;
+    --Red: #800000;
+    --Orange: #a63e00;
+    --Green: #005c33;
   }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--Body-Background);
 }
 
 .dashboard {
@@ -32,8 +37,8 @@ body {
 }
 
 .header {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px var(--shadow-color);
@@ -43,6 +48,7 @@ body {
 
 .header:hover {
     box-shadow: 0 4px 10px var(--shadow-color);
+    background-color: var(--Hover);
     transition: 0.3s;
 }
 
@@ -65,7 +71,7 @@ body {
     padding: 20px;
     position: relative;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: var(--Items);
     box-shadow: 0 2px 5px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -78,44 +84,20 @@ body {
     transform: translateY(-5px);
     transition: 0.3s;
     box-shadow: 0 4px 10px var(--shadow-color);
+    background-color: var(--Hover);
 }
 
 .grid-item h2 {
     margin-top: 0;
+    color: var(--Heading);
 }
 
 .grid-item p {
     margin: 0;
+    color: var(--Sub-Text);
 }
-.grid-item.boss-comments {
-    background-color: var(--Red-Background);
-}
-
-.grid-item.boss-comments:hover {
-    background-color: var(--Red-Text);
-    transition: 0.3s;
-}
-.grid-item.alerts {
-    background-color: var(--Allert-Color);
-}
-
-.grid-item.alerts:hover {
-    background-color: var(--Allert-Hover);
-    transition: 0.3s;
-}
-
-.contact-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: var(--contact-icon);
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.contact-icon:hover {
-    color: var(--contact-icon-hover);
-    transition: 0.3s;
+.grid-item.boss-comments,.grid-item.alerts {
+    background-color: var(--Red);
 }
 
 ul.custom-list {
@@ -123,7 +105,6 @@ ul.custom-list {
     padding: 0;
     text-align: center;
     display: inline-block;
-    background-color: var(--background-color);
 }
 
 ul.custom-list li {
@@ -136,12 +117,12 @@ ul.custom-list li {
 
 ul.custom-list li a {
     display: inline-block;
-    color: var(--background-color);
-    background-color: var(--secondary-color);
+    color: var(--Heading);
+    background-color: var(--Items);
     text-decoration: none;
     padding: 20px 70px;
     width: 70px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--shadow-color);
     border-radius: 10px;
     text-align: center;
     white-space: nowrap;
@@ -150,6 +131,9 @@ ul.custom-list li a {
 ul.custom-list li a:hover {
     transform: scale(1.03);
     transition: 0.1s;
+}
+.Icons{
+    color: var(--Icons);
 }
 .guide {
     position: fixed;
@@ -209,6 +193,7 @@ ul.custom-list li a:hover {
     z-index: 1001;
     position: relative;
 }
+
 
 @media only screen and (max-width: 750px) {
     .grid-container {
