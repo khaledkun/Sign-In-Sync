@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css");
-
 * {
   padding: 0;
   margin: 0;
@@ -328,7 +327,7 @@ body {
   
   .title_contact {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 3rem;
     color: var(--Heading);
     margin-bottom: 2rem;
@@ -348,21 +347,19 @@ body {
 
   .form-group {
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--Icons);
   }
 
   .form-group input:focus,
   .form-group textarea:focus,
   .form-group input:not(:focus),
   .form-group textarea:not(:focus) {
-    border: none;
+    border: 2px solid var(--Secondary);
   }
 
   label {
     display: block;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--Heading);
 
   }
   
@@ -373,7 +370,7 @@ body {
     padding: 0.75rem;
     font-size: 1rem;
     border-radius: 5px;
-    border: 2px solid var(--Heading);
+    border: 2px solid transparent;
   }
   
   textarea {
@@ -381,34 +378,32 @@ body {
   }
   
   .send {
-    background-color: var(--Button-Color-Light);
-    color: var(--secondary-color) ;
+    background-color: var(--Secondary);
+    color: var(--Heading) ;
     margin: auto;
     display: block;
     margin-bottom: 2rem;
   }
   
   .send:hover {
-    background-color: var(--Background-color);
-    color:var(--secondary-color);
+    background-color: var(--Hover);
+    color:var(--Heading);
     transition: 0.3s;
   }
-
-.title_contact span {
-    font-weight: 600;
-    color:var(--secondary-color);
-}
 
 .form-group input,
 .form-group textarea {
     background-color: transparent;
-    border-color: #000000;
+    color: var(--Heading);
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
 }
 
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #ffffff;
+    color: var(--Sub-Text);
 }
 
 .form-container {
@@ -440,15 +435,6 @@ p {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: white;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
 
