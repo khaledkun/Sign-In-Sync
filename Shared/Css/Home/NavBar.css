@@ -130,7 +130,7 @@ nav {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px var(--shadow-color);
   border-color: transparent;
   z-index: 98;
 }
