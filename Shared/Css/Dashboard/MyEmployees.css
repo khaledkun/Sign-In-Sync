@@ -105,13 +105,13 @@ body {
 }
 
 .green-text {
-    color: var(--Green);
+    color: var(--Heading);
     font-size: 25px;
     font-weight: bold;
 }
 
 .red-text {
-    color:var(--Red);
+    color:var(--Heading);
     font-size: 25px;
     font-weight: bold;
 }
@@ -127,17 +127,17 @@ p span {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid var(--shadow-color);
+    border: 1px solid var(--Secondary);
     height: 100px;
     background-color: var(--Items);
     border-radius: 5px;
     resize: vertical;
     color: var(--Heading);
     scrollbar-width: thin;
+    resize: none;
 }
 
 .grid-item textarea:hover {
-    background-color: var(--Hover);
     transition: 0.3s;
 }
 
@@ -154,6 +154,7 @@ p span {
 }
 
 .grid-item p {
+    color: var(--Sub-Text);
     margin: 0;
 }
 
@@ -166,7 +167,6 @@ p span {
     position: absolute;
     bottom: 25px;
     right: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     padding: 5px;
@@ -177,7 +177,6 @@ p span {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
@@ -188,7 +187,6 @@ p span {
     position: absolute;
     left: 20px;
     left: 20px;
-    color: var(--contact-icon);
     text-decoration: none;
     font-size: 24px;
     pointer-events: none;
@@ -196,7 +194,6 @@ p span {
 }
 
 .contact-icon:hover {
-    color: var(--contact-icon-hover);
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -215,26 +212,26 @@ p span {
 
 #search-input {
     padding: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--Secondary);
     border-radius: 5px;
     width: 300px;
     padding-bottom: 20px;
     margin-top: 30px;
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--Items);
+    color: var(--Heading);
 }
 
 #search-input::placeholder {
-    color: var(--background-color);
+    color: var(--Sub-Text);
 }
 
 #list-box {
     padding: 10px;
     width: 350px !important;
     border-radius: 5px;
-    border: 1px solid var(--border-color);
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    border: 1px solid var(--Secondary);
+    background-color: var(--Items);
+    color: var(--Heading);
     cursor: pointer;
     margin-top: 30px;
     width: 150px;
@@ -247,10 +244,10 @@ p span {
 }
 
 #search-button {
-    background-color: var(--secondary-color);
+    background-color: var(--Items);
     margin-top: 30px;
-    color: var(--background-color);
-    border: none;
+    border: 1px solid var(--Secondary);
+    border-left: 0px;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
