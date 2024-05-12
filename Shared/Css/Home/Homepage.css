@@ -87,7 +87,7 @@ body {
 
 .Signup {
   background-color: var(--Secondary);
-  color: var(--Heading);
+  color: var(--ButtonTxt);
 }
 
 .Signup:hover {
@@ -194,7 +194,7 @@ body {
   .ReadMore {
     display: inline-block;
     background-color: var(--Secondary);
-    color: var(--Heading);
+    color: var(--ButtonTxt);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -283,12 +283,13 @@ body {
   
   .watch {
     background-color: var(--Secondary);
-    color: var(--Heading);
+    color: var(--ButtonTxt);
    
   }
   
   .watch:hover {
     background-color: var(--Hover);
+    color:var(--Heading);
     transition: 0.3s;
   }
   
@@ -374,7 +375,7 @@ body {
   
   .send {
     background-color: var(--Secondary);
-    color: var(--Heading) ;
+    color: var(--ButtonTxt) ;
     margin: auto;
     display: block;
     margin-bottom: 2rem;

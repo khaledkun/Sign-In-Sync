@@ -109,8 +109,7 @@ nav {
 }
 
 .scroll-to-top i {
-  background-color: var(--Secondary);
-  color: var(--Heading);
+  color: var(--ButtonTxt);
   font-size: 20px;
 }
 
@@ -118,6 +117,7 @@ nav {
   background-color: var(--Hover);
   color: var(--Heading);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 #mode-toggle-btn {
@@ -136,13 +136,14 @@ nav {
 }
 
 #mode-toggle-btn i {
-  color: var(--Heading);
+  color: var(--ButtonTxt);
   font-size: 20px;
   margin-top: 11px;
 }
 
-#mode-toggle-btn:hover {
+#mode-toggle-btn:hover, #mode-toggle-btn i:hover {
   background-color: var(--Hover);
+  color: var(--Heading);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -175,7 +176,7 @@ footer {
 }
 
 .social-media a {
-  color: var(--Sub-Text);
+  color: var(--Heading);
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
