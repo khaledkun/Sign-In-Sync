@@ -16,7 +16,7 @@ echo "<pre>";
 print_r($_POST);
 echo "</pre>";
 
-include('../Templates/SharedConfig.php');
+include('../../Templates/SharedConfig.php');
 include($ConnectContrl);
 
 $query="INSERT INTO employee ( firstname, lastname, email , gender, password, age,prive) 

@@ -9,7 +9,7 @@ if ($showGuide) {
 }
 $id =$_SESSION['id'];
 
-include '../Templates/SharedConfig.php';
+include '../../Templates/SharedConfig.php';
 include_once($ConnectContrl);
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);

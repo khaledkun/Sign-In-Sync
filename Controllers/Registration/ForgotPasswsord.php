@@ -1,7 +1,7 @@
 <?php
 session_start ();
     if(isset($_POST["email"])){
-        include('../Templates/SharedConfig.php');
+        include('../../Templates/SharedConfig.php');
         include($ConnectContrl);
         $email = $_POST["email"];
 

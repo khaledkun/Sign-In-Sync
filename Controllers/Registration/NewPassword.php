@@ -1,7 +1,7 @@
 <?php
 session_start ();
     if(isset($_POST["password"]) && isset($_POST["token"])){
-        include('../Templates/SharedConfig.php');
+        include('../../Templates/SharedConfig.php');
         include($ConnectContrl);
         $token = $_POST["token"];
         $password = $_POST["password"];

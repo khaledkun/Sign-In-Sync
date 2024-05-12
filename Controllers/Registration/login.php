@@ -3,7 +3,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 // $username=$_POST['username'];
 // $password=md5($_POST['password']);
-include('../Templates/SharedConfig.php');
+include('../../Templates/SharedConfig.php');
 include($ConnectContrl);
 session_start();
 $query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";

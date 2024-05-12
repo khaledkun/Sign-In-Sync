@@ -22,7 +22,7 @@ $userdata1 =$result1->fetch_assoc();
 // You Can Change the Page Title as you like
     $pageTitle = "My Dashboard";
     // Include the Template
-    include '../Templates/MetaTags.php';
+    include '../../Templates/MetaTags.php';
     include_once($ConnectContrl);?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
