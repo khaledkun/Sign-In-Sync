@@ -58,7 +58,8 @@
         </div>
     </footer>
     <a href="#" title="Back To Top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
-    <button id="mode-toggle-btn" title="Dark Mode"><i id="mode-icon" class="fas fa-moon"></i></button>
+    <button id="dark-mode-btn" title="Dark Mode"><i class="fas fa-moon"></i></button>
+    <button id="light-mode-btn" title="Light Mode"><i class="fas fa-sun"></i></button>
     
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
