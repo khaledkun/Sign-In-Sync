@@ -120,7 +120,7 @@ nav {
   transition: 0.3s;
 }
 
-#dark-mode-btn,#light-mode-btn {
+#mode-toggle-btn {
   position: fixed;
   bottom: 25px;
   right: 100px;
@@ -134,18 +134,14 @@ nav {
   border-color: transparent;
   z-index: 98;
 }
-#light-mode-btn {
-  position: fixed;
-  bottom: 80px;
-  right: 100px;
-}
-#dark-mode-btn i,#light-mode-btn i {
+
+#mode-toggle-btn i {
   color: var(--Heading);
   font-size: 20px;
   margin-top: 11px;
 }
 
-#dark-mode-btn:hover, #light-mode-btn:hover {
+#mode-toggle-btn:hover {
   background-color: var(--Hover);
   transition: 0.3s;
   cursor: pointer;
