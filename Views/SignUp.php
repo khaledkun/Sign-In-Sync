@@ -61,10 +61,17 @@
       <div class="list-box">
         <h2>Sign as:</h2>
         <select id="position" name="position">
+<<<<<<< Updated upstream
           <option value="manager">Admin</option>
           <option value="supervisor">Manager</option>
           <option value="employee">Supervisor</option>
           <option value="employee" selected>Employee</option>
+=======
+          <option value="3">Admin</option>
+          <option value="0">Manager</option>
+          <option value="2">Supervisor</option>
+          <option value="1" selected>Employee</option>
+>>>>>>> Stashed changes
        </select>
       </div>
       <label for="terms-and-conditions">
