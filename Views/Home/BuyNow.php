@@ -5,7 +5,7 @@
         // You Can Change the Page Title as you like
         $pageTitle = "Buy Now";
         // Include the Template
-        include '../../Templates/MetaTags.php';
+        include '../Templates/MetaTags.php';
     ?>
     <link rel="stylesheet" href="<?php echo $HomepagePath; ?>">
     <style>
