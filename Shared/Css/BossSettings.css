@@ -1,0 +1,183 @@
+:root{
+    --background-color: #f9fafc;
+    --secondary-color: #4d69ff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --Red-Text:#ff3333;
+    --Red-Background: #ff6666;
+    --Green-Text: green;
+    --border-color: #ccc;
+    --black-background: #000000;
+    --contact-icon: #555;
+    --contact-icon-hover: #007bff;
+    --listBox-Shadow: rgba(77, 105, 255, 0.5);/* ++ Submit-Button-hover */
+    --Submit-Button-Background: rgb(55, 55, 255);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.dashboard {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.header {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    display: flex;
+    align-items: center;
+}
+
+#current-date {
+    margin: 0;
+    font-size: 18px;
+}
+
+.date-section {
+    margin-left: auto;
+}
+
+.header:hover {
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: 0.3s;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 11px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    padding: 20px;
+    margin: 20px;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.grid-item label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-label {
+    margin-bottom: 20px;
+}
+
+.grid-item input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grid-item p {
+    margin: 0;
+}
+
+.grid-item input[type="radio"] {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio-label {
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background: var(--Submit-Button-Background);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--background-color);
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: 20%;
+    font-size: 1.5em;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    color: var(--background-color);
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+.text-box-container {
+    margin-top: 20px;
+}
+
+.text-box-container input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px bold var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    max-width: 80%;
+}
+
+.text-box-container input[type="number"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--listBox-Shadow);
+    color:var(--black-background);
+}
+
+input[type="number"]:not(:focus) {
+    border-color: var(--black-background);
+    color: var(--black-background);
+}
+
+.text-box-container input[type="number"]::placeholder {
+    color: var(--black-background);
+}
+
+.text-box-container input[type="number"]::-webkit-input-placeholder {
+    color: var(--black-background);
+}
+
+.text-box-container input[type="number"]:-ms-input-placeholder {
+    color: var(--black-background);
+}
+
+@media only screen and (max-width: 1520px) {
+    .footer {
+        margin-top: 220px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .dashboard {
+        margin-left: 0px;
+    }
+}
