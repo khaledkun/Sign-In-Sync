@@ -4,7 +4,7 @@ $password = $_POST['password'];
 // $username=$_POST['username'];
 // $password=md5($_POST['password']);
 include('../../Templates/SharedConfig.php');
-include($ConnectContrl);
+include('connect.php');
 session_start();
 $query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";
 $result = $conn->query($query);// mysqli result object ==>current_field  ==> feild_count ==>  lengths ==>num_rows ==>type ==>
@@ -36,33 +36,50 @@ if (!isset($_SESSION['first_login'])) {
 	// Otherwise, it's not the first login in this session
 	$_SESSION['first_login'] = false;
 }
-if ($result-> num_rows > 0 && $user['prive']==0) {
-	session_start();
-	$_SESSION['id']=$id;
-	
+//------------------------------------------------------------------login--php
+if($result-> num_rows > 0){
 
-	
-	header('Location: ' . $MydashboardView);
+	if ( $user['idPrive']==4 || $user['idPrive']==3) {
+		session_start();
+		$_SESSION['id']=$id;
+		header('Location: ' . $MydashboardView);
 
-	
-}elseif($result-> num_rows > 0 && $user['prive']==1){
-	session_start();
-	$_SESSION['id']=$id;
-	echo date_default_timezone_set('Asia/Riyadh');
-	$date = date('Y-m-d',time());
-	$time = date('H:i:s',time());
-	// echo $date."<br>";
-	// echo $time."<br>";
-	$query1 ="INSERT INTO login( id_empolyee, day, timee) VALUES ($id,'$date','$time')";
-	$result1 =$conn->query($query1);
-	// $query2 = "SELECT * FROM login"
+		
+	}elseif( $user['idPrive']==1 || $user['idPrive']==2){
+		session_start();
+		$_SESSION['id']=$id;
+		echo date_default_timezone_set('Asia/Riyadh');
+		$date = date('Y-m-d',time());
+		$time = date('H:i:s',time());
+		// echo $date."<br>";
+		// echo $time."<br>";
+		$query1 ="INSERT INTO login( id_empolyee, day, timee) VALUES ($id,'$date','$time')";
+		$result1 =$conn->query($query1);
+		// $query2 = "SELECT * FROM login"
 
-	// $id_login= $login['id_login'];
-	//type on anothor time will be work
-	$query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
+		// $id_login= $login['id_login'];
+		//type on anothor time will be work
+		$query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
+		// $result3=$conn->query($query3);
+		header('Location: ' . $MyEmpView);
+
+			// if(!$result2){
+	// 	header('location:fordatetable.php');
+	// }
+	// --------
+	
+	// $result2=$conn->query($query2);
+	// var_dump($result2);
+	// $logindata =$result2->fetch_assoc();
+
+	// $id_login= $logindata['id_login'];
+	// echo $id_login;
+	// //type on anothor time will be work
+	// $query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
 	// $result3=$conn->query($query3);
-	header('Location: ' . $MyEmpView);
-	
+	// header('location: ../Views/BossDashboard.php');
+		
+	}
 }else{
-	header('Location: ' . $LoginView);
+		header('Location: ' . $LoginView);
 }
