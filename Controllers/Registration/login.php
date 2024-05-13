@@ -6,7 +6,7 @@ $password = $_POST['password'];
 include('../../Templates/SharedConfig.php');
 include('connect.php');
 session_start();
-$query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";
+$query = "SELECT * FROM employee WHERE email = '$email' AND passsword = '$password'";
 $result = $conn->query($query);// mysqli result object ==>current_field  ==> feild_count ==>  lengths ==>num_rows ==>type ==>
 // var_dump($result);
 

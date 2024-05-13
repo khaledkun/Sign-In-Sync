@@ -84,6 +84,7 @@ $ControllersPath = "../../Controllers/";
         $LogoutContrl =  $RegestrationContrl . "logout.php";
         $NewPassContrl =  $RegestrationContrl . "NewPassword.php";
         $PopupContrl =  $RegestrationContrl . "PopUpPage.js";
+        
         $SignupContrl =  $RegestrationContrl . "signup.php";
 
 

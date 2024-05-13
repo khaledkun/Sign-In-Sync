@@ -20,7 +20,7 @@
 <body>
   <div class="wrapper">
     <h1>Sign Up</h1>
-    <form method="post" action="<?php echo $SignUpContrl; ?>">
+    <form method="post" action="<?php echo $SignupContrl; ?>">
       <div class="user-details">
         <div class="input-box">
           <label for="fname">First Name</label>
@@ -54,17 +54,19 @@
       <div class="list-box2">
       <label for="gender">Gender</label>
         <select id="gender" name="gender">
-          <option value="male" selected>&#xf222; Male</option>
-          <option value="female">&#xf221; Female</option>
+          <option value="0" selected>&#xf222; Male</option>
+          <option value="1">&#xf221; Female</option>
        </select>
       </div>
       <div class="list-box">
         <h2>Sign as:</h2>
         <select id="position" name="position">
-          <option value="manager">&#xf502; Admin</option>
-          <option value="value3" selected>&#xf007; Employee</option>
-          <option value="value2">&#xf508; Manager</option>
-          <option value="value4">&#xf505; Supervisor</option>
+
+        
+          <option value="3">&#xf502; Admin</option>
+          <option value="4" selected>&#xf007; Employee</option>
+          <option value="2">&#xf508; Manager</option>
+          <option value="1">&#xf505; Supervisor</option>
        </select>
       </div>
       <label for="terms-and-conditions">

@@ -1,7 +1,7 @@
 <?php
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_POST);
+// echo "</pre>";
 
 include"connect.php";
 
@@ -47,6 +47,6 @@ $resulte2 = $conn->query($query2);
 // echo "<br>";
 // var_dump($resulte2);
 // echo "<br>";
-if($resulte && $resulte1 &&$ $resulte2){
-	header('location:../../views/Dashboard/MyDashboard.php');
+if($resulte && $resulte1 && $resulte2){
+	header('location:../../views/Dashboard/EmployeesSettings.php');
 }
