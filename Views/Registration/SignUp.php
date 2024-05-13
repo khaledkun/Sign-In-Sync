@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +23,7 @@
 <body>
   <div class="wrapper">
     <h1>Sign Up</h1>
-    <form method="post" action="<?php echo $SignupContrl; ?>">
+    <form method="post" action="<?php echo $SignupContrl; ?>" novalidate>
       <div class="user-details">
         <div class="input-box">
           <label for="fname">First Name</label>

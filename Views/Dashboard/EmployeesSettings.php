@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <?php
+    session_start();
+    $idUser= $_SESSION['id'];
+    include '../../Controllers/Registration/connect.php';
+    $query5 = "SELECT * FROM employee WHERE id = '$idUser'";
     // You Can Change the Page Title as you like
     $pageTitle = "Employees Settings";
     // Include the Template
     include '../../Templates/MetaTags.php'; 
-    include '../../Controllers/Registration/connect.php';
+    
+    $result5= $conn->query($query5);
+    $userData = $result5->fetch_assoc();
+    $idPrive = 4;
+
+    // $idPrive = $userData['idPrive'];
+    echo $idPrive;
     //------------------------employee data sitting
     $query1 ="SELECT * FROM bosssitting WHERE idPrive = '1'";
     $result1 =$conn->query($query1);
@@ -38,6 +48,11 @@
         <div class="header">
                 <h1><i class="fas fa-user-cog Icons"></i> Employees Settings</h1>
         </div>
+        <?php 
+        if($idPrive != 2 ){
+       
+            ?>
+        
         <div class="grid-item">
             <h2><i class="fas fa-user Icons"></i> Employee Settings</h2>
             <div class="text-box-container">
@@ -48,7 +63,15 @@
                 <input type="number" id="security5" name="security0-5" placeholder="Pay Levy per Hour" min="0" value="<?= $employee['payHour'];?>"><br>
             </div>
         </div>
-        <div class="grid-item">
+            <?php } 
+            ?>
+
+
+        <?php 
+        if($idPrive == 2 ){
+       
+            ?>
+            <div class="grid-item">
             <h2><i class="fas fa-user-shield Icons"></i> Supervisor Settings</h2>
             <div class="checkbox-container">
                 <div class="text-box-container">
@@ -60,6 +83,13 @@
                 </div>
             </div>
         </div>
+<?php
+        }
+        ?>
+        <?php 
+        if($idPrive == 3 || $idPrive == 4){
+        ?>
+        
         <div class="grid-item">
             <h2><i class="fas fa-user-tie Icons"></i> Manager Settings</h2>
             <div class="radio-container">
@@ -74,6 +104,7 @@
         </div>
         <button type="submit" class="submit-button"><i class="fas fa-save Icons"></i> Save</button>
       </div>
+            <?php }?>
     </form>
 </body>
 </html>
