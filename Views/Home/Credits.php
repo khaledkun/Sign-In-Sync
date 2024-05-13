@@ -28,7 +28,7 @@
             text-align: center;
         }
         h1 {
-            color: #f9fafc;
+            color: var(--Heading);
             font-size: 50px;
             margin-bottom: 40px;
             text-align: center;
@@ -57,18 +57,20 @@
         }
         .description p {
             flex: 1;
-            color: #fff;
+            color: var(--Heading);
             text-align: left;
         }
         .item .description h2 {
             font-size: 40px;
             margin-bottom: 20px;
             text-align: left;
+            color: var(--Heading);
         }
         .item .description h3 {
             font-size: 20px;
             margin-bottom: 20px;
             text-align: left;
+            color: var(--Heading);
         }
         .social-icons {
             position: absolute;
