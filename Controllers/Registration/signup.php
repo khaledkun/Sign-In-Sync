@@ -1,7 +1,6 @@
 
 <?php
-include('../../Templates/SharedConfig.php');
-include($ConnectContrl);
+
 
 $firstname = $_POST['fname'];
 $lastname = $_POST['lname'];
@@ -13,14 +12,17 @@ $sginas = $_POST['position'];
 $age = $_POST['age'];
 $gender = $_POST['gender'];
 
+include('../../Templates/SharedConfig.php');
+include($ConnectContrl);
 
 $query3 = "SELECT * FROM employee";
 $result3 = $conn->query($query3);
 foreach($result3 as $key=>$value){
 }
 print_r($value);
-  if($value['email']==$email){
+  if($value['email']==$email&& $value['passsword']==$passored){
 	header('location:../../Views/Registration/SignUp.php');
+	exit();
   }
 
 // echo "<pre>";
@@ -50,15 +52,16 @@ if($resulte){
 if ( $userArray['idPrive']==1 || $userArray['idPrive']==2) {
 	
 	
-	// header('Location: ' . $MyEmpView);
-	
+	header('Location: ' . $MyEmpView);
+	exit();
 
 	
 }elseif( $userArray['idPrive']==4 || $userArray['idPrive']==3){
 	
-	// header('Location: ' . $MydashboardView);
+	header('Location: ' . $MydashboardView);
+	exit();
 }
 else{
-	// header('Location: ' . $LoginView);
+	header('Location: ' . $LoginView);
 }
 //INSERT INTO `employee`( `firstname`, `lastname`, `address`, `email`, `gender`, `password`, `age`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]','[value-13]')
