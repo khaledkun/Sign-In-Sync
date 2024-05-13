@@ -11,23 +11,27 @@
     $userdata1 =$result1->fetch_assoc();
     
 
+    if ($result1-> num_rows > 0){
 
-
-   
-    if ($result1-> num_rows > 0 && $userdata1['prive']==0) {
+      if($userdata1['idPrive']==3 || $userdata1['idPrive']==4) {
     
   
-    header('Location: ' . $MydashboardView);
-    exit();
-  
-}elseif($result1-> num_rows > 0 && $userdata1['prive']==1){
-  
-  header('Location: ' . $MyEmpView);
-  exit();
+        header('Location: ' . $MydashboardView);
+        exit();
+      
+    }elseif($userdata1['idPrive']==2 || $userdata1['idPrive']==1){
+      
+      header('Location: ' . $MyEmpView);
+      exit();
+    
+    
+     
+    }
 
+    }
 
- 
-}
+   
+    
   
 }
 

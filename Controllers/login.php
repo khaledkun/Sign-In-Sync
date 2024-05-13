@@ -5,7 +5,7 @@ $password = $_POST['password'];
 // $username=$_POST['username'];
 // $password=md5($_POST['password']);
 require 'connect.php';
-$query = "SELECT * FROM employee WHERE email = '$email' AND password = '$password'";
+$query = "SELECT * FROM employee WHERE email = '$email' AND passsword = '$password'";
 $result = $conn->query($query);// mysqli result object ==>current_field  ==> feild_count ==>  lengths ==>num_rows ==>type ==>
 // var_dump($result);
 
@@ -49,7 +49,7 @@ if (  $user['prive']==4 || $user['prive']==3) {
 	$time = date('H:i:s',time());
 	// echo $date."<br>";
 	// echo $time."<br>";
-	$query1 ="INSERT INTO login( id_empolyee, day, timee) VALUES ($id,'$date','$time')";
+	$query1 ="INSERT INTO login( id_empolyee, dayy, timee) VALUES ($id,'$date','$time')";
 	$result1 =$conn->query($query1);
 	$query2 = "SELECT * FROM datys WHERE datee =$date";
 	$result2 =$conn->query($query2);

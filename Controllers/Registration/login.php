@@ -40,8 +40,15 @@ if (!isset($_SESSION['first_login'])) {
 if($result-> num_rows > 0){
 
 	if ( $user['idPrive']==4 || $user['idPrive']==3) {
-		session_start();
+		
 		$_SESSION['id']=$id;
+
+		echo date_default_timezone_set('Asia/Riyadh');
+		$date = date('Y-m-d',time());
+		$time = date('H:i:s',time());
+		$query1 ="INSERT INTO login( id_employee, dayy, timee) VALUES ($id,'$date','$time')";
+		$result1 =$conn->query($query1);
+
 		header('Location: ' . $MydashboardView);
 
 		
@@ -53,13 +60,16 @@ if($result-> num_rows > 0){
 		$time = date('H:i:s',time());
 		// echo $date."<br>";
 		// echo $time."<br>";
-		$query1 ="INSERT INTO login( id_empolyee, day, timee) VALUES ($id,'$date','$time')";
+		$query1 ="INSERT INTO login( id_employee, dayy, timee) VALUES ($id,'$date','$time')";
 		$result1 =$conn->query($query1);
 		// $query2 = "SELECT * FROM login"
 
 		// $id_login= $login['id_login'];
 		//type on anothor time will be work
-		$query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
+
+
+		// $query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
+
 		// $result3=$conn->query($query3);
 		header('Location: ' . $MyEmpView);
 
@@ -81,5 +91,5 @@ if($result-> num_rows > 0){
 		
 	}
 }else{
-		header('Location: ' . $LoginView);
+		// header('Location: ' . $LoginView);
 }
