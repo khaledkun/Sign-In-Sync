@@ -21,7 +21,7 @@ foreach($result3 as $key=>$value){
 }
 print_r($value);
   if($value['email']==$email&& $value['passsword']==$passored){
-	header('location:../../Views/Registration/SignUp.php');
+	header('location:../../Views/Registration/SignUp.php?IsSit=1');
 	exit();
   }
 
