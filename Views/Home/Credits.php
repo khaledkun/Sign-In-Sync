@@ -51,6 +51,7 @@
             margin-left: 200px;
             border-radius: 50%;
             margin-right: 20px;
+            filter: var(--Img);
         }
         .item p {
             margin: 4px 0;

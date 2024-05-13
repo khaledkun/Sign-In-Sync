@@ -23,6 +23,7 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
     --Red: #800000;
     --Green: #005c33;
+    --Img: invert(0%);
     --max-width: 1200px;
     scroll-behavior: smooth;
   }

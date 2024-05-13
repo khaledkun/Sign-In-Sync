@@ -21,7 +21,7 @@
             margin: 0;
         }
         .container {
-            background-color: #002cb6;
+            background-color: var(--Body-Background);
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -29,12 +29,12 @@
             margin: 0 auto;
         }
         h1 {
-            color: #f9fafc;
+            color: var(--Heading);
             font-size: 24px;
             margin-bottom: 20px;
         }
         p {
-            color: #f9fafc;
+            color: var(--Heading);
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 50px;

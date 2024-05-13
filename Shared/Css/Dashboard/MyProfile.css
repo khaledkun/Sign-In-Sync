@@ -48,6 +48,7 @@ body {
 .profile-picture img {
     width: 150px;
     border-radius: 50%;
+    filter: var(--Img);
 }
 
 .profile-info h2 {
@@ -67,7 +68,7 @@ body {
     background: var(--Secondary);
     border-radius: 5px;
     padding: 4px 0px;
-    color: var(--Heading);
+    color: var(--ButtonTxt);
     cursor: pointer;
     display: inline-block;
     font-size: 0.8em;
@@ -129,7 +130,7 @@ body {
     border: 1px solid var(--Secondary);
     border-radius: 5px;
     padding: 10px 20px;
-    color: var(--Heading);
+    color: var(--ButtonTxt);
     cursor: pointer;
     margin-top: 20px;
     max-width: 20%;
@@ -137,6 +138,9 @@ body {
     max-width: 200px;
     display: block;
     margin: 0 auto;
+}
+.submit-button i {
+    color: var(--ButtonTxt)
 }
 
 .submit-button:hover {

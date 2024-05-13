@@ -98,7 +98,7 @@ body {
     border: 1px solid var(--Secondary);
     border-radius: 5px;
     padding: 10px 20px;
-    color: var(--Heading);
+    color: var(--ButtonTxt);
     cursor: pointer;
     margin-top: 20px;
     max-width: 20%;
@@ -106,6 +106,9 @@ body {
     max-width: 200px;
     display: block;
     margin: 0 auto;
+}
+.submit-button i {
+    color: var(--ButtonTxt)
 }
 
 .submit-button:hover {
