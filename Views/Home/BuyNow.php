@@ -27,7 +27,9 @@
   flex-wrap: wrap;
   margin: 0 -16px;
 }
-
+p, h4 {
+  color: var(--Heading);
+}
 .col-25 {
   -ms-flex: 25%; 
   flex: 25%;
@@ -50,7 +52,7 @@
 }
 
 .container {
-  background-color: #f2f2f2;
+  background-color: var(--Body-Background);
   padding: 15px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -62,15 +64,17 @@ input[type=text] {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  color: var(--Heading);
+  background-color: var(--Body-Background);
 }
 
 label {
   margin-bottom: 10px;
   display: block;
-  color: black;
+  color: var(--Heading);
 }
 .privacy-Page {
-  color: red;
+  color: var(--Red);
   font-size: 17px;
 }
 .privacy-Page:hover {
@@ -84,8 +88,8 @@ label {
 }
 
 .btn {
-  background-color: #004baa;
-  color: white;
+  background-color: var(--Secondary);
+  color: var(--ButtonTxt);
   padding: 17px;
   margin: 0px 0;
   border: none;
@@ -96,12 +100,13 @@ label {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: var(--Hover);
+  color: var(--Heading);
 }
 
 span.price {
   float: right;
-  color: grey;
+  color: var(--Heading);
 }
 
 @media (max-width: 800px) {
@@ -180,14 +185,14 @@ span.price {
   <div class="col-25">
     <div class="container">
       <h4>Cart
-        <span class="price" style="color:black">
+        <span class="price" style="color:var(--Heading)">
           <i class="fa fa-shopping-cart"></i>
           <b>1</b>
         </span>
       </h4>
       <p><a href="#">Sign In Sync</a> <span class="price">$0</span></p>
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$0</b></span></p>
+      <p>Total <span class="price" style="color:var(--Heading)"><b>$0</b></span></p>
     </div>
   </div>
 </div>
