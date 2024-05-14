@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="submit-button"><i class="fas fa-save Icons"></i> Save</button>
+        <button type="submit" class="submit-button">Save</button>
       </div>
             <?php }?>
     </form>

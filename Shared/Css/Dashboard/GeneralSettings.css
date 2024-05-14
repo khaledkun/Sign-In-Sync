@@ -98,7 +98,7 @@ body {
     background: var(--Secondary);
     border: 1px solid var(--Secondary);
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 40px;
     color: var(--ButtonTxt);
     cursor: pointer;
     margin-top: 20px;
@@ -109,7 +109,7 @@ body {
     margin: 0 auto;
 }
 .submit-button i {
-    color: var(--ButtonTxt)
+    color: var(--ButtonTxt);
 }
 .submit-button:hover {
     background-color: var(--Hover);

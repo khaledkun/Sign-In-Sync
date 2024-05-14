@@ -52,8 +52,8 @@
                     <label for="position"><i class="fas fa-briefcase Icons"></i> Position :</label>
                     <input type="text" id="position" value="Employee" disabled>
                     
-                    <button type="submit" class="submit-button"><i class="fas fa-save Icons"></i> Save</button>
                 </div>
+                <button type="submit" class="submit-button">Save</button>
             </div>
         </div>
     </form>
