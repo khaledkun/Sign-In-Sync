@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(!$_SESSION['id']){
+    header("location:../Registration/login.php");
+    exit();
+ }
+
 // Check if the guide has already been shown in this session
 $showGuide = !isset($_SESSION['guide_shown_employees_statistics']) || $_SESSION['guide_shown_employees_statistics'] == false;
 

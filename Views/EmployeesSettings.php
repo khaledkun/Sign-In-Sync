@@ -1,3 +1,9 @@
+<?php
+if(!$_SESSION['id']){
+    header("location:../Registration/login.php");
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

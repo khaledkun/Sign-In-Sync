@@ -1,8 +1,15 @@
+<?php
+    session_start();
+    
+    if(!$_SESSION['id']){
+    header("location:../Registration/login.php");
+    exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php
-    session_start();
+   <?php
     $idUser= $_SESSION['id'];
     include '../../Controllers/Registration/connect.php';
     $query5 = "SELECT * FROM employee WHERE id = '$idUser'";

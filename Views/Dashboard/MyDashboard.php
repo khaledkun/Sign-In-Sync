@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!$_SESSION['id']){
+   header("location:../Registration/login.php");
+   exit();
+}
 $id =$_SESSION['id'];
 $first_login = isset($_SESSION['first_login']) && $_SESSION['first_login'];
 

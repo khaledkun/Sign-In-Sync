@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!$_SESSION['id']){
+    header("location:../Registration/login.php");
+    exit();
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
