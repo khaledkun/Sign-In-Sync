@@ -38,6 +38,8 @@ if (!isset($_SESSION['first_login'])) {
 }
 //------------------------------------------------------------------login--php
 if($result-> num_rows > 0){
+	
+	
 
 	if ( $user['idPrive']==4 || $user['idPrive']==3) {
 		$id = $user['id'];
