@@ -26,7 +26,7 @@ $user =$result->fetch_assoc();
 
 // echo "<br>";
 // print_r($user);
-$id = $user['id'];
+
 // echo $id;
 
 if (!isset($_SESSION['first_login'])) {
@@ -40,7 +40,7 @@ if (!isset($_SESSION['first_login'])) {
 if($result-> num_rows > 0){
 
 	if ( $user['idPrive']==4 || $user['idPrive']==3) {
-		
+		$id = $user['id'];
 		$_SESSION['id']=$id;
 
 		echo date_default_timezone_set('Asia/Riyadh');
@@ -50,10 +50,12 @@ if($result-> num_rows > 0){
 		$result1 =$conn->query($query1);
 
 		header('Location: ' . $MydashboardView);
+		exit();
+
 
 		
 	}elseif( $user['idPrive']==1 || $user['idPrive']==2){
-		session_start();
+		$id = $user['id'];
 		$_SESSION['id']=$id;
 		echo date_default_timezone_set('Asia/Riyadh');
 		$date = date('Y-m-d',time());
@@ -72,6 +74,7 @@ if($result-> num_rows > 0){
 
 		// $result3=$conn->query($query3);
 		header('Location: ' . $MyEmpView);
+		exit();
 
 			// if(!$result2){
 	// 	header('location:fordatetable.php');
@@ -91,5 +94,5 @@ if($result-> num_rows > 0){
 		
 	}
 }else{
-		// header('Location: ' . $LoginView);
+		header('Location: ' . $LoginView);
 }

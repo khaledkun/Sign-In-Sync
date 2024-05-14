@@ -13,9 +13,9 @@
     
     $result5= $conn->query($query5);
     $userData = $result5->fetch_assoc();
-    $idPrive = 4;
+    // $idPrive = 4;
 
-    // $idPrive = $userData['idPrive'];
+    $idPrive = $userData['idPrive'];
     echo $idPrive;
     //------------------------employee data sitting
     $query1 ="SELECT * FROM bosssitting WHERE idPrive = '1'";
