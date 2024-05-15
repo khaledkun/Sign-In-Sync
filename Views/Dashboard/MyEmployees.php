@@ -58,10 +58,19 @@ $userdata1 =$result1->fetch_assoc();
                 <input type="text" id="search-input" placeholder="Search...">
                 <button id="search-button"><i class="fas fa-search Icons"></i></button>
             </div>
-        </div>        
+        </div> 
+        <?php
+        // $query2="SELECT* FROM employee";
+        // $result2 = $conn->query($query2);
+        // foreach($result2 as $key => $value){
+        ?>       
         <div class="grid-container">
                 <div class="grid-item">
-                    <p><span>Employee</span></p>
+                    <p><span><?php 
+                    // echo $value['firstname'];
+                    
+                    ?>
+                    Employee</span></p>
                     <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
                     <a href="#" class="type-icon"><i class="fas fa-user Icons"></i>
                     <a href="#" class="state-icon"><i class="fas fa-circle Icons" style="color: green;"></i></a>
@@ -72,6 +81,9 @@ $userdata1 =$result1->fetch_assoc();
                     <p><i class="fas fa-user-clock Icons"></i> Break Time: <span class="red-text">5 Minutes</span></p>
                     <textarea placeholder="Comments"></textarea>
                 </div>
+        <?php
+        // }
+        ?>
                 <div class="grid-item">
                     <p><span>Employee</span></p>
                     <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
