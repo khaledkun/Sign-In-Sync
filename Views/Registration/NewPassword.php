@@ -21,9 +21,23 @@
     <input type="hidden" id="token" name="token" value="<?php echo $_GET["token"];?>">
       <?php endif; ?>
         <input type="password" id="password" name="password" placeholder="Enter Your new Password" required>
+        <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility()" alt="eye-icon for the password">
       </div>
       <button type="submit" class="sendcode">Change Password</button>
     </form>
   </div>
+  <script>
+      function togglePasswordVisibility() {
+        var passwordField = document.getElementById('password');
+        var eyeIcon = document.querySelector('.lock-img');
+        if (passwordField.type === 'password') {
+          passwordField.type = 'text';
+          eyeIcon.src = '<?php echo $EyeSlash; ?>';
+        } else {
+          passwordField.type = 'password';
+          eyeIcon.src = '<?php echo $Eye; ?>'; 
+        }
+      }
+    </script>
 </body>
 </html>

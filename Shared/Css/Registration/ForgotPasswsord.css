@@ -17,6 +17,7 @@
 
 .input-box {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .input-box label {
@@ -34,7 +35,15 @@
   color: #333;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
+.input-box img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 49px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 input::placeholder {
   color: #333;
 }
