@@ -44,6 +44,7 @@ img{
 }
 .lock-img{
   bottom: 165px;
+  cursor: pointer;
 }
 .user-img{
   bottom: 280px;
