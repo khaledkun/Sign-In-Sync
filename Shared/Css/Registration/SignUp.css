@@ -15,6 +15,7 @@
 .input-box {
   width: calc(50% - 20px); 
   margin-bottom: 16px; 
+ position: relative;
 }
 .container {
   width: calc(50% - 20px); 
@@ -51,6 +52,15 @@
   font-size: 12.8px; 
   color: var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.5);
+}
+.input-box img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 44px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 .input-box input::placeholder,input[type=tel]::placeholder{
   color: #000000 ;

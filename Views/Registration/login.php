@@ -59,11 +59,11 @@
           <h1>Login</h1> 
               <!-- ده كلاس للبيانات المدخله -->
               <div class="input-box">
-              <label for="email">Email<input type="email" placeholder="Email" name="email" required></label>
-                <img class="user-img" src="<?php echo $user1Path; ?>" alt="user-icon">
-                <label for="password">Password<input type="password"  minlength="6" placeholder="Enter your password" name="password" required></label>    
-                <img class="lock-img" src="<?php echo $lockPath; ?>" alt="lock-icon for the password">
-              </div>
+          <label for="email">Email<input type="email" placeholder="Email" name="email" required></label>
+          <img class="user-img" src="<?php echo $user1Path; ?>" alt="user-icon">
+          <label for="password">Password<input type="password" id="password" minlength="6" placeholder="Enter your password" name="password" required></label>
+          <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility()" alt="eye-icon for the password">
+        </div>
 
               <div class="remember-forget">
                 <label><input type="checkbox" id="rememberMe"> Remember me</label>
@@ -77,5 +77,18 @@
           </p></div>
         </form>
       </div>
+      <script>
+      function togglePasswordVisibility() {
+        var passwordField = document.getElementById('password');
+        var eyeIcon = document.querySelector('.lock-img');
+        if (passwordField.type === 'password') {
+          passwordField.type = 'text';
+          eyeIcon.src = '<?php echo $EyeSlash; ?>';
+        } else {
+          passwordField.type = 'password';
+          eyeIcon.src = '<?php echo $Eye; ?>'; 
+        }
+      }
+    </script>
     </body>
 </html>

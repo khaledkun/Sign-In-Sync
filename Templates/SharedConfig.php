@@ -19,6 +19,8 @@ $navBarLogoPath = $ImgsPath . "NavBar.png";
 $user1Path = $ImgsPath . "user.svg";
 $user2Path = $ImgsPath . "User-Icon.png";
 $websiteLogoPath = $ImgsPath . "WebSiteLogo.svg";
+$Eye = $ImgsPath . "eye.png";
+$EyeSlash = $ImgsPath . "eye-slash.png";
 
 // Define the directory containing the Css
 $CssPath = $Shared . "Css/";
