@@ -19,7 +19,9 @@ include_once($ConnectContrl);
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();
-$posstion = $userdata1['idPrive']
+$posstion = $userdata1['idPrive'];
+$imgname = $userdata1['imgname'];
+$imgpath = "../../Controllers/Registration/img/"."$imgname";
 
 ?>
 
@@ -46,8 +48,8 @@ $posstion = $userdata1['idPrive']
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
                 <label for="profile-picture-input">
-                    <img id="profile-picture-preview" src="<?php echo $user2Path; ?>" alt="Profile Picture">
-                    <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="pict">
+                    <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path?>" alt="Profile Picture">
+                    <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img">
                     <i class="fas fa-camera Icons"></i>
                 </label>
             </div>
