@@ -54,7 +54,9 @@ $userdata1 =$result1->fetch_assoc();
                 <p class="current-date"><i class="far fa-calendar-alt Icons"></i> <?= date(' d M, Y');?></p>
             </div>
         </div>
+        
         <div class="grid-container">
+            <!-- start timer  -->
             <div class="grid-item sign-in-time">
                 <i class="fas fa-sign-in-alt Icons"></i>
                 <h2>Sign In Time</h2>
@@ -62,9 +64,11 @@ $userdata1 =$result1->fetch_assoc();
             <div id="timedisplay">00:00:00</div>
             <button id="startbutton" class="timer-button" title="Start"><i class="fas fa-play Icons"></i></button>
             <button id="pausebutton" class="timer-button" title="Pause"><i class="fas fa-pause Icons"></i></button>
-            <button id="resetbutton" class="timer-button" title="Reset"><i class="fas fa-stop Icons"></i></button>
+            <!-- to remember add  this onclick="AjaxReset()" -->
+            <button id="resetbutton" class="timer-button" title="Reset"  ><i class="fas fa-stop Icons"></i></button>
             </div>
             </div>
+            <!-- end  timer  -->
             <div class="grid-item late-time">
                 <i class="fas fa-clock Icons"></i>
                 <h2>Late Arrival</h2>
@@ -272,7 +276,22 @@ $userdata1 =$result1->fetch_assoc();
 
     
 <script>
+// --------for test for timer and DB----------start
  
+
+
+//  function AjaxReset(){
+// 			const xhr =new XMLHttpRequest();
+// 			const result = document.getElementById('timedisplay').value;
+// 			xhr.onreadystatechange =function(){
+			
+// 		};
+// 		xhr.open("GET",'ajaxTESt.php?reset='+result,true);
+// 		xhr.send();
+// 	}
+
+
+//------------end-----------test----------------timer
 const guideContainer = document.getElementById("guide-container");
 const steps = document.querySelectorAll(".guide-step");
 let currentStep = 0; 
@@ -478,6 +497,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 2000);
     }
 });
+
+
     </script>
 
 
