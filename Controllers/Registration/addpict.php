@@ -1,4 +1,43 @@
 <?php
+session_start();
+$id =$_SESSION['id'];
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+  
+  $name = $_FILES['img']['name'];
+  $type = $_FILES['img']['type'];
+  $tmp_name =$_FILES['img']['tmp_name'];
+  $error =$_FILES['img']['error'];
+  $size = $_FILES['img']['size'];
+  
+  $arraypic= explode(".",$name);
+  $count =count($arraypic);
+  $count--;
+  
+  $picExti = $arraypic["$count"];
+  
+  array_pop($arraypic);
+  $imgnewname = implode(".",$arraypic) ;
+  $imgnewname .= time();
+  
+  $imgnewname .="."."$picExti";
+  
+  
+  
+  
+  move_uploaded_file($tmp_name,"N:\github\Controllers\Registration\img\\". $imgnewname);
+  include "connect.php";
+  $query1 ="UPDATE employee SET imgname = '$imgnewname' WHERE id ='$id'";
+  $result1=$conn->query($query1);
+  var_dump($result1);
+  
+
+}
+
+
+
+
+//-------------------------------------------------------
 // if($_SERVER['REQUEST_METHOD']=='post'){
 // $name = $_FILES['pict']['name']."<br>";
 // $type = $_FILES['pict']['type']."<br>";
@@ -18,7 +57,7 @@
 // print_r($_SERVER);
 
 // print_r($_FILES['pict']);
-header('location:../../Views/Dashboard/MyProfile.php')
+header('location:../../Views/Dashboard/MyProfile.php');
 ?>
 <?php
 // if(isset($_POST['submit'])){
