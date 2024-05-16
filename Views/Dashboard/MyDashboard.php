@@ -30,6 +30,7 @@ $userdata1 =$result1->fetch_assoc();
     include_once($ConnectContrl);?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
+    
     <script src="<?php echo $StopWatchContrl; ?>"></script>
 </head>
 <body>
@@ -65,51 +66,51 @@ $userdata1 =$result1->fetch_assoc();
             <button id="startbutton" class="timer-button" title="Start"><i class="fas fa-play Icons"></i></button>
             <button id="pausebutton" class="timer-button" title="Pause"><i class="fas fa-pause Icons"></i></button>
             <!-- to remember add  this onclick="AjaxReset()" -->
-            <button id="resetbutton" class="timer-button" title="Reset"  ><i class="fas fa-stop Icons"></i></button>
+            <button id="resetbutton" class="timer-button" title="Reset"   onclick="AjaxReset()"><i class="fas fa-stop Icons"></i></button>
             </div>
             </div>
             <!-- end  timer  -->
-            <div class="grid-item late-time">
+            <div class="grid-item late-time" onclick="AjaxLate()">
                 <i class="fas fa-clock Icons"></i>
                 <h2>Late Arrival</h2>
                 <p id="late-time">0 hours (0 days)</p>
             </div>
             
-            <div class="grid-item absent-days">
+            <div class="grid-item absent-days" onclick="Ajaxabsent()">
                 <i class="far fa-calendar-times Icons"></i>
                 <h2>Absent Days</h2>
                 <p id="absent-days">0 days</p>
             </div>
-            <div class="grid-item break-time">
+            <div class="grid-item break-time" onclick="Ajaxbreak()">
             <i class="fas fa-user-clock Icons"></i>
                 <h2>Break Time</h2>
                 <p id="break-time">0 Minutes</p>
             </div>
-            <div class="grid-item total-paycheck">
+            <div class="grid-item total-paycheck" onclick="Ajaxpaycheck()">
                 <i class="fas fa-money-bill-alt Icons"></i>
                 <h2>Total Paycheck</h2>
                 <p id="total-paycheck">0 EGP (<span class="red-text">-0</span>)</p>
             </div>
-            <div class="grid-item tasks" style="grid-column: span 1; grid-row: span 2;">
+            <div class="grid-item tasks" style="grid-column: span 1; grid-row: span 2;" onclick="Ajaxtask()">
                 <i class="fas fa-tasks Icons"></i>
                 <h2>Tasks</h2>
-                <div class="boss-comments-scroll">
-                 <p>Text content for scrolling...</p>
+                <div class="boss-comments-scroll" ">
+                 <p id="task">Text content for scrolling...</p>
                  <p>Additional text content...</p>
                  <p>More text content...</p>
                 </div>
             </div>
-            <div class="grid-item boss-comments" style="grid-column: span 1; grid-row: span 2;">
+            <div class="grid-item boss-comments" style="grid-column: span 1; grid-row: span 2;" onclick="AjaxcommentAlart()">
                 <i class="fas fa-comments Icons"></i>
                 <h2>Alerts & Boss Comments</h2>
                 <div class="boss-comments-scroll">
-                 <p>Text content for scrolling...</p>
+                 <p id="comment">Text content for scrolling...</p>
                  <p>Additional text content...</p>
                  <p>More text content...</p>
                 </div>
                 <a href="#" class="contact-icon" title="Contact"><i class="fas fa-envelope Icons"></i></a>
             </div>
-            <div class="grid-item holidays">
+            <div class="grid-item holidays" onclick="Ajaxholiday()">
                 <i class="fas fa-calendar-alt Icons"></i>
                 <h2>Next Holidays</h2>
                 <p id="next-holidays">No holidays</p>
@@ -276,22 +277,7 @@ $userdata1 =$result1->fetch_assoc();
 
     
 <script>
-// --------for test for timer and DB----------start
- 
 
-
-//  function AjaxReset(){
-// 			const xhr =new XMLHttpRequest();
-// 			const result = document.getElementById('timedisplay').value;
-// 			xhr.onreadystatechange =function(){
-			
-// 		};
-// 		xhr.open("GET",'ajaxTESt.php?reset='+result,true);
-// 		xhr.send();
-// 	}
-
-
-//------------end-----------test----------------timer
 const guideContainer = document.getElementById("guide-container");
 const steps = document.querySelectorAll(".guide-step");
 let currentStep = 0; 
@@ -500,7 +486,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     </script>
-
+<script src="../../Controllers/Dashboard/ajax/ajax.js"></script>
 
 
 </body>
