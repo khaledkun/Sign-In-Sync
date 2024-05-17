@@ -5,12 +5,13 @@
 
  function AjaxLate(){
 			const xhr1 =new XMLHttpRequest();
-			const elementLate1 =document.getElementById('late-time')
+			const elementLate1 =document.getElementById('late-time');
 			// const result = document.getElementById('timedisplay').value;
 			xhr1.onreadystatechange =function(){
 			elementLate1.innerHTML = xhr1.responseText;
+			const  hi= "hinadathisfortest";
 		};
-		xhr1.open("GET",'../../Controllers/Dashboard/ajax/php/late.php?reset=TESTForAJax',true);
+		xhr1.open("GET",'../../Controllers/Dashboard/ajax/php/late.php?reset=' + hi,true);
 
 		
 		xhr1.send();
@@ -27,7 +28,7 @@
 // =============================================================
 function Ajaxabsent(){
 	const xhr2 =new XMLHttpRequest();
-	const elementLate2 =document.getElementById('absent-days')
+	const elementLate2 =document.getElementById('absent-days');
 	// const result = document.getElementById('timedisplay').value;
 	xhr2.onreadystatechange =function(){
 	elementLate2.innerHTML = xhr2.responseText;
@@ -49,7 +50,7 @@ xhr2.send();
 // =============================================================
 function Ajaxbreak(){
 	const xhr3 =new XMLHttpRequest();
-	const elementLate3 =document.getElementById('break-time')
+	const elementLate3 =document.getElementById('break-time');
 	// const result = document.getElementById('timedisplay').value;
 	xhr3.onreadystatechange =function(){
 	elementLate3.innerHTML = xhr3.responseText;
@@ -71,7 +72,7 @@ xhr3.send();
 // =============================================================
 function Ajaxpaycheck(){
 	const xhr4 =new XMLHttpRequest();
-	const elementLate4 =document.getElementById('total-paycheck')
+	const elementLate4 =document.getElementById('total-paycheck');
 	// const result = document.getElementById('timedisplay').value;
 	xhr4.onreadystatechange =function(){
 	elementLate4.innerHTML = xhr4.responseText;
@@ -94,7 +95,7 @@ xhr4.send();
 // =============================================================
 function Ajaxholiday(){
 	const xhr5 =new XMLHttpRequest();
-	const elementLate5 =document.getElementById('next-holidays')
+	const elementLate5 =document.getElementById('next-holidays');
 	// const result = document.getElementById('timedisplay').value;
 	xhr5.onreadystatechange =function(){
 	elementLate5.innerHTML = xhr5.responseText;
@@ -116,7 +117,7 @@ xhr5.send();
 // =============================================================
 function Ajaxtask(){
 	const xhr6 =new XMLHttpRequest();
-	const elementLate6 =document.getElementById('task')
+	const elementLate6 =document.getElementById('task');
 	// const result = document.getElementById('timedisplay').value;
 	xhr6.onreadystatechange =function(){
 	elementLate6.innerHTML = xhr6.responseText;
@@ -138,7 +139,7 @@ xhr6.send();
 // =============================================================
 function AjaxcommentAlart(){
 	const xhr7 =new XMLHttpRequest();
-	const elementLate7 =document.getElementById('comment')
+	const elementLate7 =document.getElementById('comment');
 	// const result = document.getElementById('timedisplay').value;
 	xhr7.onreadystatechange =function(){
 	elementLate7.innerHTML = xhr7.responseText;
@@ -162,12 +163,14 @@ xhr7.send();
 
 //-------end-------********absent*******---------end----------
 //-----------star-----------for late day----------ajax
-//  function AjaxReset(){
-// 			const xhr =new XMLHttpRequest();
-// 			const result = document.getElementById('timedisplay').value;
-// 			xhr.onreadystatechange =function(){
+ function AjaxReset(){
+			const xhr8 =new XMLHttpRequest();
+			const result8 = document.getElementById('timedisplay').textContent;
+			const elementLate2 =document.getElementById('absent-days');
+			xhr8.onreadystatechange =function(){
+				elementLate2.innerHTML = xhr8.responseText;
 			
-// 		};
-// 		xhr.open("GET",'../../Controllers/Dashboard/ajax/ajaxTESt.php?reset='+result,true);
-// 		xhr.send();
-// 	}
+		};
+		xhr8.open("GET",'../../Controllers/Dashboard/ajax/php/reset.php?reset='+result8,true);
+		xhr8.send();
+	}

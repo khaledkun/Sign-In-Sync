@@ -30,7 +30,7 @@ $userdata1 =$result1->fetch_assoc();
     include_once($ConnectContrl);?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
-    
+    <script src="../../Controllers/Dashboard/ajax/ajax.js"></script>
     <script src="<?php echo $StopWatchContrl; ?>"></script>
 </head>
 <body>
@@ -94,7 +94,7 @@ $userdata1 =$result1->fetch_assoc();
             <div class="grid-item tasks" style="grid-column: span 1; grid-row: span 2;" onclick="Ajaxtask()">
                 <i class="fas fa-tasks Icons"></i>
                 <h2>Tasks</h2>
-                <div class="boss-comments-scroll" ">
+                <div class="boss-comments-scroll" >
                  <p id="task">Text content for scrolling...</p>
                  <p>Additional text content...</p>
                  <p>More text content...</p>
@@ -486,7 +486,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     </script>
-<script src="../../Controllers/Dashboard/ajax/ajax.js"></script>
+
 
 
 </body>
