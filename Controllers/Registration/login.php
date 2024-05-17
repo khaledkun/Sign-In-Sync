@@ -20,16 +20,18 @@ $user =$result->fetch_assoc();
 // }
 
 
+
 // echo '<pre>';
 // print_r($result);
 // echo '</pre>';
 
 // echo "<br>";
-// print_r($user);
+print_r($user);
 
 // echo $id;
 
 if (!isset($_SESSION['first_login'])) {
+	
 	// If it's the first time this session is created
 	$_SESSION['first_login'] = true;
 } else {
@@ -96,5 +98,6 @@ if($result-> num_rows > 0){
 		
 	}
 }else{
-		header('Location: ' . $LoginView);
+		// header('Location: ' . $LoginView);
 }
+// echo $result;

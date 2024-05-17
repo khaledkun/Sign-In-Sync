@@ -55,8 +55,9 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
             </div>
             <div class="profile-details grid-container">
                 <div class="profile-item profile-info">
+                <!-- $userdata1['firstname'] -->
                     <label for="name"><i class="fas fa-user Icons"></i> First Name :</label>
-                    <input type="text" id="name" value="<?= $userdata1['firstname']?>" disabled>
+                    <input type="text" id="name" value="<?= $_SESSION['id']?>" disabled>
 
                     <label for="name"><i class="fas fa-user Icons"></i> Last Name :</label>
                     <input type="text" id="name" value="<?= $userdata1['lastname']?>" disabled>

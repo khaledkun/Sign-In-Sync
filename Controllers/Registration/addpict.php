@@ -2,37 +2,47 @@
 session_start();
 $id =$_SESSION['id'];
 
-if($_SERVER['REQUEST_METHOD']=='POST'){
+echo "<pre>";
+print_r($_SERVER);
+echo "</pre>";
+if(true){
+
+  if($_SERVER['REQUEST_METHOD']=='POST'){
   
-  $name = $_FILES['img']['name'];
-  $type = $_FILES['img']['type'];
-  $tmp_name =$_FILES['img']['tmp_name'];
-  $error =$_FILES['img']['error'];
-  $size = $_FILES['img']['size'];
+    $name = $_FILES['img']['name'];
+    $type = $_FILES['img']['type'];
+    $tmp_name =$_FILES['img']['tmp_name'];
+    $error =$_FILES['img']['error'];
+    $size = $_FILES['img']['size'];
+    
+    $arraypic= explode(".",$name);
+    $count =count($arraypic);
+    $count--;
+    
+    $picExti = $arraypic["$count"];
+    
+    array_pop($arraypic);
+    $imgnewname = implode(".",$arraypic) ;
+    $imgnewname .= time();
+    
+    $imgnewname .="."."$picExti";
+    
+    $theDocumentRoot =$_SERVER['DOCUMENT_ROOT'];
+    
+    //http://localhost:3000/Controllers/Registration/addpict.php
+    move_uploaded_file($tmp_name,$theDocumentRoot."\Controllers\Registration\img\\". $imgnewname);
+    include "connect.php";
+    $query1 ="UPDATE employee SET imgname = '$imgnewname' WHERE id ='$id'";
+    $result1=$conn->query($query1);
+    var_dump($result1);
+    
   
-  $arraypic= explode(".",$name);
-  $count =count($arraypic);
-  $count--;
-  
-  $picExti = $arraypic["$count"];
-  
-  array_pop($arraypic);
-  $imgnewname = implode(".",$arraypic) ;
-  $imgnewname .= time();
-  
-  $imgnewname .="."."$picExti";
-  
-  
-  
-  
-  move_uploaded_file($tmp_name,"N:\github\Controllers\Registration\img\\". $imgnewname);
-  include "connect.php";
-  $query1 ="UPDATE employee SET imgname = '$imgnewname' WHERE id ='$id'";
-  $result1=$conn->query($query1);
-  var_dump($result1);
-  
+  }
+
+
 
 }
+
 
 
 
