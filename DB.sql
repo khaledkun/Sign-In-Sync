@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2024 at 02:02 PM
+-- Generation Time: May 18, 2024 at 02:47 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,6 +20,54 @@ SET time_zone = "+00:00";
 --
 -- Database: `sign in sync`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `allday`
+--
+
+CREATE TABLE `allday` (
+  `id` int(11) NOT NULL,
+  `dayy` date NOT NULL,
+  `typee` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `allday`
+--
+
+INSERT INTO `allday` (`id`, `dayy`, `typee`) VALUES
+(31, '2024-05-18', 1),
+(32, '2024-05-19', 0),
+(33, '2024-05-20', 0),
+(34, '2024-05-21', 1),
+(35, '2024-05-22', 1),
+(36, '2024-05-23', 1),
+(37, '2024-05-24', 1),
+(38, '2024-05-25', 1),
+(39, '2024-05-26', 1),
+(40, '2024-05-27', 1),
+(41, '2024-05-28', 1),
+(42, '2024-05-29', 1),
+(43, '2024-05-30', 1),
+(44, '2024-05-31', 1),
+(45, '2024-06-01', 1),
+(46, '2024-06-02', 1),
+(47, '2024-06-03', 1),
+(48, '2024-06-04', 1),
+(49, '2024-06-05', 1),
+(50, '2024-06-06', 1),
+(51, '2024-06-07', 1),
+(52, '2024-06-08', 1),
+(53, '2024-06-09', 1),
+(54, '2024-06-10', 1),
+(55, '2024-06-11', 1),
+(56, '2024-06-12', 1),
+(57, '2024-06-13', 1),
+(58, '2024-06-14', 1),
+(59, '2024-06-15', 1),
+(60, '2024-06-16', 1);
 
 -- --------------------------------------------------------
 
@@ -80,7 +128,7 @@ CREATE TABLE `employee` (
   `login_date` date DEFAULT NULL,
   `token` varchar(255) DEFAULT NULL,
   `idPrive` int(11) NOT NULL,
-  `imgname` varchar(60) DEFAULT NULL
+  `imgname` varchar(400) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
@@ -88,10 +136,10 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`id`, `firstname`, `lastname`, `username`, `address`, `email`, `gender`, `phone`, `passsword`, `salary`, `age`, `login_date`, `token`, `idPrive`, `imgname`) VALUES
-(1, 'nada', 'eldabour', 'nada eldabour', 'kjion ibob 89bui', 'nada@gimail.com', 1, '2001243254563434', 'nada123321', 200000, 20050502, NULL, NULL, 1, '99440887_557541408298448_2196168609833680896_n1715774275.jpg'),
-(2, 'nada', 'eldabour', 'nada eldabour', 'knio no', 'nn15056691@gmail.com', 1, '04524542452', 'nada123', 200000, 20050502, '2024-03-12', NULL, 4, NULL),
-(3, 'nada', 'eldabour1', 'nada eldabour1', 'knionob[0[noib', 'nn15056962@gmail.com', 1, '7687567468', '1234', 200000, 20050502, '2024-03-12', NULL, 1, NULL),
-(4, 'nada', 'nada', NULL, NULL, 'nn15056963@gmail.com', 1, NULL, '123', NULL, 19, NULL, NULL, 4, NULL),
+(1, 'nada', 'eldabour', 'nada eldabour', 'kjion ibob 89bui', 'nada@gimail.com', 1, '2001243254563434', 'nada123321', 200000, 20050502, NULL, NULL, 1, '99106298_557541501631772_7976924166223822848_n1715987555.jpg'),
+(2, 'nada', 'eldabour', 'nada eldabour', 'knio no', 'nn15056691@gmail.com', 1, '04524542452', 'nada123', 200000, 20050502, '2024-03-12', NULL, 4, '130250237_243870837291638_8606958526193533080_n1715987006.jp'),
+(3, 'nada', 'eldabour1', 'nada eldabour1', 'knionob[0[noib', 'nn15056962@gmail.com', 1, '7687567468', '1234nada', 200000, 20050502, '2024-03-12', NULL, 1, '100082170_557541434965112_263284737945108480_n1715989085.jpg'),
+(4, 'nada', 'nada', NULL, NULL, 'nn15056963@gmail.com', 1, NULL, 'hinada', NULL, 19, NULL, NULL, 4, '101988329_305320740484907_3916724776680429475_n1715987950.jp'),
 (5, 'nada', 'nada', NULL, NULL, 'nn15056964@gmail.com', 1, NULL, '', NULL, 19, NULL, NULL, 1, NULL),
 (6, 'nada', 'nada', NULL, NULL, 'nn15056965@gmail.com', 1, NULL, '', NULL, 19, NULL, NULL, 1, NULL),
 (7, 'nada', 'nada', NULL, NULL, 'nn15056967@gmail.com', 1, NULL, '', NULL, 19, NULL, NULL, 1, NULL),
@@ -140,15 +188,20 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`id`, `dayy`, `timee`, `id_employee`, `Eout`, `daysession`) VALUES
 (1, '2024-05-13', '13:58:39', 1, '01:51:07', 6),
-(2, '2024-05-14', '12:57:21', 2, NULL, 6),
-(3, '2024-05-14', '13:48:41', 2, NULL, 6),
+(2, '2024-05-14', '12:57:21', 2, '02:09:38', 1),
+(3, '2024-05-14', '13:48:41', 2, '02:09:38', 1),
 (4, '2024-05-14', '13:58:06', 1, '01:51:07', 6),
 (5, '2024-05-14', '23:10:37', 1, '01:51:07', 6),
 (15, '2024-05-15', '02:28:32', 1, '02:28:49', 1),
 (16, '2024-05-15', '02:29:16', 1, '02:29:35', 2),
 (17, '2024-05-15', '02:31:04', 1, '02:31:34', 3),
-(18, '2024-05-15', '02:43:34', 1, NULL, 0),
-(19, '2024-05-15', '09:32:50', 1, NULL, 0);
+(18, '2024-05-15', '02:43:34', 1, '02:14:27', 1),
+(19, '2024-05-15', '09:32:50', 1, '02:14:27', 1),
+(20, '2024-05-16', '19:22:33', 1, '02:14:27', 1),
+(21, '2024-05-18', '01:32:52', 2, '02:09:38', 1),
+(22, '2024-05-18', '02:10:18', 1, '02:14:27', 1),
+(23, '2024-05-18', '02:18:43', 4, '02:21:45', 1),
+(24, '2024-05-18', '02:22:39', 3, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -170,6 +223,25 @@ INSERT INTO `privileges` (`id`, `privileges`) VALUES
 (2, 'supervisor'),
 (3, 'admin'),
 (4, 'manager');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `resettest`
+--
+
+CREATE TABLE `resettest` (
+  `id` int(11) NOT NULL,
+  `date` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `resettest`
+--
+
+INSERT INTO `resettest` (`id`, `date`) VALUES
+(1, '00:00:00'),
+(2, '00:00:44');
 
 -- --------------------------------------------------------
 
@@ -236,6 +308,12 @@ INSERT INTO `testtask` (`id`, `date1`) VALUES
 --
 
 --
+-- Indexes for table `allday`
+--
+ALTER TABLE `allday`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `bosssitting`
 --
 ALTER TABLE `bosssitting`
@@ -269,6 +347,12 @@ ALTER TABLE `privileges`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `resettest`
+--
+ALTER TABLE `resettest`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `shift`
 --
 ALTER TABLE `shift`
@@ -289,6 +373,12 @@ ALTER TABLE `testtask`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `allday`
+--
+ALTER TABLE `allday`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `bosssitting`
@@ -312,13 +402,19 @@ ALTER TABLE `employee`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `privileges`
 --
 ALTER TABLE `privileges`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `resettest`
+--
+ALTER TABLE `resettest`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `shift`
