@@ -52,6 +52,7 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                 // $user2Path?>
                 <?php
                 // ?>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
                     <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
                     <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img">
                     <i class="fas fa-camera Icons"></i>
