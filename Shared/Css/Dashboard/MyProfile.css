@@ -88,6 +88,7 @@ body {
 .profile-item.profile-info input[type="text"],
 .profile-item.profile-info input[type="email"],
 .profile-item.profile-info input[type="tel"],
+.profile-item.profile-info input[type=password],
 .profile-info select {
     border: none;
     background-color: transparent;
@@ -168,6 +169,7 @@ body {
 .profile-item.profile-info input[type="text"],
 .profile-item.profile-info input[type="email"],
 .profile-item.profile-info input[type="tel"],
+.profile-item.profile-info input[type=password],
 .profile-info select {
     border: none;
     font-size: inherit;
