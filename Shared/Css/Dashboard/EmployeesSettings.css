@@ -151,6 +151,15 @@ input[type="number"]::placeholder{
 .Icons{
     color: var(--Icons);
 }
+.logo-text {
+    margin-top: 4px;
+}
+.footer {
+    margin-top: 2.5px;
+}
+.mode-toggle {
+    margin-top: 17px;
+}
 
 @media only screen and (max-width: 750px) {
     .dashboard {
