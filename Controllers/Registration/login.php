@@ -77,7 +77,7 @@ if($result-> num_rows > 0){
 		// $query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
 
 		// $result3=$conn->query($query3);
-		header('Location: ' . $MyEmpView);
+		header('Location: ' . $MydashboardView);
 		exit();
 
 			// if(!$result2){
