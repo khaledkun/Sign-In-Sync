@@ -52,55 +52,60 @@ $manager = $result4->fetch_assoc();
             <div class="header">
                 <h1><i class="fas fa-user-cog Icons"></i> Employees Settings</h1>
             </div>
-            <?php if($idPrive != 2 || $idPrive == 4) { ?>
+
             <div class="grid-item">
                 <h2><i class="fas fa-user Icons"></i> Employee Settings</h2>
                 <div class="text-box-container">
                     <label for="name">Salary</label>
-                    <input type="number" id="security1" name="security0-1" placeholder="Salary" min="<?= $idPrive <= 2 ? $employee['salary'] : "" ?>" max="<?= $idPrive <= 2 ? $employee['salary'] : "" ?>" value="<?= $employee['salary']; ?>"><br>
+                    <input type="number" id="security1" name="security0-1" placeholder="Salary" min="<?= $employee['salary'] ?>" max="<?= $employee['salary'] ?>" value="<?= $employee['salary']; ?>"><br>
                     <label for="name">Shift Hours</label>
-                    <input type="number" id="security2" name="security0-2" placeholder="Shift Hours" min="<?= $idPrive <= 2 ? $employee['shiftHour'] : "" ?>" max="<?= $idPrive <= 2 ? $employee['shiftHour'] : "" ?>" value="<?= $employee['shiftHour']; ?>"><br>
+                    <input type="number" id="security2" name="security0-2" placeholder="Shift Hours" min="<?= $employee['shiftHour'] ?>" max="<?= $employee['shiftHour'] ?>" value="<?= $employee['shiftHour']; ?>"><br>
                     <label for="name">Max Days For Absence</label>
-                    <input type="number" id="security3" name="security0-3" placeholder="Max Days for Absence" min="<?= $idPrive <= 2 ? $employee['maxAbesence'] : "" ?>" max="<?= $idPrive <= 2 ? $employee['maxAbesence'] : "" ?>" value="<?= $employee['maxAbesence']; ?>"><br>
+                    <input type="number" id="security3" name="security0-3" placeholder="Max Days for Absence" min="<?= $employee['maxAbesence'] ?>" max="<?= $employee['maxAbesence'] ?>" value="<?= $employee['maxAbesence']; ?>"><br>
                     <label for="name">Max Days For Latency</label>
-                    <input type="number" id="security4" name="security0-4" placeholder="Max Days for Latency" min="<?= $idPrive <= 2 ? $employee['maxLatence'] : "" ?>" max="<?= $idPrive <= 2 ? $employee['maxLatence'] : "" ?>" value="<?= $employee['maxLatence']; ?>"><br>
+                    <input type="number" id="security4" name="security0-4" placeholder="Max Days for Latency" min="<?= $employee['maxLatence'] ?>" max="<?= $employee['maxLatence'] ?>" value="<?= $employee['maxLatence']; ?>"><br>
                     <label for="name">Pay Levy per Hour</label>
-                    <input type="number" id="security5" name="security0-5" placeholder="Pay Levy per Hour" min="<?= $idPrive <= 2 ? $employee['payHour'] : "" ?>" max="<?= $idPrive <= 2 ? $employee['payHour'] : "" ?>" value="<?= $employee['payHour']; ?>"><br>
+                    <input type="number" id="security5" name="security0-5" placeholder="Pay Levy per Hour" min="<?= $employee['payHour'] ?>" max="<?= $employee['payHour'] ?>" value="<?= $employee['payHour']; ?>"><br>
                 </div>
             </div>
-            <?php } ?>
 
-            <?php if($idPrive == 2 || $idPrive == 4 || $idPrive == 3) { ?>
             <div class="grid-item">
                 <h2><i class="fas fa-user-shield Icons"></i> Supervisor Settings</h2>
                 <div class="checkbox-container">
                     <div class="text-box-container">
-                        <input type="number" id="security1" name="security1-1" placeholder="Salary" min="<?= $idPrive <= 2 ? $supervisor['salary'] : "" ?>" max="<?= $idPrive <= 2 ? $supervisor['salary'] : "" ?>" value="<?= $supervisor['salary']; ?>"><br>
-                        <input type="number" id="security2" name="security1-2" placeholder="Shift Hours" min="<?= $idPrive <= 2 ? $supervisor['shiftHour'] : "" ?>" max="<?= $idPrive <= 2 ? $supervisor['shiftHour'] : "" ?>" value="<?= $supervisor['shiftHour']; ?>"><br>
-                        <input type="number" id="security3" name="security1-3" placeholder="Max Days for Absence" min="<?= $idPrive <= 2 ? $supervisor['maxAbesence'] : "" ?>" max="<?= $idPrive <= 2 ? $supervisor['maxAbesence'] : "" ?>" value="<?= $supervisor['maxAbesence']; ?>"><br>
-                        <input type="number" id="security4" name="security1-4" placeholder="Max Days for Latency" min="<?= $idPrive <= 2 ? $supervisor['maxLatence'] : "" ?>" max="<?= $idPrive <= 2 ? $supervisor['maxLatence'] : "" ?>" value="<?= $supervisor['maxLatence']; ?>"><br>
-                        <input type="number" id="security5" name="security1-5" placeholder="Pay Levy per Hour" min="<?= $idPrive <= 2 ? $supervisor['payHour'] : "" ?>" max="<?= $idPrive <= 2 ? $supervisor['payHour'] : "" ?>" value="<?= $supervisor['payHour']; ?>"><br>
+                    <label for="name">Salary</label>
+                        <input type="number" id="security1" name="security1-1" placeholder="Salary" min="<?= $supervisor['salary'] ?>" max="<?= $supervisor['salary'] ?>" value="<?= $supervisor['salary']; ?>"><br>
+                        <label for="name">Shift Hours</label>
+                        <input type="number" id="security2" name="security1-2" placeholder="Shift Hours" min="<?= $supervisor['shiftHour'] ?>" max="<?= $supervisor['shiftHour'] ?>" value="<?= $supervisor['shiftHour']; ?>"><br>
+                        <label for="name">Max Days For Absence</label>
+                        <input type="number" id="security3" name="security1-3" placeholder="Max Days for Absence" min="<?= $supervisor['maxAbesence'] ?>" max="<?= $supervisor['maxAbesence'] ?>" value="<?= $supervisor['maxAbesence']; ?>"><br>
+                        <label for="name">Max Days For Latency</label>
+                        <input type="number" id="security4" name="security1-4" placeholder="Max Days for Latency" min="<?= $supervisor['maxLatence'] ?>" max="<?= $supervisor['maxLatence'] ?>" value="<?= $supervisor['maxLatence']; ?>"><br>
+                        <label for="name">Pay Levy per Hour</label>
+                        <input type="number" id="security5" name="security1-5" placeholder="Pay Levy per Hour" min="<?= $supervisor['payHour'] ?>" max="<?= $supervisor['payHour'] ?>" value="<?= $supervisor['payHour']; ?>"><br>
                     </div>
                 </div>
             </div>
-            <?php } ?>
 
-            <?php if($idPrive == 3 || $idPrive == 4) { ?>
             <div class="grid-item">
                 <h2><i class="fas fa-user-tie Icons"></i> Manager Settings</h2>
                 <div class="radio-container">
                     <div class="text-box-container">
+                    <label for="name">Salary</label>
                         <input type="number" id="security1" name="security2-1" placeholder="Salary" min="0" value="<?= $manager['salary']; ?>"><br>
+                        <label for="name">Shift Hours</label>
                         <input type="number" id="security2" name="security2-2" placeholder="Shift Hours" min="0" value="<?= $manager['shiftHour']; ?>"><br>
+                        <label for="name">Max Days For Absence</label>
                         <input type="number" id="security3" name="security2-3" placeholder="Max Days for Absence" min="0" value="<?= $manager['maxAbesence']; ?>"><br>
+                        <label for="name">Max Days For Latency</label>
                         <input type="number" id="security4" name="security2-4" placeholder="Max Days for Latency" min="0" value="<?= $manager['maxLatence']; ?>"><br>
+                        <label for="name">Pay Levy per Hour</label>
                         <input type="number" id="security5" name="security2-5" placeholder="Pay Levy per Hour" min="0" value="<?= $manager['payHour']; ?>"><br>
                     </div>
                 </div>
             </div>
+
             <button type="submit" class="submit-button">Save</button>
-            </div>
-            <?php } ?>
         </div>
     </form>
 </body>
