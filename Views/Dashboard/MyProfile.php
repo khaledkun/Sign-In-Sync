@@ -76,10 +76,10 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                     <input type="text" id="name" value="<?= $userdata1['gender'] == 1? 'Female':'Male'?>" disabled>
 
                     <label for="name"><i class="fas fa-lock Icons"></i> Password :</label>
-                    <input type="text" id="name" value="<?= $userdata1['passsword']?>" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
+                    <input type="password" id="name" value="<?= $userdata1['passsword']?>" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
                     
                     <label for="position"><i class="fas fa-briefcase Icons"></i> Position :</label>
-                    <input type="text" id="position" value="<?php if($posstion ==1){ echo "Employee";} if($posstion ==2){ echo "Supervisor";} if($posstion ==3){ echo "Admin";} if($posstion ==4){ echo "Manager";}?>" disabled>
+                    <input type="text" id="position" value="<?php if($posstion ==1){ echo "Employee";} if($posstion ==2){ echo "Supervisor";} if($posstion ==3){ echo "Admin";} if($posstion ==4){ echo "Manager";}?>">
                     
                 </div>
                 <button type="submit" class="submit-button">Save</button>
