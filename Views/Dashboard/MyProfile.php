@@ -47,15 +47,15 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
         </div>
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
+            <i class="fa fa-trash Icons" id="remove-picture-icon"></i>
+                <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
                 <label for="profile-picture-input">
                 <?php
                 // $user2Path?>
                 <?php
                 // ?>
-                    <i class="fa fa-trash Icons"></i>
-                    <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
                     <i class="fas fa-camera Icons">
-                        <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img"></i>
+                    <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img"></i>
                 </label>
             </div>
             <div class="profile-details grid-container">
@@ -101,6 +101,13 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
         reader.readAsDataURL(file);
     }
 });
+document.getElementById('remove-picture-icon').addEventListener('click', function() {
+    // Clear the file input value
+    document.getElementById('profile-picture-input').value = '';
+    // Reset the image preview
+    document.getElementById('profile-picture-preview').src = '';
+});
+
     </script>
 </body>
 </html>
