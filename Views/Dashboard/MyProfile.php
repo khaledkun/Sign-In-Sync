@@ -56,6 +56,7 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                 // ?>
                     <i class="fas fa-camera Icons">
                     <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img"></i>
+                    <p id="error-message" style="color: red;"></p>
                 </label>
             </div>
             <div class="profile-details grid-container">
@@ -91,23 +92,50 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
     <!-- ده عشان تجرب بس فكرة تغيير الصورة بتاعة البروفايل -->
 
     <script>
-        document.getElementById('profile-picture-input').addEventListener('change', function() {
-    const file = this.files[0];
-    if (file) {
+    document.getElementById('profile-picture-input').addEventListener('change', function() {
+        const file = this.files[0];
         const reader = new FileReader();
-        reader.onload = function(event) {
-            document.getElementById('profile-picture-preview').src = event.target.result;
-        }
-        reader.readAsDataURL(file);
-    }
-});
-document.getElementById('remove-picture-icon').addEventListener('click', function() {
-    // Clear the file input value
-    document.getElementById('profile-picture-input').value = '';
-    // Reset the image preview
-    document.getElementById('profile-picture-preview').src = '';
-});
+        const profilePicture = document.getElementById('profile-picture-preview');
+        const errorMessage = document.getElementById('error-message');
+        const maxSize = 2 * 1024 * 1024; 
+        const minWidth = 150;
+        const minHeight = 150;
 
-    </script>
+        reader.onload = function(event) {
+            const img = new Image();
+            img.src = event.target.result;
+            img.onload = function() {
+                if (file.size > maxSize) {
+                    errorMessage.textContent = 'File size must be less than 2MB';
+                    document.getElementById('profile-picture-input').value = '';
+                    profilePicture.src = '';
+                    return;
+                }
+                if (img.width < minWidth || img.height < minHeight) {
+                    errorMessage.textContent = 'Image dimensions must be at least 150x150 pixels';
+                    document.getElementById('profile-picture-input').value = '';
+                    profilePicture.src = '';
+                    return;
+                }
+                errorMessage.textContent = ''; 
+                profilePicture.src = img.src; 
+            };
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.getElementById('remove-picture-icon').addEventListener('click', function() {
+       
+        document.getElementById('profile-picture-input').value = '';
+        
+        document.getElementById('profile-picture-preview').src = '';
+        
+        document.getElementById('error-message').textContent = '';
+    });
+</script>
+
 </body>
 </html>
