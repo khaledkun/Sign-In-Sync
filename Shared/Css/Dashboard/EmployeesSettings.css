@@ -65,8 +65,11 @@ body {
 }
 
 .grid-item label {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: left;
+    font-weight: bold;
 }
 
 .checkbox-label {
@@ -83,9 +86,10 @@ body {
     margin: 0;
 }
 
-.grid-item input[type="radio"] {
+.grid-item input[type="number"] {
     margin-right: 10px;
     display: inline-block;
+    margin-bottom: 40px !important;
     vertical-align: middle;
 }
 
@@ -141,6 +145,7 @@ input[type="number"]::placeholder{
     outline: none;
     background-color: transparent;
     max-width: 80%;
+    width: 150px;
 }
 
 .Icons{
