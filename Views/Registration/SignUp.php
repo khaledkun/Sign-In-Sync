@@ -36,12 +36,12 @@
         <div class="input-box">
           <label for="password">Password</label>
           <input type="password" onChange="onChange()" id="password" pattern="^(?=.*[A-Z])(?=.*[!@#$%^&*_])(?=.{8,}).*$" title="Password must contain at least one uppercase letter, one special character (!@#$%^&*_), and be at least 8 characters long." name="password" placeholder="Enter your password" required>
-          <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility('password', this)" alt="eye-icon for the password">
+          <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility('password', this)" style="filter: invert(100%);" alt="eye-icon for the password">
         </div>
         <div class="input-box">
           <label for="password2">Confirm Password</label>
           <input type="password" onChange="onChange()" id="password2" name="password2" placeholder="Confirm your password" required>
-          <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility('password2', this)" alt="eye-icon for the confirm password">
+          <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility('password2', this)" style="filter: invert(100%);" alt="eye-icon for the confirm password">
         </div>
         <div class="input-box">
           <label for="email">Email Address</label>

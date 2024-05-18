@@ -21,7 +21,7 @@
     <input type="hidden" id="token" name="token" value="<?php echo $_GET["token"];?>">
       <?php endif; ?>
         <input type="password" id="password" name="password" placeholder="Enter Your new Password" required>
-        <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility()" alt="eye-icon for the password">
+        <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility()" style="filter: invert(100%);" alt="eye-icon for the password">
       </div>
       <button type="submit" class="sendcode">Change Password</button>
     </form>
