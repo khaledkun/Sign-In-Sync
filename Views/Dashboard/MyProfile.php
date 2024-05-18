@@ -48,7 +48,11 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
                 <label for="profile-picture-input">
-                    <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path?>" alt="Profile Picture">
+                <?php
+                // $user2Path?>
+                <?php
+                // ?>
+                    <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
                     <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img">
                     <i class="fas fa-camera Icons"></i>
                 </label>
