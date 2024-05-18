@@ -54,8 +54,8 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                 // ?>
                     <i class="fa fa-trash Icons"></i>
                     <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
-                    <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img">
-                    <i class="fas fa-camera Icons"></i>
+                    <i class="fas fa-camera Icons">
+                        <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" name="img"></i>
                 </label>
             </div>
             <div class="profile-details grid-container">
