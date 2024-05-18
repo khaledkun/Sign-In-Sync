@@ -72,7 +72,7 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                     <input type="text" id="name" value="<?= $userdata1['gender'] == 1? 'Femail':'Mail'?>" disabled>
 
                     <label for="name"><i class="fas fa-lock Icons"></i> Password :</label>
-                    <input type="password" id="name" value="<?= $userdata1['passsword']?>" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
+                    <input type="text" id="name" value="<?= $userdata1['passsword']?>" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
                     
                     <label for="department"><i class="fas fa-building Icons"></i> Department :</label>
                     <input type="text" id="department" value="IT" disabled>
