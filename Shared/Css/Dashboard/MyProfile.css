@@ -48,7 +48,6 @@ body {
 .profile-picture img {
     width: 150px;
     border-radius: 50%;
-    filter: var(--Img);
 }
 
 .profile-info h2 {

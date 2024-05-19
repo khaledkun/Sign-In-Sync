@@ -48,7 +48,11 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
         <div class="profile-details grid-container">
             <div class="profile-item profile-picture" style="background-image: url('placeholder-image.png');">
             <i class="fa fa-trash Icons" id="remove-picture-icon"></i>
-                <img id="profile-picture-preview" src="<?=$userdata1['imgname']!=NULL? $imgpath:$user2Path;?>" alt="Profile Picture">
+            <?php if ($imgname && file_exists($imgpath)) : ?>
+            <img id="profile-picture-preview" src="<?= $imgpath ?>" alt="Profile Picture">
+            <?php else : ?>
+            <img id="profile-picture-preview" src="<?= $user2Path ?>" alt="Profile Picture" style="filter: var(--Img);">
+                 <?php endif; ?>
                 <label for="profile-picture-input">
                 <?php
                 // $user2Path?>
@@ -128,13 +132,10 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
     });
 
     document.getElementById('remove-picture-icon').addEventListener('click', function() {
-       
-        document.getElementById('profile-picture-input').value = '';
-        
-        document.getElementById('profile-picture-preview').src = '';
-        
-        document.getElementById('error-message').textContent = '';
-    });
+    document.getElementById('profile-picture-input').value = '';
+    document.getElementById('profile-picture-preview').src = '<?= $user2Path ?>';
+    document.getElementById('error-message').textContent = '';
+});
 </script>
 
 </body>
