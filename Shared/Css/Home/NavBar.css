@@ -223,6 +223,8 @@ body {
       flex-direction: column;
       justify-content: center;
       gap: 3rem;
+      overflow-y: auto;
+      scrollbar-width: thin;
     }
   
     ul li:first-child {
