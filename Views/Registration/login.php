@@ -61,7 +61,7 @@
               <div class="input-box">
           <label for="email">Email<input type="email" placeholder="Email" name="email" required></label>
           <img class="user-img" src="<?php echo $user1Path; ?>" alt="user-icon">
-          <label for="password">Password<input type="password" id="password" minlength="6" placeholder="Enter your password" name="password" required></label>
+          <label for="password">Password<input type="password" id="password" placeholder="Enter your password" name="password" required></label>
           <img class="lock-img" src="<?php echo $Eye; ?>" onclick="togglePasswordVisibility()" style="filter: invert(100%);" alt="eye-icon for the password">
         </div>
 
