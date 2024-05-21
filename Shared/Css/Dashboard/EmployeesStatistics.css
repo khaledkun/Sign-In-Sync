@@ -192,4 +192,7 @@ ul.custom-list li a:hover {
     .dashboard {
         margin-left: 0px;
     }
+    ul.custom-list {
+        margin-bottom: -70px;
+    }
 }
