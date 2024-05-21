@@ -52,9 +52,10 @@ $manager = $result4->fetch_assoc();
             <div class="header">
                 <h1><i class="fas fa-user-cog Icons"></i> Employees Settings</h1>
             </div>
-
-            <div class="grid-item">
-                <h2><i class="fas fa-user Icons"></i> Employee Settings</h2>
+        <div class="grid-container">
+         <div class="grid-item">
+            <h2><i class="fas fa-user Icons"></i> Employee Settings</h2>
+            <div class="checkbox-container">
                 <div class="text-box-container">
                     <label for="name">Salary</label>
                     <input type="number" id="security1" name="security0-1" placeholder="Salary" min="<?= $employee['salary'] ?>" max="<?= $employee['salary'] ?>" value="<?= $employee['salary']; ?>"><br>
@@ -68,7 +69,7 @@ $manager = $result4->fetch_assoc();
                     <input type="number" id="security5" name="security0-5" placeholder="Pay Levy per Hour" min="<?= $employee['payHour'] ?>" max="<?= $employee['payHour'] ?>" value="<?= $employee['payHour']; ?>"><br>
                 </div>
             </div>
-
+        </div>
             <div class="grid-item">
                 <h2><i class="fas fa-user-shield Icons"></i> Supervisor Settings</h2>
                 <div class="checkbox-container">
@@ -104,9 +105,8 @@ $manager = $result4->fetch_assoc();
                     </div>
                 </div>
             </div>
-
-            <button type="submit" class="submit-button">Save</button>
         </div>
+        <button type="submit" class="submit-button">Save</button>
     </form>
 </body>
 </html>

@@ -165,6 +165,9 @@ body {
 .Icons{
     color: var(--Icons);
 }
+select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
+  }
 
 @media only screen and (max-width: 751px) {
 .profile-item.profile-info input[type="text"],

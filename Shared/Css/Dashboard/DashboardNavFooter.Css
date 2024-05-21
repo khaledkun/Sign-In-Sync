@@ -153,12 +153,43 @@
   .menu-items {
     display: none;
   }
+  .header, .search-container {
+    position: fixed;
+    z-index: 997;
+    width: calc(90% - 20px);
+  }
+
+  .profile-header {
+    position: fixed;
+    z-index: 997;
+    width: calc(90% - 20px);
+    display: flex;
+  }
+
+  .dashboard > :not(.header) {
+    margin-top: 80px;
+  }
+
+  .boss-dashboard > :not(.header, .search-container) {
+    margin-top: 160px;
+  }
+  .search-container {
+    margin-top: 80px;
+  }
+ .contact-icon {
+  z-index: 1;
+ }
+
+  .profile > :not(.profile-header) {
+    margin-top: 100px;
+  }
 
   .menu-icon {
     display: block;
-    position: absolute;
+    position: fixed;
+    z-index: 998;
     top: 48px;
-    right: 55px;
+    right: 50px;
     cursor: pointer;
   }
 

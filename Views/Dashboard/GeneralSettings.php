@@ -26,6 +26,7 @@ if(!$_SESSION['id']){
         <div class="header">
                 <h1><i class="fas fa-cog Icons"></i> General Settings</h1>
         </div>
+        <div class="grid-container">
         <div class="grid-item">
             <h2><i class="fas fa-bell Icons"></i> Notification Settings</h2>
             <div class="checkbox-container">
@@ -65,8 +66,10 @@ if(!$_SESSION['id']){
                 </label><br>
             </div>
         </div>
+        </div>
         <button type="submit" class="submit-button">Save</button>
       </div>
+    </div>
     </form>
 </body>
 </html>

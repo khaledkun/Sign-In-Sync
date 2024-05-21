@@ -85,8 +85,12 @@ $imgpath = "../../Controllers/Registration/img/"."$imgname";
                     <input type="password" id="name" value="<?= $userdata1['passsword']?>" disabled><a href="<?php echo $ForgetPassView; ?>" target="_blank" class="change">Change</a>
                     
                     <label for="position"><i class="fas fa-briefcase Icons"></i> Position :</label>
-                    <input type="text" id="position" value="<?php if($posstion ==1){ echo "Employee";} if($posstion ==2){ echo "Supervisor";} if($posstion ==3){ echo "Admin";} if($posstion ==4){ echo "Manager";}?>">
-                    
+                    <select id="position" name="position" disabled>
+                    <option value="3" <?php if($posstion == 3) echo "selected"; ?>>&#xf502; Admin</option>
+                    <option value="1" <?php if($posstion == 1) echo "selected"; ?>>&#xf007; Employee</option>
+                    <option value="2" <?php if($posstion == 2) echo "selected"; ?>>&#xf505; Supervisor</option>
+                    <option value="4" <?php if($posstion == 4) echo "selected"; ?>>&#xf508; Manager</option>
+                    </select>
                 </div>
                 <button type="submit" class="submit-button">Save</button>
             </div>
