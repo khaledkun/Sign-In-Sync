@@ -59,5 +59,80 @@ $userdata1 =$result1->fetch_assoc();
             <p>&copy; 2024 Sign In Sync</p>
         </div>
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+    const profileHeader = document.querySelector('.profile-header');
+    const menuIcon = document.querySelector('.menu-icon');
+    const searchContainer = document.querySelector('.search-container');
+
+    if (header) {
+      header.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+      header.style.opacity = '1';
+      header.style.visibility = 'visible';
+    }
+    if (profileHeader) {
+      profileHeader.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+      profileHeader.style.opacity = '1';
+      profileHeader.style.visibility = 'visible';
+    }
+    if (menuIcon) {
+      menuIcon.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+      menuIcon.style.opacity = '1';
+      menuIcon.style.visibility = 'visible';
+    }
+    if (searchContainer) {
+      searchContainer.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+      searchContainer.style.opacity = '1';
+      searchContainer.style.visibility = 'visible';
+    }
+
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth <= 750) {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+         
+          if (header) {
+            header.style.opacity = '0';
+            header.style.visibility = 'hidden';
+          }
+          if (profileHeader) {
+            profileHeader.style.opacity = '0';
+            profileHeader.style.visibility = 'hidden';
+          }
+          if (menuIcon) {
+            menuIcon.style.opacity = '0';
+            menuIcon.style.visibility = 'hidden';
+          }
+          if (searchContainer) {
+            searchContainer.style.opacity = '0';
+            searchContainer.style.visibility = 'hidden';
+          }
+        } else {
+         
+          if (header) {
+            header.style.opacity = '1';
+            header.style.visibility = 'visible';
+          }
+          if (profileHeader) {
+            profileHeader.style.opacity = '1';
+            profileHeader.style.visibility = 'visible';
+          }
+          if (menuIcon) {
+            menuIcon.style.opacity = '1';
+            menuIcon.style.visibility = 'visible';
+          }
+          if (searchContainer) {
+            searchContainer.style.opacity = '1';
+            searchContainer.style.visibility = 'visible';
+          }
+        }
+        lastScrollTop = scrollTop;
+      }
+    });
+  });
+</script>
 </body>
 </html>
