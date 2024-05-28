@@ -23,11 +23,19 @@ $userdata1 =$result1->fetch_assoc();
 <html lang="en">
 <head>
     <?php
+
+    include_once($ConnectContrl);  
+    $query20 = "SELECT * FROM allday WHERE typee = 0";
+    $result20 =$conn->query($query20);
+    $thDay =date("Y-m-d",time());
+    $query21 ="SELECT * FROM allday WHERE dayy = '$thDay'";
+    $result21 =$conn->query($query21);
+    $Day = $result21->fetch_assoc();
 // You Can Change the Page Title as you like
     $pageTitle = "My Dashboard";
     // Include the Template
     include '../../Templates/MetaTags.php';
-    include_once($ConnectContrl);?>
+    ?>
     <link rel="stylesheet" href="<?php echo $DashboardPath; ?>">
     <link rel="stylesheet" href="<?php echo $StopwatchPath; ?>">
     <script src="../../Controllers/Dashboard/ajax/ajax.js"></script>
@@ -113,7 +121,26 @@ $userdata1 =$result1->fetch_assoc();
             <div class="grid-item holidays" onclick="Ajaxholiday()">
                 <i class="fas fa-calendar-alt Icons"></i>
                 <h2>Next Holidays</h2>
-                <p id="next-holidays">No holidays</p>
+                <p id="next-holidays">
+                    <?php
+                    foreach($result20 as $key=>$value){
+                        if($value['id']==$Day['id']){
+                            echo "this day is holiday".$Day['dayy'];
+                            
+                            break;
+                        }
+                        if($value['id']>$Day['id']){
+                            echo $value['dayy']."<br>";
+                             break;
+                        }
+                            
+                            
+                            // echo "<pre>";
+                            // print_r($value['dayy']);
+                            // echo "</pre>";
+                        }
+                    ?>
+                </p>
             </div>
         </div>
     </div>

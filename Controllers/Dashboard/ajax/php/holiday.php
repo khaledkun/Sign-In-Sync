@@ -11,11 +11,16 @@ $Day = $result21->fetch_assoc();
 
 
 foreach($result20 as $key=>$value){
-
-    if($value['id']>$Day['id']){
-        echo $value['dayy']."<br>";
-         break;
-    }
+if($value['id']==$Day['id']){
+    echo "this day is holiday".$Day['dayy'];
+    
+    break;
+}
+if($value['id']>$Day['id']){
+    echo $value['dayy']."<br>";
+     break;
+}
+    
     
     // echo "<pre>";
     // print_r($value['dayy']);
