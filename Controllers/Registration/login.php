@@ -98,6 +98,6 @@ if($result-> num_rows > 0){
 		
 	}
 }else{
-		// header('Location: ' . $LoginView);
+		header('Location: ' . $LoginView);
 }
 // echo $result;
