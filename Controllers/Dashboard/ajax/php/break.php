@@ -67,7 +67,7 @@ if($num_rows==1){
     //معانا كده عدد الساعات
     if($allBreakSec>=3600){
         $breakHour = $allBreakSec/(60*60);
-        $countHour = round($breakHour) ;//countHour
+        $countHour = floor($breakHour) ;//countHour
         //كده تنقصنا الساعات بالثوانى من  كل الثوانى
         $breakminbySec =($allBreakSec-($countHour*60*60));
         //هنه جبنا عدد الدقائق
@@ -88,7 +88,7 @@ if($num_rows==1){
 
     }elseif($allBreakSec<60){
         $totalreal= $totalin-$totalout;
-        // echo $totalreal;
+        
         echo "00:00:".$allBreakSec;
     }
     
@@ -99,7 +99,7 @@ if($num_rows==1){
 
 
 }elseif($num_rows>2){
-    echo "<b>you take more than one break<br> you take "."$num_rows_sup"."break and total time<br></b><b>******** ==</b>";
+    echo "<b>you take more than one break<br> you take "."$num_rows_sup  "."break and total time<br></b><b>******** ==</b>";
      //first delet all data to break time
      $query40 ="DELETE FROM calBreak WHERE id_employee =$id";
      $reslut40 =$conn->query($query40);
