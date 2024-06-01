@@ -9,9 +9,9 @@
 			// const result = document.getElementById('timedisplay').value;
 			xhr1.onreadystatechange =function(){
 			elementLate1.innerHTML = xhr1.responseText;
-			const  hi= "hinadathisfortest";
+			// const  hi= "hinadathisfortest";
 		};
-		xhr1.open("GET",'../../Controllers/Dashboard/ajax/php/late.php?reset=' + hi,true);
+		xhr1.open("GET",'../../Controllers/Dashboard/ajax/php/late.php?reset=TESTForAJax',true);
 
 		
 		xhr1.send();
@@ -163,14 +163,14 @@ xhr7.send();
 
 //-------end-------********absent*******---------end----------
 //-----------star-----------for late day----------ajax
- function AjaxReset(){
-			const xhr8 =new XMLHttpRequest();
-			const result8 = document.getElementById('timedisplay').textContent;
-			const elementLate2 =document.getElementById('absent-days');
-			xhr8.onreadystatechange =function(){
-				elementLate2.innerHTML = xhr8.responseText;
+//  function AjaxReset(){
+// 			const xhr8 =new XMLHttpRequest();
+// 			const result8 = document.getElementById('timedisplay').textContent;
+// 			const elementLate2 =document.getElementById('absent-days');
+// 			xhr8.onreadystatechange =function(){
+// 				elementLate2.innerHTML = xhr8.responseText;
 			
-		};
-		xhr8.open("GET",'../../Controllers/Dashboard/ajax/php/reset.php?reset='+result8,true);
-		xhr8.send();
-	}
+// 		};
+// 		xhr8.open("GET",'../../Controllers/Dashboard/ajax/php/reset.php?reset='+result8,true);
+// 		xhr8.send();
+// 	}

@@ -74,7 +74,7 @@ $userdata1 =$result1->fetch_assoc();
             <button id="startbutton" class="timer-button" title="Start"><i class="fas fa-play Icons"></i></button>
             <button id="pausebutton" class="timer-button" title="Pause"><i class="fas fa-pause Icons"></i></button>
             <!-- to remember add  this onclick="AjaxReset()" -->
-            <button id="resetbutton" class="timer-button" title="Reset"   onclick="AjaxReset()"><i class="fas fa-stop Icons"></i></button>
+            <button id="resetbutton" class="timer-button" title="Reset"   onclick=""><i class="fas fa-stop Icons"></i></button>
             </div>
             </div>
             <!-- end  timer  -->
