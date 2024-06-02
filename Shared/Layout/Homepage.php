@@ -73,5 +73,37 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('nav');
+    const navCheckbox = document.querySelector('#check');
+
+    if (navbar) {
+      navbar.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+      navbar.style.opacity = '1';
+      navbar.style.visibility = 'visible';
+    }
+
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth <= 750) {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          if (navbar && !navCheckbox.checked) {
+            navbar.style.opacity = '0';
+            navbar.style.visibility = 'hidden';
+          }
+        } else {
+          if (navbar) {
+            navbar.style.opacity = '1';
+            navbar.style.visibility = 'visible';
+          }
+        }
+        lastScrollTop = scrollTop;
+      }
+    });
+  });
+</script>
 </body>
 </html>
