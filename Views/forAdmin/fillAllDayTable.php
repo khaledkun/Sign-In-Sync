@@ -1,8 +1,8 @@
 <?php
 include "../../Controllers/Registration/connect.php";
-$query3= "DELETE  FROM allday WHERE 0=0";
-$delete =true;
-$insert =true;
+$query3= "DELETE  FROM allday WHERE id <223";
+$delete =false;
+$insert =false;
 if($delete == true){
   $result3 =$conn->query($query3);
   var_dump($result3);
@@ -13,8 +13,8 @@ $dayBySecends = (60*60*24);
 // echo date('Y-m-d h:i:s',$dayBySecends);
 if($insert){
   
-  $countDay =30;
-  for($i=0;$i<30;++$i){
+  $countDay =100;
+  for($i=0;$i<100;++$i){
     // echo $i;
   
     $Daybysecend = time()+($dayBySecends*$i);
@@ -42,23 +42,48 @@ if($insert){
 <form action="controlDay.php" method="POST">
   <h1>chose holiday days</h1>
   <?php
-  for($x=0;$x<30;++$x){
-    $Daybysecend = time()+($dayBySecends*$x);
-    $Dayss = date("Y-m-d",$Daybysecend);
-    ?>
- <h3>'(<?=$Dayss?>)'</h3>
 
-  <input type="radio" id="check" name="typeDay<?=$x?>" value="0" required>
+  $query200 = "SELECT * FROM allday";
+  $result100 =$conn->query($query200);
+  $x=0;
+  foreach($result100 as $key => $value){
+    $x++;
+    ?>
+    <h3>'(<?=$value['dayy']?>)'</h3>
+   
+     <input type="radio" id="check" name="typeDay<?=$x?>" value="0" required>
+     <label for="check">holiday</label>
+     <br>
+     <input type="radio" id="check" name="typeDay<?=$x?>" value="1" required checked>
+     <label for="check">workday</label>
+     <br>
+     <?php
+   
+
+  }
+    // return to make this work again after we end++++
+  // for($x=0;$x<30;++$x){
+  //   $Daybysecend = time()+($dayBySecends*$x);
+  //   $Dayss = date("Y-m-d",$Daybysecend);
+    ?>
+ <!-- <h3>'(<?php  
+//  echo $Dayss
+?>)'</h3>
+ -->
+  <!-- <input type="radio" id="check" name="typeDay<?php 
+  // echo $x
+  ?>" value="0" required>
   <label for="check">holiday</label>
   <br>
-  <input type="radio" id="check" name="typeDay<?=$x?>" value="1" required checked>
+  <input type="radio" id="check" name="typeDay<?php 
+  // echo $x?>" value="1" required checked>
   <label for="check">workday</label>
-  <br>
+  <br> -->
   <?php
 
 
 
-  }
+  // }++++
   ?>
   <input type="submit">
 </form>

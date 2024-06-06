@@ -11,21 +11,7 @@ $result = $conn->query($query);// mysqli result object ==>current_field  ==> fei
 // var_dump($result);
 
 $user =$result->fetch_assoc();
-// foreach ($result as $row => $value) {
-// 	echo '<pre>';
 
-// 	print_r($value);
-
-// 	echo '</pre>';
-// }
-
-
-
-// echo '<pre>';
-// print_r($result);
-// echo '</pre>';
-
-// echo "<br>";
 print_r($user);
 
 // echo $id;
@@ -68,33 +54,11 @@ if($result-> num_rows > 0){
 		// echo $time."<br>";
 		$query1 ="INSERT INTO login( id_employee, dayy, timee) VALUES ($id,'$date','$time')";
 		$result1 =$conn->query($query1);
-		// $query2 = "SELECT * FROM login"
-
-		// $id_login= $login['id_login'];
-		//type on anothor time will be work
-
-
-		// $query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
-
-		// $result3=$conn->query($query3);
+		
 		header('Location: ' . $MydashboardView);
 		exit();
 
-			// if(!$result2){
-	// 	header('location:fordatetable.php');
-	// }
-	// --------
-	
-	// $result2=$conn->query($query2);
-	// var_dump($result2);
-	// $logindata =$result2->fetch_assoc();
-
-	// $id_login= $logindata['id_login'];
-	// echo $id_login;
-	// //type on anothor time will be work
-	// $query3 ="INSERT INTO days (id_login, datee, type) VALUES ($id_login, $date, '1')";
-	// $result3=$conn->query($query3);
-	// header('location: ../Views/BossDashboard.php');
+		
 		
 	}
 }else{

@@ -1,7 +1,5 @@
 
 <?php
-
-
 $firstname = $_POST['fname'];
 $lastname = $_POST['lname'];
 $password = $_POST['password'];
@@ -28,10 +26,6 @@ print_r($value);
 // echo "<pre>";
 // print_r($_POST);
 // echo "</pre>";
-
-
-
-
 $query="INSERT INTO employee ( firstname, lastname, email , gender, passsword, age,idPrive) 
 VALUES ( '$firstname', '$lastname' ,'$email', $gender, '$password','$age','$sginas')";
 

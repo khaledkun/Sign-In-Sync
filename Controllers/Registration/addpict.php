@@ -43,6 +43,7 @@ if(true){
 
 }
 
+header('location:../../Views/Dashboard/MyProfile.php');
 
 
 
@@ -67,7 +68,6 @@ if(true){
 // print_r($_SERVER);
 
 // print_r($_FILES['pict']);
-header('location:../../Views/Dashboard/MyProfile.php');
 ?>
 <?php
 // if(isset($_POST['submit'])){

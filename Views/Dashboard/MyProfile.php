@@ -19,7 +19,13 @@ include_once($ConnectContrl);
 $query1 ="SELECT * FROM employee WHERE id ='$id'";
 $result1=$conn->query($query1);
 $userdata1 =$result1->fetch_assoc();
+// var_dump($result1);
+// echo "<pre>";
+// print_r($userdata1);
+// echo "</pre>";
+
 $posstion = $userdata1['idPrive'];
+echo "$possion";
 $imgname = $userdata1['imgname'];
 $imgpath = "../../Controllers/Registration/img/"."$imgname";
 
