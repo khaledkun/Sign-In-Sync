@@ -25,7 +25,7 @@ $userdata1 =$result1->fetch_assoc();
 // echo "</pre>";
 
 $posstion = $userdata1['idPrive'];
-echo "$possion";
+
 $imgname = $userdata1['imgname'];
 $imgpath = "../../Controllers/Registration/img/"."$imgname";
 

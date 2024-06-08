@@ -81,18 +81,18 @@ $userdata1 =$result1->fetch_assoc();
             <div class="grid-item late-time" onclick="AjaxLate()">
                 <i class="fas fa-clock Icons"></i>
                 <h2>Late Arrival</h2>
-                <p id="late-time">0 hours (0 days)</p>
+                <p id="late-time"><b>click to see</b></p>
             </div>
             
             <div class="grid-item absent-days" onclick="Ajaxabsent()">
                 <i class="far fa-calendar-times Icons"></i>
                 <h2>Absent Days</h2>
-                <p id="absent-days">0 days</p>
+                <p id="absent-days"><b>click to see</b></p>
             </div>
             <div class="grid-item break-time" onclick="Ajaxbreak()">
             <i class="fas fa-user-clock Icons"></i>
                 <h2>Break Time</h2>
-                <p id="break-time">0 Minutes</p>
+                <p id="break-time"><b>click to see</b></p>
             </div>
             <div class="grid-item total-paycheck" onclick="Ajaxpaycheck()">
                 <i class="fas fa-money-bill-alt Icons"></i>

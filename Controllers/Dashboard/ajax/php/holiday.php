@@ -12,12 +12,12 @@ $Day = $result21->fetch_assoc();
 
 foreach($result20 as $key=>$value){
 if($value['id']==$Day['id']){
-    echo "this day is holiday".$Day['dayy'];
+    echo "<b>this day is holiday".$Day['dayy']."</b>";
     
     break;
 }
 if($value['id']>$Day['id']){
-    echo $value['dayy']."<br>";
+    echo "<b>" .$value['dayy']."</b>"."<br>";
      break;
 }
     

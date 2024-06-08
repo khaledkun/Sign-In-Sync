@@ -1,6 +1,7 @@
 <?php
 session_start();
 $id =$_SESSION['id'];
+// echo "hi it work ";
 //get login data for employee and this day
 $thDay2 =date("Y-m-d",time());
 include "../../../Registration/connect.php";
@@ -18,7 +19,7 @@ $num_rows_sup2=$num_rows-2;
 //end
 // exit();
 //if we get one reslut 
-
+// echo "<br> $num_rows";
 //if ////////////////////////////////////////////////////////////////
 if($num_rows==1){
     echo "<b>you don't take any break <br>";
@@ -34,17 +35,28 @@ if($num_rows==1){
     //for the session two to get time in 
     $query31 ="SELECT * FROM login WHERE id_employee = $id AND dayy ='$thDay2' AND daysession = 0";
     $result31 =$conn->query($query31);
+    $query32 ="SELECT * FROM login WHERE id_employee = $id AND dayy ='$thDay2' AND daysession = 2";
+    $result32 =$conn->query($query32);
 
     //out
     foreach($result30 as $key1=>$value1){
     }
     //in
     foreach($result31 as $key2=>$value2){
+        echo $value2;
     }
     //get time in for session two and 
     //get time out for session one
-    $timein  =$value2['timee'];
-    $timeout =$value1['Eout'];
+    foreach($result32 as $key3=>$value3){
+        
+    }
+    if(isset($value2)){
+        $timein  =$value2['timee'];
+        $timeout =$value1['Eout'];
+    }else{
+        $timein =$value3['timee'];
+        $timeout=$value1['Eout'];
+    }
     
     $timeinArray =explode(':',"$timein");
     
